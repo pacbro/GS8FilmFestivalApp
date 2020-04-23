@@ -55,13 +55,28 @@ const vidContainerIframe = {//.vid-container object, vid-container embed
 
 const vidItem = {
     display: 'block',
-    width: '148px',
-    height: '178px',
+    background: 'rgb(255,255,255)',
+    //width: '148px',
+    width: '9em',
+    //height: '178px',
+    height: '11em',
     float: 'left',
-    margin: '0',
-    padding: '5px',
+    //margin: '0',
+    padding: '.3em',
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: 'LightGrey',
+    borderRadius: '.3em',
 };
-
+const sliderDiv = {
+    position: 'relative',
+    //width: '700px',
+    width: '41.8em',
+    height: '11.8em',
+    margin: 'auto',
+    background: 'rgb(0,0,0)',
+    padding: '7px'
+};
 const desc = {
     color: '#21A1D2',
     fontSize: '15px',
@@ -78,21 +93,63 @@ const thumb = {
     bottom: 0,
     left: 0,
 };
+
 const dotGroup = {
     textAlign: 'center'
 };
 const buttonBack = {
     position: 'absolute',
-    left:-75,
-    top: '30%',
-
+    textAlign: 'center',
+    fontSize: '32px',
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: 'LightGrey',
+    left:-45,
+    top: '.15em',
+    borderRadius: '.2em',
+    height: '6em',
+    width: '1.4em',
 };
 const buttonNext = {
     position: 'absolute',
-    right:-75,
-    top: '30%'
+    textAlign: 'center',
+    fontSize: '32px',
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: 'LightGrey',
+    right:-45,
+    top: '.15em',
+    borderRadius: '.2em',
+    height: '6em',
+    width: '1.4em',
 };
+const buttonBack2 = {
+    position: 'absolute',
+    textAlign: 'center',
+    fontSize: '20px',
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: 'LightGrey',
+    left:-40,
+    top: '35%',
+    borderRadius: '50%',
+    height: '2.6em',
+    width: '2.6em',
 
+};
+const buttonNext2 = {
+    position: 'absolute',
+    textAlign: 'center',
+    fontSize: '20px',
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: 'LightGrey',
+    right:-40,
+    top: '35%',
+    borderRadius: '50%',
+    height: '2.6em',
+    width: '2.6em',
+};
 
 
 
@@ -110,9 +167,12 @@ const Styles = {
     thumb,
     dotGroup,
     buttonBack,
+    buttonBack2,
     buttonNext,
+    buttonNext2,
     vidItem,
     desc,
+    sliderDiv,
 };
 
 export default Styles;
