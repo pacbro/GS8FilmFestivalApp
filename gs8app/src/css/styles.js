@@ -77,6 +77,15 @@ const sliderDiv = {
     background: 'rgb(0,0,0)',
     padding: '7px'
 };
+const sliderDiv2 = {
+    position: 'relative',
+    //width: '700px',
+    width: '45em',
+    height: '11.8em',
+    margin: 'auto',
+    background: 'rgb(0,0,0)',
+    padding: '7px'
+};
 const desc = {
     color: '#21A1D2',
     fontSize: '15px',
@@ -130,7 +139,7 @@ const buttonBack2 = {
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
-    left:-40,
+    left:-25,
     top: '35%',
     borderRadius: '50%',
     height: '2.6em',
@@ -144,7 +153,7 @@ const buttonNext2 = {
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
-    right:-40,
+    right:-25,
     top: '35%',
     borderRadius: '50%',
     height: '2.6em',
@@ -173,6 +182,7 @@ const Styles = {
     vidItem,
     desc,
     sliderDiv,
+    sliderDiv2,
 };
 
 export default Styles;

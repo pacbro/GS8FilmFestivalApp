@@ -16,8 +16,10 @@ import {
     Slide,
     Slider,
 } from 'pure-react-carousel';
+import Papa from 'papaparse';
+//import filmsCash from '../csv/films';
 import CSVReader from 'react-csv-reader';
-import s from '../css/carousel.scss';
+//import s from '../css/carousel.scss';
 
 
 const imgStyle = {
@@ -35,8 +37,17 @@ const Home = () => (
         <h1>Thank you for making GS8 2019 a Success!</h1>
 
         <Card style={styles.cardStyle}>
+            <h1>CSV Import work</h1>
+            <div>
+                <p>
+                    Parse this file: filmsCash.csv
+                </p>
+            </div>
+        </Card>
+
+        <Card style={styles.cardStyle}>
             <h1>Film Gallery</h1>
-            <h2 className={s.headline}>2020 Films</h2>
+            <h2>2020 Films</h2>
             <div className="vid-container" style={styles.vidContainer}>
                 <iframe id="vid_frame"
                         style={styles.vidContainerIframe}
@@ -44,7 +55,12 @@ const Home = () => (
                         src="http://www.youtube.com/embed/pjMlCHCufrA?rel=0&showinfo=0&autohide=1"
                         frameBorder="0"
                         width="100%"
-                        height="315">
+                        height="100%"
+                        allowfullscreen="allowfullscreen"
+                        mozallowfullscreen="mozallowfullscreen"
+                        msallowfullscreen="msallowfullscreen"
+                        oallowfullscreen="oallowfullscreen"
+                        webkitallowfullscreen="webkitallowfullscreen">
                 </iframe>
             </div>
             <br/>
@@ -59,7 +75,7 @@ const Home = () => (
                 >
                     <div style={styles.sliderDiv}>
 
-                        <Slider className={s.slider}>
+                        <Slider>
                             <Slide index={0}>
                                 <div
                                     className="vid-item"
@@ -74,7 +90,10 @@ const Home = () => (
                                             alt="Figure Man Written by Anthony Thambynayagam"
                                         />
                                     </div>
-                                    <div className="desc" style={styles.desc}>
+                                    <div
+                                        className="desc"
+                                        style={styles.desc}
+                                    >
                                         Figure Man Written by Anthony Thambynayagam
                                     </div>
                                 </div>
@@ -94,7 +113,10 @@ const Home = () => (
                                             alt="The Best Day of My Life by Jason Austin"
                                         />
                                     </div>
-                                    <div className="desc" style={styles.desc}>
+                                    <div
+                                        className="desc"
+                                        style={styles.desc}
+                                    >
                                         The Best Day of My Life by Jason Austin
                                     </div>
                                 </div>
@@ -114,7 +136,10 @@ const Home = () => (
                                             alt="Untitled by Nolan Gonzalez"
                                         />
                                     </div>
-                                    <div className="desc" style={styles.desc}>
+                                    <div
+                                        className="desc"
+                                        style={styles.desc}
+                                    >
                                         Untitled by Nolan Gonzalez
                                     </div>
                                 </div>
@@ -134,7 +159,10 @@ const Home = () => (
                                             alt="Ernest Argyros 2"
                                         />
                                     </div>
-                                    <div className="desc" style={styles.desc}>
+                                    <div
+                                        className="desc"
+                                        style={styles.desc}
+                                    >
                                         Ernest Argyros 2
                                     </div>
                                 </div>
@@ -153,7 +181,11 @@ const Home = () => (
                                             alt="Public Grief by Ali Rowenna"
                                         />
                                     </div>
-                                    <div className="desc" style={styles.desc}>Our Usual Table by La Dele Sines and Alan Phillips
+                                    <div
+                                        className="desc"
+                                        style={styles.desc}
+                                    >
+                                        Our Usual Table by La Dele Sines and Alan Phillips
                                         Public Grief by Ali Rowenna
                                     </div>
                                 </div>
@@ -276,36 +308,41 @@ const Home = () => (
 
         <Card style={styles.cardStyle}>
             <h1>Film Gallery</h1>
-            <h2 className={s.headline}>2020 Films</h2>
+            <h2>2020 Films</h2>
             <div className="vid-container" style={styles.vidContainer}>
-                <iframe id="vid_frame"
+                <iframe id="vid_frame2"
                         style={styles.vidContainerIframe}
                         title="Figure Man Written by Anthony Thambynayagam"
-                        src="http://www.youtube.com/embed/pjMlCHCufrA?rel=0&showinfo=0&autohide=1"
+                        src="http://www.youtube.com/embed/pjMlCHCufrA?rel=0&fs=1&showinfo=0&autohide=1"
                         frameBorder="0"
                         width="100%"
-                        height="315">
+                        height="100%"
+                        allowfullscreen="allowfullscreen"
+                        mozallowfullscreen="mozallowfullscreen"
+                        msallowfullscreen="msallowfullscreen"
+                        oallowfullscreen="oallowfullscreen"
+                        webkitallowfullscreen="webkitallowfullscreen">
                 </iframe>
             </div>
             <br/>
             <div>
                 <CarouselProvider
-                    visibleSlides={4.12}
+                    visibleSlides={4.5}
                     totalSlides={10}
                     step={4}
                     naturalSlideWidth={425}
                     naturalSlideHeight={500}
                     hasMasterSpinner
                 >
-                    <div style={styles.sliderDiv}>
+                    <div style={styles.sliderDiv2}>
 
-                        <Slider className={s.slider}>
+                        <Slider>
                             <Slide index={0}>
                                 <div
                                     className="vid-item"
                                     style={styles.vidItem}
                                     onClick={() => {
-                                        document.getElementById('vid_frame').src='https://www.youtube.com/embed/pjMlCHCufrA?autoplay=1&rel=0&showinfo=0&autohide=1'}
+                                        document.getElementById('vid_frame2').src='https://www.youtube.com/embed/pjMlCHCufrA?autoplay=1&rel=0&showinfo=0&autohide=1'}
                                     }
                                 >
                                     <div className="thumb" style={styles.thumb}>
@@ -325,7 +362,7 @@ const Home = () => (
                                     className="vid-item"
                                     style={styles.vidItem}
                                     onClick={() => {
-                                        document.getElementById('vid_frame').src='https://www.youtube.com/embed/mCbqDuNgMp4?autoplay=1&rel=0&showinfo=0&autohide=1'}
+                                        document.getElementById('vid_frame2').src='https://www.youtube.com/embed/mCbqDuNgMp4?autoplay=1&rel=0&showinfo=0&autohide=1'}
                                     }
                                 >
                                     <div className="thumb" style={styles.thumb}>
@@ -345,7 +382,7 @@ const Home = () => (
                                     className="vid-item"
                                     style={styles.vidItem}
                                     onClick={() => {
-                                        document.getElementById('vid_frame').src='http://youtube.com/embed/DVJU9-3QHzE?autoplay=1&rel=0&showinfo=0&autohide=1'}
+                                        document.getElementById('vid_frame2').src='http://youtube.com/embed/DVJU9-3QHzE?autoplay=1&rel=0&showinfo=0&autohide=1'}
                                     }
                                 >
                                     <div className="thumb" style={styles.thumb}>
@@ -365,7 +402,7 @@ const Home = () => (
                                     className="vid-item"
                                     style={styles.vidItem}
                                     onClick={() => {
-                                        document.getElementById('vid_frame').src='http://youtube.com/embed/OgovstrZ5OU?autoplay=1&rel=0&showinfo=0&autohide=1'}
+                                        document.getElementById('vid_frame2').src='http://youtube.com/embed/OgovstrZ5OU?autoplay=1&rel=0&showinfo=0&autohide=1'}
                                     }
                                 >
                                     <div className="thumb" style={styles.thumb}>
@@ -384,7 +421,7 @@ const Home = () => (
                                 <div className="vid-item"
                                      style={styles.vidItem}
                                      onClick={() => {
-                                         document.getElementById('vid_frame').src='http://youtube.com/embed/gt9pDsYuubI?autoplay=1&rel=0&showinfo=0&autohide=1'}
+                                         document.getElementById('vid_frame2').src='http://youtube.com/embed/gt9pDsYuubI?autoplay=1&rel=0&showinfo=0&autohide=1'}
                                      }
                                 >
                                     <div className="thumb" style={styles.thumb}>
@@ -404,7 +441,7 @@ const Home = () => (
                                     className="vid-item"
                                     style={styles.vidItem}
                                     onClick={() => {
-                                        document.getElementById('vid_frame').src='http://youtube.com/embed/hXyDYJLn_sE?autoplay=1&rel=0&showinfo=0&autohide=1'}
+                                        document.getElementById('vid_frame2').src='http://youtube.com/embed/hXyDYJLn_sE?autoplay=1&rel=0&showinfo=0&autohide=1'}
                                     }
                                 >
                                     <div className="thumb" style={styles.thumb}>
@@ -424,7 +461,7 @@ const Home = () => (
                                     className="vid-item"
                                     style={styles.vidItem}
                                     onClick={() => {
-                                        document.getElementById('vid_frame').src='http://youtube.com/embed/UURuEgH2yqw?autoplay=1&rel=0&showinfo=0&autohide=1'}
+                                        document.getElementById('vid_frame2').src='http://youtube.com/embed/UURuEgH2yqw?autoplay=1&rel=0&showinfo=0&autohide=1'}
                                     }
                                 >
                                     <div className="thumb" style={styles.thumb}>
@@ -444,7 +481,7 @@ const Home = () => (
                                     className="vid-item"
                                     style={styles.vidItem}
                                     onClick={() => {
-                                        document.getElementById('vid_frame').src='http://youtube.com/embed/JTDctcyssJM?autoplay=1&rel=0&showinfo=0&autohide=1'}
+                                        document.getElementById('vid_frame2').src='http://youtube.com/embed/JTDctcyssJM?autoplay=1&rel=0&showinfo=0&autohide=1'}
                                     }
                                 >
                                     <div className="thumb" style={styles.thumb}>
@@ -463,7 +500,7 @@ const Home = () => (
                                 <div className="vid-item"
                                      style={styles.vidItem}
                                      onClick={() => {
-                                         document.getElementById('vid_frame').src='http://youtube.com/embed/jSgNTYQtolI?autoplay=1&rel=0&showinfo=0&autohide=1'}
+                                         document.getElementById('vid_frame2').src='http://youtube.com/embed/jSgNTYQtolI?autoplay=1&rel=0&showinfo=0&autohide=1'}
                                      }>
                                     <div className="thumb" style={styles.thumb}>
                                         <Image
@@ -480,7 +517,7 @@ const Home = () => (
                                 <div className="vid-item"
                                      style={styles.vidItem}
                                      onClick={() => {
-                                         document.getElementById('vid_frame').src='http://youtube.com/embed/3ODq0UvATTc?autoplay=1&rel=0&showinfo=0&autohide=1'}
+                                         document.getElementById('vid_frame2').src='http://youtube.com/embed/3ODq0UvATTc?autoplay=1&rel=0&showinfo=0&autohide=1'}
                                      }>
                                     <div className="thumb" style={styles.thumb}>
                                         <Image
