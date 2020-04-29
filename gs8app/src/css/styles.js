@@ -61,7 +61,6 @@ const vidItem = {
     //height: '178px',
     height: '11em',
     float: 'left',
-    //margin: '0',
     padding: '.3em',
     border: '1px',
     borderStyle: 'solid',

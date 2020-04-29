@@ -5,7 +5,7 @@ import Contact from './Contact';
 import Subscribe from './Subscribe';
 import styles from '../css/styles';
 
-
+import csvController from '../controllers/csv-controller';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import {
     ButtonBack,
@@ -16,10 +16,7 @@ import {
     Slide,
     Slider,
 } from 'pure-react-carousel';
-import Papa from 'papaparse';
-//import filmsCash from '../csv/films';
-import CSVReader from 'react-csv-reader';
-//import s from '../css/carousel.scss';
+
 
 
 const imgStyle = {
@@ -27,6 +24,29 @@ const imgStyle = {
     height: 'auto'
 };
 
+function gogo(){
+    // set
+    // var lastAccess = new Date().getTime();
+    // if (sessionStorage)
+    //     sessionStorage.setItem("myapp_time", lastAccess.toString());
+    //
+    // retrieve in another page or on a refresh
+    // var time = null;
+    // if (sessionStorage)
+    //     time = sessionStorage.getItem("myapp_time");
+
+    // if (time)
+    //     time = new Date(time * 1);
+    // else
+    //     time = new Date();
+
+
+    let csvController = new csvController();
+    let index0ytID = 'pjMlCHCufrA';
+};
+
+
+// noinspection SpellCheckingInspection
 const Home = () => (
     <div style={styles.parentDivStyle}>
         <img
@@ -36,14 +56,6 @@ const Home = () => (
         />
         <h1>Thank you for making GS8 2019 a Success!</h1>
 
-        <Card style={styles.cardStyle}>
-            <h1>CSV Import work</h1>
-            <div>
-                <p>
-                    Parse this file: filmsCash.csv
-                </p>
-            </div>
-        </Card>
 
         <Card style={styles.cardStyle}>
             <h1>Film Gallery</h1>
@@ -76,6 +88,7 @@ const Home = () => (
                     <div style={styles.sliderDiv}>
 
                         <Slider>
+
                             <Slide index={0}>
                                 <div
                                     className="vid-item"
@@ -85,6 +98,7 @@ const Home = () => (
                                     }
                                 >
                                     <div className="thumb" style={styles.thumb}>
+                                        {/*src="http://img.youtube.com/vi/{index0ytID}/0.jpg" */}
                                         <Image
                                             src="http://img.youtube.com/vi/pjMlCHCufrA/0.jpg"
                                             alt="Figure Man Written by Anthony Thambynayagam"
@@ -575,6 +589,7 @@ const Home = () => (
             />
         </Card>
         <p>Map goes here</p>
+        {/* Uha why is there a API key here? We should remove it or deactivate it! */}
         {/* API key AIzaSyDizypkVSGXwtOacsa73GX0DcqSE6l5KAg  */}
 
         <Subscribe />
