@@ -5,8 +5,7 @@ import Contact from './Contact';
 import Subscribe from './Subscribe';
 import styles from '../css/styles';
 
-import Carousel from './Carousel';
-import Carousel2 from './Carousel2';
+import FilmGallery from './FilmGallery';
 //import csvController from '../controllers/csv-controller';
 //import 'pure-react-carousel/dist/react-carousel.es.css';
 /*import {
@@ -40,10 +39,9 @@ const Home = () => (
         />
         <h1>Thank you for making GS8 2019 a Success!</h1>
 
-        <Carousel />
-        <Carousel2 />
 
 
+        <FilmGallery />
 
 
 
