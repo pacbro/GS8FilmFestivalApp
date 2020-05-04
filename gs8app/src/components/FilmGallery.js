@@ -20,6 +20,18 @@ import Papa from "papaparse";
 } from 'pure-react-carousel';
 */
 
+/*
+import {Readable} from 'stream';
+async function readableToString2(readable) {
+    let result = '';
+
+    for await (const chunk of readable) {
+        result += chunk;
+    }
+    return result;
+}
+*/
+
 async function logChunks(readable) {
     console.log('in logChunks');
     for await (const chunk of readable) {
@@ -35,8 +47,9 @@ class FilmGallery extends React.Component {
             carouselYear: this.props.year,
             allTags: [],
             filmData: [],
-
+            data: [],
         };
+        this.getData = this.getData.bind(this);
     }
 
     componentDidMount() {
