@@ -4,10 +4,11 @@ import './css/index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
+import { tempData } from './tempData';
 
 ReactDOM.render(
     <BrowserRouter>
-        <App />
+        <App tempData={tempData}/>
     </BrowserRouter>,
     document.getElementById('root')
 );
