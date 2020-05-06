@@ -19,7 +19,17 @@ import Home from './Home';
 import AdminData from './AdminData';
 //fixed???
 
+import PropTypes from 'prop-types';
+
+
 class App extends Component {
+    //loads tempData from index.js as a prop
+    //then sets it as a state
+    constructor(props) {
+        super(props);
+        this.state = props.tempData;
+    }
+
     render() {
         return (
             <div className="App">
@@ -42,7 +52,16 @@ class App extends Component {
                         <Route path="/rules" component={Rules} />
                         <Route path="/shop" component={Shop} />
                         <Route path="/subscribe" component={Subscribe} />
-                        <Route path="/" component={Home} />
+                        
+                        <Route
+                            path="/"
+                            render={props => (
+                                <Home
+                                    {...props}
+                                    filmData={this.state.filmData}
+                                />
+                            )}
+                        />
                         <Redirect to="/" />
                     </Switch>
                 </div>
@@ -50,6 +69,12 @@ class App extends Component {
         );
     }
 }
+
+//ensures data is loaded correctly
+App.propTypes = {
+    tempData: PropTypes.object
+};
+
 
 export default App;
 
