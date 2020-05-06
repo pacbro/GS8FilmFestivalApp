@@ -180,6 +180,9 @@ class Navbar extends React.Component {
                         <Button component={NavLink} to="/contact">
                             Contact
                         </Button>
+                        <Button component={NavLink} to="/filmGallery">
+                            Film Gallery
+                        </Button>
                         <Button component={NavLink} to="/donate">
                             Donate
                         </Button>

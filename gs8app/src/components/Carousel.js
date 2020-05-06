@@ -21,6 +21,12 @@ let filmData = {
 };
 */
 
+let setFilmSRC = (ytID) => {
+    window.scrollTo(500, 0);
+    //let str = 'https://www.youtube.com/embed/'+ytID+'?autoplay=1&rel=0&showinfo=0&autohide=1';
+    document.getElementById('vid_frame').src='https://www.youtube.com/embed/'+ytID+'?autoplay=1&rel=0&showinfo=0&autohide=1';
+}
+
 class Carousel extends React.Component {
     constructor(props) {
         super(props);
@@ -36,26 +42,28 @@ class Carousel extends React.Component {
         console.log('<< Carousel 01: Mounted successfully >>');
     }
 
+
+
     render() {
         return (
             <div>
-                <div className="vid-container" style={styles.vidContainer}>
-                    <iframe id="vid_frame"
-                            style={styles.vidContainerIframe}
-                            title="Figure Man Written by Anthony Thambynayagam"
-                            src="http://www.youtube.com/embed/pjMlCHCufrA?autoplay=1&rel=0&showinfo=0"
-                            frameBorder="0"
-                            width="100%"
-                            height="100%"
-                            allowFullScreen="allowFullScreen"
-                            mozallowfullscreen="mozallowfullscreen"
-                            msallowfullscreen="msallowfullscreen"
-                            oallowfullscreen="oallowfullscreen"
-                            webkitallowfullscreen="webkitallowfullscreen">
-                    </iframe>
-                </div>
-                <br/>
-                <div>
+
+                <iframe id="vid_frame"
+                        style={styles.vidContainerIframe}
+                        title="Figure Man Written by Anthony Thambynayagam"
+                        src="http://www.youtube.com/embed/pjMlCHCufrA?autoplay=1&rel=0&showinfo=0"
+                        frameBorder="0"
+                        width="640"
+                        height="480"
+                        allowFullScreen="allowFullScreen"
+                        mozallowfullscreen="mozallowfullscreen"
+                        msallowfullscreen="msallowfullscreen"
+                        oallowfullscreen="oallowfullscreen"
+                        webkitallowfullscreen="webkitallowfullscreen">
+                </iframe>
+
+                <h2>2020 Films</h2>
+                <div style={styles.filmGalleryStyle}>
                     <CarouselProvider
                         visibleSlides={4.12}
                         totalSlides={10}
@@ -72,9 +80,10 @@ class Carousel extends React.Component {
                                     <div
                                         className="vid-item"
                                         style={styles.vidItem}
-                                        onClick={() => {
-                                            document.getElementById('vid_frame').src='https://www.youtube.com/embed/pjMlCHCufrA?autoplay=1&rel=0&showinfo=0&autohide=1'}
-                                        }
+                                        onClick={()=>{
+                                            setFilmSRC('pjMlCHCufrA');
+                                        }}
+
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             {/*src="http://img.youtube.com/vi/{index0ytID}/0.jpg" */}
@@ -96,9 +105,9 @@ class Carousel extends React.Component {
                                     <div
                                         className="vid-item"
                                         style={styles.vidItem}
-                                        onClick={() => {
-                                            document.getElementById('vid_frame').src='https://www.youtube.com/embed/mCbqDuNgMp4?autoplay=1&rel=0&showinfo=0&autohide=1'}
-                                        }
+                                        onClick={()=>{
+                                            setFilmSRC('mCbqDuNgMp4');
+                                        }}
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
@@ -119,13 +128,13 @@ class Carousel extends React.Component {
                                     <div
                                         className="vid-item"
                                         style={styles.vidItem}
-                                        onClick={() => {
-                                            document.getElementById('vid_frame').src='http://youtube.com/embed/DVJU9-3QHzE?autoplay=1&rel=0&showinfo=0&autohide=1'}
-                                        }
+                                        onClick={()=>{
+                                            setFilmSRC('nBgVaDr0l6I');
+                                        }}
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/DVJU9-3QHzE/0.jpg"
+                                                src="http://img.youtube.com/vi/nBgVaDr0l6I/0.jpg"
                                                 alt="Untitled by Nolan Gonzalez"
                                             />
                                         </div>
@@ -142,13 +151,13 @@ class Carousel extends React.Component {
                                     <div
                                         className="vid-item"
                                         style={styles.vidItem}
-                                        onClick={() => {
-                                            document.getElementById('vid_frame').src='http://youtube.com/embed/OgovstrZ5OU?autoplay=1&rel=0&showinfo=0&autohide=1'}
-                                        }
+                                        onClick={()=>{
+                                            setFilmSRC('m89w7f59a6A');
+                                        }}
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/OgovstrZ5OU/0.jpg"
+                                                src="http://img.youtube.com/vi/m89w7f59a6A/0.jpg"
                                                 alt="Ernest Argyros 2"
                                             />
                                         </div>
@@ -156,7 +165,7 @@ class Carousel extends React.Component {
                                             className="desc"
                                             style={styles.desc}
                                         >
-                                            Ernest Argyros 2
+                                            Chasing Terrence by Terrence Wynder Kevin Drury Kris Brown & Ernest Argyros
                                         </div>
                                     </div>
                                 </Slide>

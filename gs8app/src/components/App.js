@@ -5,6 +5,7 @@ import '../css/App.css';
 import Navbar from './Navbar';
 import About from './About';
 import Contact from './Contact';
+import FilmGallery from './FilmGallery';
 import Donate from './Donate';
 import Events from './Events';
 import Participate from './Participate';
@@ -29,6 +30,7 @@ class App extends Component {
                         <Route path="/admin-data" component={AdminData} />
                         <Route path="/about" component={About} />
                         <Route path="/contact" component={Contact} />
+                        <Route path="/filmGallery" component={FilmGallery} />
                         <Route path="/donate" component={Donate} />
                         <Route path="/events" component={Events} />
                         <Route path="/participate" component={Participate} />

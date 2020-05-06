@@ -2,7 +2,6 @@ import React from 'react';
 import styles from '../css/styles';
 
 import Carousel from './Carousel';
-import Carousel2 from './Carousel2';
 import Card from "@material-ui/core/Card";
 
 import * as fs from "fs";
@@ -137,16 +136,17 @@ class FilmGallery extends React.Component {
         });
     }
 
+    //<Card style={styles.cardStyle}>
     render() {
         return (
-            <div style={styles.parentDivStyle}>
-                <Card style={styles.cardStyle}>
-                    <h1>Film Gallery</h1>
-                    <h2>2020 Films</h2>
+            <div style={styles.filmGalleryStyle}>
 
-                    <Carousel year={1942}/>
-                    <Carousel2 />
-                </Card>
+                <h1>GS8 Film Gallery</h1>
+
+
+                <Carousel year={1942}/>
+
+
             </div>
         )
     }

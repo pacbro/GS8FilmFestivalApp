@@ -41,10 +41,6 @@ const Home = () => (
 
 
 
-        <FilmGallery />
-
-
-
         <Card style={styles.cardStyle}>
             <h2>Little Films for the Big Picture</h2>
             <p style={styles.pStyle}>

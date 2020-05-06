@@ -3,6 +3,12 @@ const parentDivStyle = {
     display: 'inline-block',
     width: '48em'
 };
+const filmGalleryStyle = {
+    textAlign: 'center',
+    //display: 'inline-block',
+    background: 'rgb(0,0,0)',
+    color: 'white',
+};
 const cardStyle = {
     width: '46em',
     textAlign: 'center',
@@ -19,38 +25,28 @@ const pStyle = {
     textAlign: 'justify',
     fontSize: '1.2em'
 };
-
 const divButtonStyle = {
     textAlign: 'center',
     padding: '25px',
     margine: '25px'
 };
-
 const socMed = {
     fontSize: '50px',
     margin: '0 auto'
 };
-
 const rowDivStyle = {
     textAlign: 'center',
     align: 'left'
 };
 
 
-
-const vidContainer = {
-    position: 'relative',
-    paddingTottom: '52%',
-    paddingTop: '30px',
-    height: '0',
-};
-
 const vidContainerIframe = {//.vid-container object, vid-container embed
-    position: 'absolute',
-    top: '0',
-    left: '0',
-    width: '100%',
-    height: '100%',
+    position: 'relative',
+    align: 'center',
+    //margineLeft: 'auto',
+    //margineRight: 'auto',
+    width: '60em',
+    height: '45em',
 };
 
 const vidItem = {
@@ -87,8 +83,8 @@ const sliderDiv2 = {
 };
 const desc = {
     color: '#21A1D2',
-    fontSize: '15px',
-    marginTop:'5px',
+    fontSize: '14',
+    //marginTop:'5px',
 };
 
 const thumb = {
@@ -96,10 +92,10 @@ const thumb = {
     height: '110px',
     //width: '120px',
     //margin: 'auto',
-    top: 0,
-    right: 0,
-    bottom: 0,
-    left: 0,
+    //top: '-10',
+    //right: 0,
+    //bottom: 0,
+    //left: 0,
 };
 
 const dotGroup = {
@@ -164,13 +160,13 @@ const buttonNext2 = {
 
 const Styles = {
     parentDivStyle,
+    filmGalleryStyle,
     cardStyle,
     titleStyle,
     pStyle,
     divButtonStyle,
     rowDivStyle,
     socMed,
-    vidContainer,
     vidContainerIframe,
     thumb,
     dotGroup,
