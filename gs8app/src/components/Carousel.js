@@ -35,6 +35,8 @@ class Carousel extends React.Component {
             allTags: [],
             filmData: [],
             data: [],
+            wWidth: window.innerWidth,
+            wHeight: window.innerHeight,
         };
     }
 
@@ -51,7 +53,7 @@ class Carousel extends React.Component {
                 <iframe id="vid_frame"
                         style={styles.vidContainerIframe}
                         title="Figure Man Written by Anthony Thambynayagam"
-                        src="http://www.youtube.com/embed/pjMlCHCufrA?autoplay=1&rel=0&showinfo=0"
+                        src="http://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=0&rel=0&showinfo=0"
                         frameBorder="0"
                         width="640"
                         height="480"
@@ -65,9 +67,9 @@ class Carousel extends React.Component {
                 <h2>2020 Films</h2>
                 <div style={styles.filmGalleryStyle}>
                     <CarouselProvider
-                        visibleSlides={4.12}
-                        totalSlides={10}
-                        step={4}
+                        visibleSlides={5.12}
+                        totalSlides={20}
+                        step={5}
                         naturalSlideWidth={425}
                         naturalSlideHeight={500}
                         hasMasterSpinner
@@ -173,9 +175,9 @@ class Carousel extends React.Component {
                                 <Slide index={4}>
                                     <div className="vid-item"
                                          style={styles.vidItem}
-                                         onClick={() => {
-                                             document.getElementById('vid_frame').src='http://youtube.com/embed/gt9pDsYuubI?autoplay=1&rel=0&showinfo=0&autohide=1'}
-                                         }
+                                         onClick={()=>{
+                                             setFilmSRC('gt9pDsYuubI');
+                                         }}
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
@@ -197,9 +199,9 @@ class Carousel extends React.Component {
                                     <div
                                         className="vid-item"
                                         style={styles.vidItem}
-                                        onClick={() => {
-                                            document.getElementById('vid_frame').src='http://youtube.com/embed/hXyDYJLn_sE?autoplay=1&rel=0&showinfo=0&autohide=1'}
-                                        }
+                                        onClick={()=>{
+                                            setFilmSRC('hXyDYJLn_sE');
+                                        }}
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
@@ -217,9 +219,9 @@ class Carousel extends React.Component {
                                     <div
                                         className="vid-item"
                                         style={styles.vidItem}
-                                        onClick={() => {
-                                            document.getElementById('vid_frame').src='http://youtube.com/embed/UURuEgH2yqw?autoplay=1&rel=0&showinfo=0&autohide=1'}
-                                        }
+                                        onClick={()=>{
+                                            setFilmSRC('UURuEgH2yqw');
+                                        }}
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
@@ -237,9 +239,9 @@ class Carousel extends React.Component {
                                     <div
                                         className="vid-item"
                                         style={styles.vidItem}
-                                        onClick={() => {
-                                            document.getElementById('vid_frame').src='http://youtube.com/embed/JTDctcyssJM?autoplay=1&rel=0&showinfo=0&autohide=1'}
-                                        }
+                                        onClick={()=>{
+                                            setFilmSRC('JTDctcyssJM');
+                                        }}
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
@@ -256,9 +258,10 @@ class Carousel extends React.Component {
                                 <Slide index={8}>
                                     <div className="vid-item"
                                          style={styles.vidItem}
-                                         onClick={() => {
-                                             document.getElementById('vid_frame').src='http://youtube.com/embed/jSgNTYQtolI?autoplay=1&rel=0&showinfo=0&autohide=1'}
-                                         }>
+                                         onClick={()=>{
+                                             setFilmSRC('jSgNTYQtolI');
+                                         }}
+                                    >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
                                                 src="http://img.youtube.com/vi/jSgNTYQtolI/0.jpg"
@@ -273,9 +276,10 @@ class Carousel extends React.Component {
                                 <Slide index={9}>
                                     <div className="vid-item"
                                          style={styles.vidItem}
-                                         onClick={() => {
-                                             document.getElementById('vid_frame').src='http://youtube.com/embed/3ODq0UvATTc?autoplay=1&rel=0&showinfo=0&autohide=1'}
-                                         }>
+                                         onClick={()=>{
+                                             setFilmSRC('3ODq0UvATTc');
+                                         }}
+                                    >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
                                                 src="http://img.youtube.com/vi/3ODq0UvATTc/0.jpg"
@@ -287,6 +291,189 @@ class Carousel extends React.Component {
                                         </div>
                                     </div>
                                 </Slide>
+                                <Slide index={10}>
+                                    <div className="vid-item"
+                                         style={styles.vidItem}
+                                         onClick={()=>{
+                                             setFilmSRC('20NS42MUPBE');
+                                         }}
+                                    >
+                                        <div className="thumb" style={styles.thumb}>
+                                            <Image
+                                                src="http://img.youtube.com/vi/20NS42MUPBE/0.jpg"
+                                                alt="The Big Con by Augie Pagan"
+                                            />
+                                        </div>
+                                        <div className="desc" style={styles.desc}>
+                                            Special Olympics Basketball by Cedar Bushue
+                                        </div>
+                                    </div>
+                                </Slide>
+                                <Slide index={11}>
+                                    <div className="vid-item"
+                                         style={styles.vidItem}
+                                         onClick={()=>{
+                                             setFilmSRC('FA86M03VZgA');
+                                         }}
+                                    >
+                                        <div className="thumb" style={styles.thumb}>
+                                            <Image
+                                                src="http://img.youtube.com/vi/FA86M03VZgA/0.jpg"
+                                                alt="The Big Con by Augie Pagan"
+                                            />
+                                        </div>
+                                        <div className="desc" style={styles.desc}>
+                                            HOLD FAST by Chris Pfeifle
+                                        </div>
+                                    </div>
+                                </Slide>
+                                <Slide index={12}>
+                                    <div className="vid-item"
+                                         style={styles.vidItem}
+                                         onClick={()=>{
+                                             setFilmSRC('XmLLo9PCcYY');
+                                         }}
+                                    >
+                                        <div className="thumb" style={styles.thumb}>
+                                            <Image
+                                                src="http://img.youtube.com/vi/XmLLo9PCcYY/0.jpg"
+                                                alt="The Big Con by Augie Pagan"
+                                            />
+                                        </div>
+                                        <div className="desc" style={styles.desc}>
+                                            The Adventures of Oak and Humbug by Christopher Kimbrough & Elahe Zare
+                                        </div>
+                                    </div>
+                                </Slide>
+                                <Slide index={13}>
+                                    <div className="vid-item"
+                                         style={styles.vidItem}
+                                         onClick={()=>{
+                                             setFilmSRC('vy4219QQ908');
+                                         }}
+                                    >
+                                        <div className="thumb" style={styles.thumb}>
+                                            <Image
+                                                src="http://img.youtube.com/vi/vy4219QQ908/0.jpg"
+                                                alt="The Big Con by Augie Pagan"
+                                            />
+                                        </div>
+                                        <div className="desc" style={styles.desc}>
+                                            The Adventures of Oak and Humbug by Christopher Kimbrough & Elahe Zare
+                                        </div>
+                                    </div>
+                                </Slide>
+                                <Slide index={14}>
+                                    <div className="vid-item"
+                                         style={styles.vidItem}
+                                         onClick={()=>{
+                                             setFilmSRC('rfhxLAPNFzc');
+                                         }}
+                                    >
+                                        <div className="thumb" style={styles.thumb}>
+                                            <Image
+                                                src="http://img.youtube.com/vi/rfhxLAPNFzc/0.jpg"
+                                                alt="The Big Con by Augie Pagan"
+                                            />
+                                        </div>
+                                        <div className="desc" style={styles.desc}>
+                                            Return of Robot by Grant Crawford
+                                        </div>
+                                    </div>
+                                </Slide>
+                                <Slide index={15}>
+                                    <div className="vid-item"
+                                         style={styles.vidItem}
+                                         onClick={()=>{
+                                             setFilmSRC('0F0SQwkre1A');
+                                         }}
+                                    >
+                                        <div className="thumb" style={styles.thumb}>
+                                            <Image
+                                                src="http://img.youtube.com/vi/0F0SQwkre1A/0.jpg"
+                                                alt="The Big Con by Augie Pagan"
+                                            />
+                                        </div>
+                                        <div className="desc" style={styles.desc}>
+                                            Innocent Chaos by Jason Zook
+                                        </div>
+                                    </div>
+                                </Slide>
+                                <Slide index={16}>
+                                    <div className="vid-item"
+                                         style={styles.vidItem}
+                                         onClick={()=>{
+                                             setFilmSRC('6sLDxt2ZUik');
+                                         }}
+                                    >
+                                        <div className="thumb" style={styles.thumb}>
+                                            <Image
+                                                src="http://img.youtube.com/vi/6sLDxt2ZUik/0.jpg"
+                                                alt="The Big Con by Augie Pagan"
+                                            />
+                                        </div>
+                                        <div className="desc" style={styles.desc}>
+                                            Headstones by Jesse Moore and Patty Foley
+                                        </div>
+                                    </div>
+                                </Slide>
+                                <Slide index={17}>
+                                    <div className="vid-item"
+                                         style={styles.vidItem}
+                                         onClick={()=>{
+                                             setFilmSRC('_9XuTT1IqUY');
+                                         }}
+                                    >
+                                        <div className="thumb" style={styles.thumb}>
+                                            <Image
+                                                src="http://img.youtube.com/vi/_9XuTT1IqUY/0.jpg"
+                                                alt="The Big Con by Augie Pagan"
+                                            />
+                                        </div>
+                                        <div className="desc" style={styles.desc}>
+                                            West Nebraska  by Just John
+                                        </div>
+                                    </div>
+                                </Slide>
+                                <Slide index={18}>
+                                    <div className="vid-item"
+                                         style={styles.vidItem}
+                                         onClick={()=>{
+                                             setFilmSRC('lZ_7x3Fddhg');
+                                         }}
+                                    >
+                                        <div className="thumb" style={styles.thumb}>
+                                            <Image
+                                                src="http://img.youtube.com/vi/lZ_7x3Fddhg/0.jpg"
+                                                alt="The Big Con by Augie Pagan"
+                                            />
+                                        </div>
+                                        <div className="desc" style={styles.desc}>
+                                            The Ghosts of GT by Hazel Lucy & Emma
+                                        </div>
+                                    </div>
+                                </Slide>
+                                <Slide index={19}>
+                                    <div className="vid-item"
+                                         style={styles.vidItem}
+                                         onClick={()=>{
+                                             setFilmSRC('cSUCoi98LKY');
+                                         }}
+                                    >
+                                        <div className="thumb" style={styles.thumb}>
+                                            <Image
+                                                src="http://img.youtube.com/vi/cSUCoi98LKY/0.jpg"
+                                                alt="The Big Con by Augie Pagan"
+                                            />
+                                        </div>
+                                        <div className="desc" style={styles.desc}>
+                                            ENDEMIC by Kevin Coulton
+                                        </div>
+                                    </div>
+                                </Slide>
+
+
+
                             </Slider>
 
                             <ButtonBack

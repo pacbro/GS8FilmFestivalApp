@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../css/styles';
 
 import Carousel from './Carousel';
-import Card from "@material-ui/core/Card";
+//import Card from "@material-ui/core/Card";
 
 import * as fs from "fs";
 import Papa from "papaparse";

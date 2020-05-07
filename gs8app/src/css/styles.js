@@ -45,8 +45,8 @@ const vidContainerIframe = {//.vid-container object, vid-container embed
     align: 'center',
     //margineLeft: 'auto',
     //margineRight: 'auto',
-    width: '60em',
-    height: '45em',
+    width: '50em',
+    height: '37.5em',
 };
 
 const vidItem = {
@@ -66,7 +66,7 @@ const vidItem = {
 const sliderDiv = {
     position: 'relative',
     //width: '700px',
-    width: '41.8em',
+    width: '51.8em',
     height: '11.8em',
     margin: 'auto',
     background: 'rgb(0,0,0)',
