@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styles from '../css/styles';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import {
@@ -27,10 +28,11 @@ let setFilmSRC = (ytID) => {
     document.getElementById('vid_frame').src='https://www.youtube.com/embed/'+ytID+'?autoplay=1&rel=0&showinfo=0&autohide=1';
 }
 
-class Carousel extends React.Component {
+class Carousel extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            filmData: this.props.filmData,
             carouselYear: this.props.year,
             allTags: [],
             filmData: [],
@@ -44,7 +46,13 @@ class Carousel extends React.Component {
         console.log('<< Carousel 01: Mounted successfully >>');
     }
 
+    /*
+                <div>
+                    <h1>Hideous Output block:</h1>
+                    <p>Name: {this.state.filmData[0].name.toString()}</p>
+                </div>
 
+    */ 
 
     render() {
         return (
@@ -498,5 +506,9 @@ class Carousel extends React.Component {
         );
     }
 }
+
+Carousel.propTypes = {
+    filmData: PropTypes.array
+};
 
 export default Carousel;

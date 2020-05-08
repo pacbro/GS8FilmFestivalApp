@@ -46,13 +46,6 @@ class Home extends Component {
         return (
             <div style={styles.parentDivStyle}>
 
-                <div>
-                    <h1>Hideous Output block:</h1>
-                    <p>Name: {this.state[0].name.toString()}</p>
-                    <p>Year: {this.state[0].year.toString()}</p>
-                    <p>URL: {this.state[0].url.toString()}</p>
-                </div>
-
                 <img
                     src={require('../img/MyPost.jpg')}
                     alt="The Georgetown Super 8 Film Festival logo"
