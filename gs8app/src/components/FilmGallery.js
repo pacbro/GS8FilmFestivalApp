@@ -4,8 +4,8 @@ import styles from '../css/styles';
 import Carousel from './Carousel';
 //import Card from "@material-ui/core/Card";
 
-import * as fs from "fs";
-import Papa from "papaparse";
+//import * as fs from "fs";
+//import Papa from "papaparse";
 //import csvController from '../controllers/csv-controller';
 //import 'pure-react-carousel/dist/react-carousel.es.css';
 /*import {
@@ -56,7 +56,7 @@ class FilmGallery extends React.Component {
         this.getCsvData();
     }
 
-    fetchCsv() {
+    //fetchCsv() {
         /*
         return fetch('../csv/films.csv').then(function (response) {
             console.log('<< Carousel 03: Fetching films.csv >>');
@@ -90,8 +90,9 @@ class FilmGallery extends React.Component {
             });
         });
         */
-    }
+    //}
 
+    /*
     fetchCsv2(req, res){
         console.log('<< Carousel 03: Fetching films.csv >>');
         //let fileName = '../csv/films.csv';
@@ -116,24 +117,66 @@ class FilmGallery extends React.Component {
             res.end(err);
         });
         return res.value;
-        */
-    }
+        
+    } */
+
+    fetchCsv3(csv){
+
+        var lines=csv.split("\n");
+      
+        var result = [];
+      
+        var headers=lines[0].split(",");
+      
+        for(var i=1;i<lines.length;i++){
+      
+            var obj = {};
+            var currentline=lines[i].split(",");
+      
+            for(var j=0;j<headers.length;j++){
+                obj[headers[j]] = currentline[j];
+            }
+      
+            result.push(obj);
+      
+        }
+        
+        //return result; //JavaScript object
+        return JSON.stringify(result); //JSON
+      }
 
     getData(result) {
         this.setState({data: result.data});
         //this.setState({filmData: result.data});
+        var didItWork = false;
+        if(this.state.data === result.data)
+        {
+            didItWork = true;
+        }
+        return didItWork;
     }
 
     async getCsvData() {
         console.log('<< Carousel 02: Getting CSV Data >>');
-        let csvData = await this.fetchCsv2();
+        let csvData = await this.fetchCsv3('../csv/films.csv');
         console.log('////// Carousel 05: Returned result.value //////');
         console.log(csvData);
         console.log('////////////////////////////////////////////////');
-        console.log('<< Carousel 06: Papa Parse >>');
-        Papa.parse(csvData, {
-            complete: this.getData
-        });
+        console.log('<< Carousel 06: Load CSV Data >>');
+        //Papa.parse(csvData, {
+           // complete: this.getData
+       // });
+       var itWorked = this.getData(csvData);
+       if(itWorked)
+       {
+        console.log('////////////////////////////////////////////////');
+        console.log('<< Carousel data loaded >>');
+       }
+       else
+       {
+        console.log('////////////////////////////////////////////////');
+        console.log('<< Carousel data load failed >>');
+       }
     }
 
     //<Card style={styles.cardStyle}>
