@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../css/styles';
 
-import Carousel from './Carousel';
+import Carousel_2020 from './Carousel_2020';
 //import Card from "@material-ui/core/Card";
 
 //import * as fs from "fs";
@@ -52,14 +52,14 @@ class FilmGallery extends React.Component {
     }
 
     componentDidMount() {
-        console.log('<< Carousel 01: Mounted successfully >>');
+        console.log('<< Carousel_2020 01: Mounted successfully >>');
         this.getCsvData();
     }
 
     //fetchCsv() {
         /*
         return fetch('../csv/films.csv').then(function (response) {
-            console.log('<< Carousel 03: Fetching films.csv >>');
+            console.log('<< Carousel_2020 03: Fetching films.csv >>');
             let reader = response.body.getReader();
             let decoder = new TextDecoder('utf-8');
 
@@ -83,7 +83,7 @@ class FilmGallery extends React.Component {
 
 
             return reader.read().then(function (result) {
-                console.log('////// Carousel 04: Returned result.value //////');
+                console.log('////// Carousel_2020 04: Returned result.value //////');
                 console.log(decoder.decode(result.value));
                 console.log('////////////////////////////////////////////////');
                 return decoder.decode(result.value);
@@ -94,7 +94,7 @@ class FilmGallery extends React.Component {
 
     /*
     fetchCsv2(req, res){
-        console.log('<< Carousel 03: Fetching films.csv >>');
+        console.log('<< Carousel_2020 03: Fetching films.csv >>');
         //let fileName = '../csv/films.csv';
         //let fs = require('fs');
 
@@ -109,7 +109,7 @@ class FilmGallery extends React.Component {
         readStream.on('open', function () {
             // This just pipes the read stream to the response object (which goes to the client)
             readStream.pipe(res);
-            console.log('////// Carousel 04: Returned result.value //////');
+            console.log('////// Carousel_2020 04: Returned result.value //////');
             console.log(res);
             console.log('////////////////////////////////////////////////');
         });
@@ -157,12 +157,12 @@ class FilmGallery extends React.Component {
     }
 
     async getCsvData() {
-        console.log('<< Carousel 02: Getting CSV Data >>');
+        console.log('<< Carousel_2020 02: Getting CSV Data >>');
         let csvData = await this.fetchCsv3('../csv/films.csv');
-        console.log('////// Carousel 05: Returned result.value //////');
+        console.log('////// Carousel_2020 05: Returned result.value //////');
         console.log(csvData);
         console.log('////////////////////////////////////////////////');
-        console.log('<< Carousel 06: Load CSV Data >>');
+        console.log('<< Carousel_2020 06: Load CSV Data >>');
         //Papa.parse(csvData, {
            // complete: this.getData
        // });
@@ -170,12 +170,12 @@ class FilmGallery extends React.Component {
        if(itWorked)
        {
         console.log('////////////////////////////////////////////////');
-        console.log('<< Carousel data loaded >>');
+        console.log('<< Carousel_2020 data loaded >>');
        }
        else
        {
         console.log('////////////////////////////////////////////////');
-        console.log('<< Carousel data load failed >>');
+        console.log('<< Carousel_2020 data load failed >>');
        }
     }
 
@@ -187,7 +187,7 @@ class FilmGallery extends React.Component {
                 <h1>GS8 Film Gallery</h1>
 
 
-                <Carousel year={1942}/>
+                <Carousel_2020 year={1942}/>
 
 
             </div>
