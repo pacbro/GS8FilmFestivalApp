@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\Component"
   ],
-  "SelectedNode": "\\src\\index.js",
+  "SelectedNode": "\\src\\Component\\FilmGallery.js",
   "PreviewInSolutionExplorer": false
 }

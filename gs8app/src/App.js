@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
+import FilmGallery from 'Component/FilmGallery';
 
 class App extends Component {
     constructor(props) {
@@ -11,12 +12,10 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                {/*
-                 <Home
+                 <FilmGallery
                     {...props}
                     filmData={this.state.filmData}
                  />                 
-                 */}
             </div>
         );
     }
