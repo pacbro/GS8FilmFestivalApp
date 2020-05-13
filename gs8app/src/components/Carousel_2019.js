@@ -12,7 +12,6 @@ import {
     Slider,
 } from 'pure-react-carousel';
 
-
 /*
 let filmData = {
     ytID:'123ABC$%^def',
@@ -28,7 +27,7 @@ let setFilmSRC = (ytID) => {
     document.getElementById('vid_frame').src='https://www.youtube.com/embed/'+ytID+'?autoplay=1&rel=0&showinfo=0&autohide=1';
 }
 
-class Carousel_2020 extends Component {
+class Carousel_2019 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -52,12 +51,12 @@ class Carousel_2020 extends Component {
                     <p>Name: {this.state.filmData[0].name.toString()}</p>
                 </div>
 
-    */ 
+    */
 
     render() {
         return (
             <div>
-                <h2>2020 Films</h2>
+                <h2>2019 Films</h2>
                 <div style={styles.filmGalleryStyle}>
                     <CarouselProvider
                         visibleSlides={5.12}
@@ -482,6 +481,7 @@ class Carousel_2020 extends Component {
                                 &#10097;
                             </ButtonNext>
                         </div>
+
                     </CarouselProvider>
 
                     <CarouselProvider
@@ -967,8 +967,8 @@ class Carousel_2020 extends Component {
     }
 }
 
-Carousel_2020.propTypes = {
+Carousel_2019.propTypes = {
     filmData: PropTypes.array
 };
 
-export default Carousel_2020;
+export default Carousel_2019;

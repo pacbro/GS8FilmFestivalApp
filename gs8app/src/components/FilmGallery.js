@@ -2,6 +2,8 @@ import React from 'react';
 import styles from '../css/styles';
 
 import Carousel_2020 from './Carousel_2020';
+import Carousel_2019 from './Carousel_2019';
+
 //import Card from "@material-ui/core/Card";
 
 //import * as fs from "fs";
@@ -185,10 +187,22 @@ class FilmGallery extends React.Component {
             <div style={styles.filmGalleryStyle}>
 
                 <h1>GS8 Film Gallery</h1>
-
+                <iframe id="vid_frame"
+                        style={styles.vidContainerIframe}
+                        title="Figure Man Written by Anthony Thambynayagam"
+                        src="http://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=0&rel=0&showinfo=0"
+                        frameBorder="0"
+                        width="640"
+                        height="480"
+                        allowFullScreen="allowFullScreen"
+                        mozallowfullscreen="mozallowfullscreen"
+                        msallowfullscreen="msallowfullscreen"
+                        oallowfullscreen="oallowfullscreen"
+                        webkitallowfullscreen="webkitallowfullscreen">
+                </iframe>
 
                 <Carousel_2020 year={1942}/>
-
+                <Carousel_2019 year={1942}/>
 
             </div>
         )
