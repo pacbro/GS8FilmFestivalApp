@@ -56,20 +56,6 @@ class Carousel_2020 extends Component {
     render() {
         return (
             <div>
-                <iframe id="vid_frame"
-                        style={styles.vidContainerIframe}
-                        title="Figure Man Written by Anthony Thambynayagam"
-                        src="http://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=0&rel=0&showinfo=0"
-                        frameBorder="0"
-                        width="640"
-                        height="480"
-                        allowFullScreen="allowFullScreen"
-                        mozallowfullscreen="mozallowfullscreen"
-                        msallowfullscreen="msallowfullscreen"
-                        oallowfullscreen="oallowfullscreen"
-                        webkitallowfullscreen="webkitallowfullscreen">
-                </iframe>
-
                 <h2>2020 Films</h2>
                 <div style={styles.filmGalleryStyle}>
                     <CarouselProvider
