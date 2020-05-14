@@ -60,12 +60,12 @@ class FilmGallery extends React.Component {
 
     //fetchCsv() {
         /*
-        return fetch('../csv/films.csv').then(function (response) {
-            console.log('<< Carousel_2020 03: Fetching films.csv >>');
+        return fetch('../csv/films2020.csv').then(function (response) {
+            console.log('<< Carousel_2020 03: Fetching films2020.csv >>');
             let reader = response.body.getReader();
             let decoder = new TextDecoder('utf-8');
 
-            let fileName = '../csv/films.csv';
+            let fileName = '../csv/films2020.csv';
             //const fs = require('fs');
             const papa = require('papaparse');
 
@@ -96,16 +96,16 @@ class FilmGallery extends React.Component {
 
     /*
     fetchCsv2(req, res){
-        console.log('<< Carousel_2020 03: Fetching films.csv >>');
-        //let fileName = '../csv/films.csv';
+        console.log('<< Carousel_2020 03: Fetching films2020.csv >>');
+        //let fileName = '../csv/films2020.csv';
         //let fs = require('fs');
 
-        const readStream = fs.createReadStream('../csv/films.csv', {encoding: 'utf8'});
+        const readStream = fs.createReadStream('../csv/films2020.csv', {encoding: 'utf8'});
         console.log("readStream:");
         console.log(readStream);
         logChunks(readStream);
 
-        //const readable = Readable.from('../csv/films.csv', {encoding: 'utf8'});
+        //const readable = Readable.from('../csv/films2020.csv', {encoding: 'utf8'});
         //this.assert.equal(await readableToString2(readable), 'Good morning!');
         /*
         readStream.on('open', function () {
@@ -160,7 +160,7 @@ class FilmGallery extends React.Component {
 
     async getCsvData() {
         console.log('<< Carousel_2020 02: Getting CSV Data >>');
-        let csvData = await this.fetchCsv3('../csv/films.csv');
+        let csvData = await this.fetchCsv3('../csv/films2020.csv');
         console.log('////// Carousel_2020 05: Returned result.value //////');
         console.log(csvData);
         console.log('////////////////////////////////////////////////');
