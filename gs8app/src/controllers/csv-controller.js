@@ -40,8 +40,8 @@ class DataController extends React.Component {
     }
 
     fetchCsv() {
-        return fetch('../csv/films.csv').then(function (response) {
-            console.log("csv-controller: Fetching films.csv");
+        return fetch('../csv/films2020.csv').then(function (response) {
+            console.log("csv-controller: Fetching films2020.csv");
             let reader = response.body.getReader();
             let decoder = new TextDecoder('utf-8');
 

@@ -5,6 +5,7 @@ import '../css/App.css';
 import Navbar from './Navbar';
 import About from './About';
 import Contact from './Contact';
+import FilmGallery from './FilmGallery';
 import Donate from './Donate';
 import Events from './Events';
 import Participate from './Participate';
@@ -19,7 +20,17 @@ import Home from './Home';
 import AdminData from './AdminData';
 //fixed???
 
+import PropTypes from 'prop-types';
+
+
 class App extends Component {
+    //loads tempData from index.js as a prop
+    //then sets it as a state
+    constructor(props) {
+        super(props);
+        this.state = props.tempData;
+    }
+
     render() {
         return (
             <div className="App">
@@ -29,6 +40,7 @@ class App extends Component {
                         <Route path="/admin-data" component={AdminData} />
                         <Route path="/about" component={About} />
                         <Route path="/contact" component={Contact} />
+                        <Route path="/filmGallery" component={FilmGallery} />
                         <Route path="/donate" component={Donate} />
                         <Route path="/events" component={Events} />
                         <Route path="/participate" component={Participate} />
@@ -42,7 +54,16 @@ class App extends Component {
                         <Route path="/rules" component={Rules} />
                         <Route path="/shop" component={Shop} />
                         <Route path="/subscribe" component={Subscribe} />
-                        <Route path="/" component={Home} />
+                        
+                        <Route
+                            path="/"
+                            render={props => (
+                                <Home
+                                    {...props}
+                                    filmData={this.state.filmData}
+                                />
+                            )}
+                        />
                         <Redirect to="/" />
                     </Switch>
                 </div>
@@ -50,6 +71,12 @@ class App extends Component {
         );
     }
 }
+
+//ensures data is loaded correctly
+App.propTypes = {
+    tempData: PropTypes.object
+};
+
 
 export default App;
 
