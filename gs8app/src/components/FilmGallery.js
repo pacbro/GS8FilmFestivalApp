@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from '../css/styles';
 
-import Carousel from './Carousel';
+import Carousel_2020 from './Carousel_2020';
+import Carousel_2019 from './Carousel_2019';
+
 //import Card from "@material-ui/core/Card";
 
-import * as fs from "fs";
-import Papa from "papaparse";
+//import * as fs from "fs";
+//import Papa from "papaparse";
 //import csvController from '../controllers/csv-controller';
 //import 'pure-react-carousel/dist/react-carousel.es.css';
 /*import {
@@ -52,18 +54,18 @@ class FilmGallery extends React.Component {
     }
 
     componentDidMount() {
-        console.log('<< Carousel 01: Mounted successfully >>');
+        console.log('<< Carousel_2020 01: Mounted successfully >>');
         this.getCsvData();
     }
 
-    fetchCsv() {
+    //fetchCsv() {
         /*
-        return fetch('../csv/films.csv').then(function (response) {
-            console.log('<< Carousel 03: Fetching films.csv >>');
+        return fetch('../csv/films2020.csv').then(function (response) {
+            console.log('<< Carousel_2020 03: Fetching films2020.csv >>');
             let reader = response.body.getReader();
             let decoder = new TextDecoder('utf-8');
 
-            let fileName = '../csv/films.csv';
+            let fileName = '../csv/films2020.csv';
             //const fs = require('fs');
             const papa = require('papaparse');
 
@@ -83,32 +85,33 @@ class FilmGallery extends React.Component {
 
 
             return reader.read().then(function (result) {
-                console.log('////// Carousel 04: Returned result.value //////');
+                console.log('////// Carousel_2020 04: Returned result.value //////');
                 console.log(decoder.decode(result.value));
                 console.log('////////////////////////////////////////////////');
                 return decoder.decode(result.value);
             });
         });
         */
-    }
+    //}
 
+    /*
     fetchCsv2(req, res){
-        console.log('<< Carousel 03: Fetching films.csv >>');
-        //let fileName = '../csv/films.csv';
+        console.log('<< Carousel_2020 03: Fetching films2020.csv >>');
+        //let fileName = '../csv/films2020.csv';
         //let fs = require('fs');
 
-        const readStream = fs.createReadStream('../csv/films.csv', {encoding: 'utf8'});
+        const readStream = fs.createReadStream('../csv/films2020.csv', {encoding: 'utf8'});
         console.log("readStream:");
         console.log(readStream);
         logChunks(readStream);
 
-        //const readable = Readable.from('../csv/films.csv', {encoding: 'utf8'});
+        //const readable = Readable.from('../csv/films2020.csv', {encoding: 'utf8'});
         //this.assert.equal(await readableToString2(readable), 'Good morning!');
         /*
         readStream.on('open', function () {
             // This just pipes the read stream to the response object (which goes to the client)
             readStream.pipe(res);
-            console.log('////// Carousel 04: Returned result.value //////');
+            console.log('////// Carousel_2020 04: Returned result.value //////');
             console.log(res);
             console.log('////////////////////////////////////////////////');
         });
@@ -116,24 +119,66 @@ class FilmGallery extends React.Component {
             res.end(err);
         });
         return res.value;
-        */
-    }
+        
+    } */
+
+    fetchCsv3(csv){
+
+        var lines=csv.split("\n");
+      
+        var result = [];
+      
+        var headers=lines[0].split(",");
+      
+        for(var i=1;i<lines.length;i++){
+      
+            var obj = {};
+            var currentline=lines[i].split(",");
+      
+            for(var j=0;j<headers.length;j++){
+                obj[headers[j]] = currentline[j];
+            }
+      
+            result.push(obj);
+      
+        }
+        
+        //return result; //JavaScript object
+        return JSON.stringify(result); //JSON
+      }
 
     getData(result) {
         this.setState({data: result.data});
         //this.setState({filmData: result.data});
+        var didItWork = false;
+        if(this.state.data === result.data)
+        {
+            didItWork = true;
+        }
+        return didItWork;
     }
 
     async getCsvData() {
-        console.log('<< Carousel 02: Getting CSV Data >>');
-        let csvData = await this.fetchCsv2();
-        console.log('////// Carousel 05: Returned result.value //////');
+        console.log('<< Carousel_2020 02: Getting CSV Data >>');
+        let csvData = await this.fetchCsv3('../csv/films2020.csv');
+        console.log('////// Carousel_2020 05: Returned result.value //////');
         console.log(csvData);
         console.log('////////////////////////////////////////////////');
-        console.log('<< Carousel 06: Papa Parse >>');
-        Papa.parse(csvData, {
-            complete: this.getData
-        });
+        console.log('<< Carousel_2020 06: Load CSV Data >>');
+        //Papa.parse(csvData, {
+           // complete: this.getData
+       // });
+       var itWorked = this.getData(csvData);
+       if(itWorked)
+       {
+        console.log('////////////////////////////////////////////////');
+        console.log('<< Carousel_2020 data loaded >>');
+       }
+       else
+       {
+        console.log('////////////////////////////////////////////////');
+        console.log('<< Carousel_2020 data load failed >>');
+       }
     }
 
     //<Card style={styles.cardStyle}>
@@ -142,10 +187,22 @@ class FilmGallery extends React.Component {
             <div style={styles.filmGalleryStyle}>
 
                 <h1>GS8 Film Gallery</h1>
+                <iframe id="vid_frame"
+                        style={styles.vidContainerIframe}
+                        title="Figure Man Written by Anthony Thambynayagam"
+                        src="http://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=0&rel=0&showinfo=0"
+                        frameBorder="0"
+                        width="640"
+                        height="480"
+                        allowFullScreen="allowFullScreen"
+                        mozallowfullscreen="mozallowfullscreen"
+                        msallowfullscreen="msallowfullscreen"
+                        oallowfullscreen="oallowfullscreen"
+                        webkitallowfullscreen="webkitallowfullscreen">
+                </iframe>
 
-
-                <Carousel year={1942}/>
-
+                <Carousel_2020 year={1942}/>
+                <Carousel_2019 year={1942}/>
 
             </div>
         )
