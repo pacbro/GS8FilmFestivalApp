@@ -1,5 +1,5 @@
 const tempData = {
-    filmData: [
+    filmDanpta: [
         {
             name: 'film1',
             year: '2020',

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../css/styles';
-import Carousel2020 from './Carousel2020';
+import Carousel from './Carousel';
 //import Card from "@material-ui/core/Card";
 
 //import * as fs from "fs";
@@ -186,7 +186,7 @@ class FilmGallery extends React.Component {
                 <h1>GS8 Film Gallery</h1>
 
 
-                <Carousel2020 year={1942}/>
+                <Carousel year={1942}/>
 
 
             </div>

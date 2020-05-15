@@ -13,7 +13,9 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <FilmGallery {...props} filmData={this.state.filmData} />
+                <FilmGallery
+                    filmData={this.props.filmData}
+                />
             </div>
         );
     }
