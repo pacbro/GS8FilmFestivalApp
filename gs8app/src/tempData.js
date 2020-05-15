@@ -3,14 +3,14 @@ const tempData = {
         {
             name: 'film1',
             year: '2020',
-            url: 'http://www.youtube.com'
+            url: 'http://www.youtube.com',
         },
         {
             name: 'film2',
             year: '2019',
-            url: 'http://www.youtube.com'
-        }
-    ]
+            url: 'http://www.youtube.com',
+        },
+    ],
 };
 
 export { tempData };

@@ -1,7 +1,7 @@
 const parentDivStyle = {
     textAlign: 'center',
     display: 'inline-block',
-    width: '48em'
+    width: '48em',
 };
 const filmGalleryStyle = {
     textAlign: 'center',
@@ -13,34 +13,34 @@ const cardStyle = {
     width: '46em',
     textAlign: 'center',
     padding: '25px',
-    margine: '25px'
+    margine: '25px',
 };
 const titleStyle = {
     fontWeight: 'bold',
     textAlign: 'center',
-    fontSize: '2.2em'
+    fontSize: '2.2em',
 };
 const pStyle = {
     display: 'inline-block',
     textAlign: 'justify',
-    fontSize: '1.2em'
+    fontSize: '1.2em',
 };
 const divButtonStyle = {
     textAlign: 'center',
     padding: '25px',
-    margine: '25px'
+    margine: '25px',
 };
 const socMed = {
     fontSize: '50px',
-    margin: '0 auto'
+    margin: '0 auto',
 };
 const rowDivStyle = {
     textAlign: 'center',
-    align: 'left'
+    align: 'left',
 };
 
-
-const vidContainerIframe = {//.vid-container object, vid-container embed
+const vidContainerIframe = {
+    //.vid-container object, vid-container embed
     position: 'relative',
     align: 'center',
     //margineLeft: 'auto',
@@ -70,7 +70,7 @@ const sliderDiv = {
     height: '11.8em',
     margin: 'auto',
     background: 'rgb(0,0,0)',
-    padding: '7px'
+    padding: '7px',
 };
 const sliderDiv2 = {
     position: 'relative',
@@ -79,7 +79,7 @@ const sliderDiv2 = {
     height: '11.8em',
     margin: 'auto',
     background: 'rgb(0,0,0)',
-    padding: '7px'
+    padding: '7px',
 };
 const desc = {
     color: '#21A1D2',
@@ -88,7 +88,7 @@ const desc = {
 };
 
 const thumb = {
-    overflow:'hidden',
+    overflow: 'hidden',
     height: '110px',
     //width: '120px',
     //margin: 'auto',
@@ -99,7 +99,7 @@ const thumb = {
 };
 
 const dotGroup = {
-    textAlign: 'center'
+    textAlign: 'center',
 };
 const buttonBack = {
     position: 'absolute',
@@ -108,7 +108,7 @@ const buttonBack = {
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
-    left:-45,
+    left: -45,
     top: '.15em',
     borderRadius: '.2em',
     height: '6em',
@@ -121,7 +121,7 @@ const buttonNext = {
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
-    right:-45,
+    right: -45,
     top: '.15em',
     borderRadius: '.2em',
     height: '6em',
@@ -134,12 +134,11 @@ const buttonBack2 = {
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
-    left:-25,
+    left: -25,
     top: '35%',
     borderRadius: '50%',
     height: '2.6em',
     width: '2.6em',
-
 };
 const buttonNext2 = {
     position: 'absolute',
@@ -148,15 +147,12 @@ const buttonNext2 = {
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
-    right:-25,
+    right: -25,
     top: '35%',
     borderRadius: '50%',
     height: '2.6em',
     width: '2.6em',
 };
-
-
-
 
 const Styles = {
     parentDivStyle,

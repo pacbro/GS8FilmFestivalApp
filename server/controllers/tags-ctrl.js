@@ -17,7 +17,7 @@ getTags = async (req, res) => {
                 .json({ success: false, error: `Tags not found` });
         }
         return res.status(200).json({ success: true, data: Tags });
-    }).catch(err => console.log(err));
+    }).catch((err) => console.log(err));
 };
 
 //createTag = (req, res) => {
@@ -134,7 +134,7 @@ getTags = async (req, res) => {
                 .json({ success: false, error: `Tags not found` });
         }
         return res.status(200).json({ success: true, data: Tags });
-    }).catch(err => console.log(err));
+    }).catch((err) => console.log(err));
 };
 
 module.exports = {
@@ -143,5 +143,5 @@ module.exports = {
     //deleteTag,
     getTags,
     //getTagById,
-    ping
+    ping,
 };

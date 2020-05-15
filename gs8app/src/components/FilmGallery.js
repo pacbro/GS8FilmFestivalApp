@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from '../css/styles';
-import Carousel from './Carousel';
+import Carousel2020 from './Carousel2020';
 //import Card from "@material-ui/core/Card";
 
-import * as fs from "fs";
-import Papa from "papaparse";
+//import * as fs from "fs";
+//import Papa from "papaparse";
 //import csvController from '../controllers/csv-controller';
 //import 'pure-react-carousel/dist/react-carousel.es.css';
 /*import {
@@ -29,15 +29,13 @@ async function readableToString2(readable) {
     return result;
 }
 */
-import PropTypes from 'prop-types';
-
-
+/*
 async function logChunks(readable) {
     console.log('in logChunks');
     for await (const chunk of readable) {
         console.log(chunk);
     }
-}
+}*/
 
 class FilmGallery extends React.Component {
 
@@ -53,14 +51,14 @@ class FilmGallery extends React.Component {
     }
 
     componentDidMount() {
-        console.log('<< Carousel 01: Mounted successfully >>');
+        console.log('<< Carousel2020 01: Mounted successfully >>');
         this.getCsvData();
     }
 
-    fetchCsv() {
+    //fetchCsv() {
         /*
         return fetch('../csv/films.csv').then(function (response) {
-            console.log('<< Carousel 03: Fetching films.csv >>');
+            console.log('<< Carousel2020 03: Fetching films.csv >>');
             let reader = response.body.getReader();
             let decoder = new TextDecoder('utf-8');
 
@@ -84,17 +82,18 @@ class FilmGallery extends React.Component {
 
 
             return reader.read().then(function (result) {
-                console.log('////// Carousel 04: Returned result.value //////');
+                console.log('////// Carousel2020 04: Returned result.value //////');
                 console.log(decoder.decode(result.value));
                 console.log('////////////////////////////////////////////////');
                 return decoder.decode(result.value);
             });
         });
         */
-    }
+    //}
 
+    /*
     fetchCsv2(req, res){
-        console.log('<< Carousel 03: Fetching films.csv >>');
+        console.log('<< Carousel2020 03: Fetching films.csv >>');
         //let fileName = '../csv/films.csv';
         //let fs = require('fs');
 
@@ -109,7 +108,7 @@ class FilmGallery extends React.Component {
         readStream.on('open', function () {
             // This just pipes the read stream to the response object (which goes to the client)
             readStream.pipe(res);
-            console.log('////// Carousel 04: Returned result.value //////');
+            console.log('////// Carousel2020 04: Returned result.value //////');
             console.log(res);
             console.log('////////////////////////////////////////////////');
         });
@@ -117,24 +116,66 @@ class FilmGallery extends React.Component {
             res.end(err);
         });
         return res.value;
-        */
-    }
+        
+    } */
+
+    fetchCsv3(csv){
+
+        var lines=csv.split("\n");
+      
+        var result = [];
+      
+        var headers=lines[0].split(",");
+      
+        for(var i=1;i<lines.length;i++){
+      
+            var obj = {};
+            var currentline=lines[i].split(",");
+      
+            for(var j=0;j<headers.length;j++){
+                obj[headers[j]] = currentline[j];
+            }
+      
+            result.push(obj);
+      
+        }
+        
+        //return result; //JavaScript object
+        return JSON.stringify(result); //JSON
+      }
 
     getData(result) {
         this.setState({data: result.data});
         //this.setState({filmData: result.data});
+        var didItWork = false;
+        if(this.state.data === result.data)
+        {
+            didItWork = true;
+        }
+        return didItWork;
     }
 
     async getCsvData() {
-        console.log('<< Carousel 02: Getting CSV Data >>');
-        let csvData = await this.fetchCsv2();
-        console.log('////// Carousel 05: Returned result.value //////');
+        console.log('<< Carousel2020 02: Getting CSV Data >>');
+        let csvData = await this.fetchCsv3('../csv/films.csv');
+        console.log('////// Carousel2020 05: Returned result.value //////');
         console.log(csvData);
         console.log('////////////////////////////////////////////////');
-        console.log('<< Carousel 06: Papa Parse >>');
-        Papa.parse(csvData, {
-            complete: this.getData
-        });
+        console.log('<< Carousel2020 06: Load CSV Data >>');
+        //Papa.parse(csvData, {
+           // complete: this.getData
+       // });
+       var itWorked = this.getData(csvData);
+       if(itWorked)
+       {
+        console.log('////////////////////////////////////////////////');
+        console.log('<< Carousel2020 data loaded >>');
+       }
+       else
+       {
+        console.log('////////////////////////////////////////////////');
+        console.log('<< Carousel2020 data load failed >>');
+       }
     }
 
     //<Card style={styles.cardStyle}>
@@ -145,16 +186,12 @@ class FilmGallery extends React.Component {
                 <h1>GS8 Film Gallery</h1>
 
 
-                <Carousel year={1942}/>
+                <Carousel2020 year={1942}/>
 
 
             </div>
         )
     }
 }
-
-FilmGallery.propTypes = {
-    filmData: PropTypes.array
-};
 
 export default FilmGallery;

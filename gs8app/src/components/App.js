@@ -8,23 +8,19 @@ class App extends Component {
         super(props);
         this.filmData = this.props.tempData;
     }
+    
 
     render() {
         return (
             <div className="App">
-                 <FilmGallery
-                    {...props}
-                    filmData={this.state.filmData}
-                 />                 
+                <FilmGallery {...props} filmData={this.state.filmData} />
             </div>
         );
     }
-
 }
 
 App.propTypes = {
-    tempData: PropTypes.object
+    tempData: PropTypes.object,
 };
-
 
 export default App;
