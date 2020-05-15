@@ -11,6 +11,7 @@ import {
     Slide,
     Slider,
 } from 'pure-react-carousel';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 /*
 let filmData = {
@@ -59,6 +60,53 @@ class Carousel extends Component {
     render() {
         return (
             <div>
+                <div>
+                    <Tabs>
+                        <TabList>
+                            <Tab>2020</Tab>
+                            <Tab disabled>2019</Tab>
+                            <Tab disabled>2011</Tab>
+                            <Tab disabled>2010</Tab>
+                            <Tab disabled>2009</Tab>
+                            <Tab disabled>2008</Tab>
+                            <Tab disabled>2007</Tab>
+                            <Tab disabled>2006</Tab>
+                        </TabList>
+
+                        <TabPanel>
+                            {/*2020*/}
+                            <h2>Any content 1</h2>
+                        </TabPanel>
+                        <TabPanel>
+                            {/*2019*/}
+                            <h2>Any content 2</h2>
+                        </TabPanel>
+                        <TabPanel>
+                            {/*2011*/}
+                            <h2>Any content 2</h2>
+                        </TabPanel>
+                        <TabPanel>
+                            {/*2010*/}
+                            <h2>Any content 2</h2>
+                        </TabPanel>
+                        <TabPanel>
+                            {/*2009*/}
+                            <h2>Any content 2</h2>
+                        </TabPanel>
+                        <TabPanel>
+                            {/*2008*/}
+                            <h2>Any content 2</h2>
+                        </TabPanel>
+                        <TabPanel>
+                            {/*2007*/}
+                            <h2>Any content 2</h2>
+                        </TabPanel>
+                        <TabPanel>
+                            {/*2006*/}
+                            <h2>Any content 2</h2>
+                        </TabPanel>
+                    </Tabs>
+                </div>
                 <iframe
                     id="vid_frame"
                     style={styles.vidContainerIframe}
