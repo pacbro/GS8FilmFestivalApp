@@ -30,13 +30,13 @@ async function readableToString2(readable) {
     return result;
 }
 */
-
+/*
 async function logChunks(readable) {
     console.log('in logChunks');
     for await (const chunk of readable) {
         console.log(chunk);
     }
-}
+}*/
 
 class FilmGallery extends React.Component {
 
@@ -142,11 +142,16 @@ class FilmGallery extends React.Component {
         }
         
         //return result; //JavaScript object
+
+        console.log(JSON.stringify(result));
         return JSON.stringify(result); //JSON
       }
 
     getData(result) {
         this.setState({data: result.data});
+        console.log(result.data)
+        console.log(this.state.data)
+        
         //this.setState({filmData: result.data});
         var didItWork = false;
         if(this.state.data === result.data)
@@ -158,7 +163,7 @@ class FilmGallery extends React.Component {
 
     async getCsvData() {
         console.log('<< Carousel_2020 02: Getting CSV Data >>');
-        let csvData = await this.fetchCsv3('../csv/films.csv');
+        let csvData = this.fetchCsv3('../csv/films.csv');
         console.log('////// Carousel_2020 05: Returned result.value //////');
         console.log(csvData);
         console.log('////////////////////////////////////////////////');
@@ -167,6 +172,7 @@ class FilmGallery extends React.Component {
            // complete: this.getData
        // });
        var itWorked = this.getData(csvData);
+       console.log(this.state.data);
        if(itWorked)
        {
         console.log('////////////////////////////////////////////////');
