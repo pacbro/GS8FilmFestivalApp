@@ -155,8 +155,9 @@ const buttonNext2 = {
     width: '2.6em',
 };
 
-
-
+const tabs = {
+    width: '100%',
+};
 
 const Styles = {
     parentDivStyle,
@@ -178,6 +179,7 @@ const Styles = {
     desc,
     sliderDiv,
     sliderDiv2,
+    tabs
 };
 
 export default Styles;

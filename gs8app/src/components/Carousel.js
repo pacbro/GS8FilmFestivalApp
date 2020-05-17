@@ -6,7 +6,6 @@ import {
     ButtonBack,
     ButtonNext,
     CarouselProvider,
-    DotGroup,
     Image,
     Slide,
     Slider,
@@ -78,14 +77,16 @@ class Carousel extends Component {
                 <div>
                     <Tabs>
                         <TabList>
-                            <Tab>2020</Tab>
-                            <Tab>2019</Tab>
-                            <Tab disabled>2011</Tab>
-                            <Tab disabled>2010</Tab>
-                            <Tab disabled>2009</Tab>
-                            <Tab disabled>2008</Tab>
-                            <Tab disabled>2007</Tab>
-                            <Tab disabled>2006</Tab>
+                                <Tab>
+                                    <img src="../img/logo2020.png"></img>
+                                </Tab>
+                                <Tab>2019</Tab>
+                                <Tab >2011</Tab>
+                                <Tab >2010</Tab>
+                                <Tab >2009</Tab>
+                                <Tab >2008</Tab>
+                                <Tab >2007</Tab>
+                                <Tab >2006</Tab>
                         </TabList>
 
                         <TabPanel>
@@ -1681,27 +1682,27 @@ class Carousel extends Component {
                         </TabPanel>
                         <TabPanel>
                             {/*2011*/}
-                            <h2>Any content 2</h2>
+                            <h2>Coming soon!</h2>
                         </TabPanel>
                         <TabPanel>
                             {/*2010*/}
-                            <h2>Any content 2</h2>
+                            <h2>Coming soon!</h2>
                         </TabPanel>
                         <TabPanel>
                             {/*2009*/}
-                            <h2>Any content 2</h2>
+                            <h2>Coming soon!</h2>
                         </TabPanel>
                         <TabPanel>
                             {/*2008*/}
-                            <h2>Any content 2</h2>
+                            <h2>Coming soon!</h2>
                         </TabPanel>
                         <TabPanel>
                             {/*2007*/}
-                            <h2>Any content 2</h2>
+                            <h2>Coming soon!</h2>
                         </TabPanel>
                         <TabPanel>
                             {/*2006*/}
-                            <h2>Any content 2</h2>
+                            <h2>Coming soon!</h2>
                         </TabPanel>
                     </Tabs>
                 </div>
