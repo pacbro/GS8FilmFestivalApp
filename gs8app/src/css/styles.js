@@ -156,7 +156,8 @@ const buttonNext2 = {
 };
 
 const tabs = {
-    width: '100%',
+    height: '2.6em',
+    width: '2.6em',
 };
 
 const Styles = {
