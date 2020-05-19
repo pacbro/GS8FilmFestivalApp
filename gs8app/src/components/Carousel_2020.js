@@ -34,7 +34,6 @@ class Carousel_2020 extends Component {
             filmData: this.props.filmData,
             carouselYear: this.props.year,
             allTags: [],
-            filmData: [],
             data: [],
             wWidth: window.innerWidth,
             wHeight: window.innerHeight,

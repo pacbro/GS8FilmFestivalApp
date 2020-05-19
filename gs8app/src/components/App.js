@@ -1,95 +1,92 @@
 import React, { Component } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import 'typeface-roboto';
 import '../css/App.css';
-import Navbar from './Navbar';
-import About from './About';
-import Contact from './Contact';
-import FilmGallery from './FilmGallery';
-import Donate from './Donate';
-import Events from './Events';
-import Participate from './Participate';
-import Cameras from './Cameras';
-import Deadlines from './Deadlines';
-import Register from './Register';
-import Rules from './Rules';
-import Shop from './Shop';
-import Subscribe from './Subscribe';
-import FilmmakerInfo from './Filmmaker-info';
-import Home from './Home';
-import AdminData from './AdminData';
-//fixed???
-
-import PropTypes from 'prop-types';
-
+import styles from '../css/styles';
+import Carousel from './Carousel';
 
 class App extends Component {
-    //loads tempData from index.js as a prop
-    //then sets it as a state
     constructor(props) {
         super(props);
-        this.state = props.tempData;
+        this.state = {
+            carouselYear: this.props.year,
+            allTags: [],
+            filmData: [],
+            data: [],
+            tempData: this.props.tempData,
+        };
+        this.getData = this.getData.bind(this);
+    }
+    
+    componentDidMount() {
+        console.log('app-didMount');
+        this.getCsvData();
+    }
+    
+    fetchCsv3(csv){
+        var lines=csv.split("\n");      
+        var result = [];      
+        var headers=lines[0].split(",");
+        for(var i=1;i<lines.length;i++){      
+            var obj = {};
+            var currentline=lines[i].split(",");
+            for(var j=0;j<headers.length;j++){
+                obj[headers[j]] = currentline[j];
+            }      
+            result.push(obj);
+      
+        }
+        //return result; //JavaScript object
+        return JSON.stringify(result); //JSON
+      }
+
+    getData(result) {
+        this.setState({data: result.data});
+        //this.setState({filmData: result.data});
+        var didItWork = false;
+        if(this.state.data === result.data)
+        {
+            didItWork = true;
+        }
+        return didItWork;
     }
 
+    async getCsvData() {
+        console.log('<< Carousel2020 02: Getting CSV Data >>');
+        let csvData = await this.fetchCsv3('../csv/films.csv');
+        console.log('////// Carousel2020 05: Returned result.value //////');
+        console.log(csvData);
+        console.log('////////////////////////////////////////////////');
+        console.log('<< Carousel2020 06: Load CSV Data >>');
+        //Papa.parse(csvData, {
+           // complete: this.getData
+       // });
+       var itWorked = this.getData(csvData);
+       if(itWorked)
+       {
+        console.log('////////////////////////////////////////////////');
+        console.log('<< Carousel2020 data loaded >>');
+       }
+       else
+       {
+        console.log('////////////////////////////////////////////////');
+        console.log('<< Carousel2020 data load failed >>');
+       }
+    }
+
+    
     render() {
         return (
-            <div className="App">
-                <Navbar />
-                <div id="contents">
-                    <Switch>
-                        <Route path="/admin-data" component={AdminData} />
-                        <Route path="/about" component={About} />
-                        <Route path="/contact" component={Contact} />
-                        <Route path="/filmGallery" component={FilmGallery} />
-                        <Route path="/donate" component={Donate} />
-                        <Route path="/events" component={Events} />
-                        <Route path="/participate" component={Participate} />
-                        <Route path="/cameras" component={Cameras} />
-                        <Route
-                            path="/filmmaker-info"
-                            component={FilmmakerInfo}
-                        />
-                        <Route path="/deadlines" component={Deadlines} />
-                        <Route path="/register" component={Register} />
-                        <Route path="/rules" component={Rules} />
-                        <Route path="/shop" component={Shop} />
-                        <Route path="/subscribe" component={Subscribe} />
-                        
-                        <Route
-                            path="/"
-                            render={props => (
-                                <Home
-                                    {...props}
-                                    filmData={this.state.filmData}
-                                />
-                            )}
-                        />
-                        <Redirect to="/" />
-                    </Switch>
-                </div>
+            <div style={styles.filmGalleryStyle}>
+                <Carousel year={1942}/>
             </div>
         );
     }
 }
 
-//ensures data is loaded correctly
 App.propTypes = {
     tempData: PropTypes.object
 };
 
 
 export default App;
-
-/*
-return (
-    <div className="App">
-        <Navbar />
-        <div id="contents">
-            <Switch>
-                <Route path="/about" component={About} />
-                <Redirect to="/" />
-            </Switch>
-        </div>
-    </div>
-);
-*/

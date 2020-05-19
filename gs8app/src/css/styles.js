@@ -63,24 +63,7 @@ const vidItem = {
     borderColor: 'LightGrey',
     borderRadius: '.3em',
 };
-const filmStrip = {
-    display: 'block',
-    background: 'rgb(0,0,0)',
-    //width: '148px',
-    //width: '1em',
-    //height: '178px',
-    //height: '1em',
-    //float: 'left',
-    //marginLeft: '.5em',
-    //marginRight: '.69em',
-    //marginTop: '.2em',
-    //marginBottom: '.2em',
-    padding: '.2em',
-    border: '1px',
-    borderStyle: 'solid',
-    borderColor: 'LightGrey',
-    //borderRadius: '.2em',
-};
+
 const sprocPerfsFirst = {
     display: 'block',
     background: 'rgb(255,255,255)',
@@ -145,15 +128,6 @@ const sliderDiv = {
     borderStyle: 'solid',
     borderColor: 'LightGrey',
 };
-const sliderDiv2 = {
-    position: 'relative',
-    //width: '700px',
-    width: '45em',
-    height: '11.8em',
-    margin: 'auto',
-    background: 'rgb(0,0,0)',
-    padding: '7px'
-};
 const desc = {
     color: '#21A1D2',
     fontSize: '14',
@@ -171,9 +145,6 @@ const thumb = {
     //left: 0,
 };
 
-const dotGroup = {
-    textAlign: 'center'
-};
 const buttonBack = {
     position: 'absolute',
     textAlign: 'center',
@@ -182,10 +153,9 @@ const buttonBack = {
     borderStyle: 'solid',
     borderColor: 'LightGrey',
     left:-45,
-    top: '.15em',
+    top: '0em',
     borderRadius: '.1em',
-    height: '7em',
-    //marginRight: '.1em',
+    height: '100%',
     width: '1.4em',
 };
 const buttonNext = {
@@ -196,42 +166,18 @@ const buttonNext = {
     borderStyle: 'solid',
     borderColor: 'LightGrey',
     right:-45,
-    top: '.15em',
-    borderRadius: '.2em',
-    height: '7em',
-    marginRight: '.1em',
+    top: '0em',
+    borderRadius: '.1em',
+    height: '100%',
     width: '1.4em',
 };
-const buttonBack2 = {
-    position: 'absolute',
-    textAlign: 'center',
-    fontSize: '20px',
-    border: '1px',
-    borderStyle: 'solid',
-    borderColor: 'LightGrey',
-    left:-25,
-    top: '35%',
-    borderRadius: '50%',
-    height: '2.6em',
-    width: '2.6em',
 
-};
-const buttonNext2 = {
-    position: 'absolute',
-    textAlign: 'center',
-    fontSize: '20px',
-    border: '1px',
-    borderStyle: 'solid',
-    borderColor: 'LightGrey',
-    right:-25,
-    top: '35%',
-    borderRadius: '50%',
+
+
+const tabs = {
     height: '2.6em',
     width: '2.6em',
 };
-
-
-
 
 const Styles = {
     parentDivStyle,
@@ -244,19 +190,15 @@ const Styles = {
     socMed,
     vidContainerIframe,
     thumb,
-    dotGroup,
+    buttonNext,
     buttonBack,
-    buttonBack2,
-    filmStrip,
     sprocPerfsFirst,
     sprocPerfsMid,
     sprocPerfsLast,
-    buttonNext,
-    buttonNext2,
     vidItem,
     desc,
     sliderDiv,
-    sliderDiv2,
+    tabs
 };
 
 export default Styles;
