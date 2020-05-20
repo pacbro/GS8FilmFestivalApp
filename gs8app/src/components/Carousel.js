@@ -35,44 +35,43 @@ class Carousel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            filmData: this.props.filmData,
             carouselYear: this.props.year,
             allTags: [],
             filmData: [],
             data: [],
             wWidth: window.innerWidth,
             wHeight: window.innerHeight,
+            //year: this.props.year,
+            //currentVideo: this.props.currentVideo,
+            //filmData: this.props.filmData,
+            iFrame: '',
         };
     }
 
     componentDidMount() {
+        this.createIFrame(this.props.currentVideo);
         console.log('<< Carousel 01: Mounted successfully >>');
     }
 
-    /*
-                <div>
-                    <h1>Hideous Output block:</h1>
-                    <p>Name: {this.state.filmData[0].name.toString()}</p>
-                </div>
-    */
+    setIFrame = newIFrame => {
+        this.setState({
+            iFrame: newIFrame
+        });
+    }
+
+    createIFrame(currentVideo) {
+        let iFrame = '<iframe id="vid_frame" style ={styles.vidContainerIframe} title=';
+        let iFrame2 = 'frameBorder="0" width="640" height="480" allowFullScreen="allowFullScreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe >';
+        let title = '"' + this.props.currentVideo.title + ' by ' + this.props.currentVideo.creator + '" ';
+        let src = 'src="http://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=0&rel=0&showinfo=0" ';
+        iFrame += title + src + iFrame2;
+        this.setIFrame(iFrame);
+    }
 
     render() {
         return (
             <div>
-                <iframe
-                    id="vid_frame"
-                    style={styles.vidContainerIframe}
-                    title="Figure Man Written by Anthony Thambynayagam"
-                    src="http://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=0&rel=0&showinfo=0"
-                    frameBorder="0"
-                    width="640"
-                    height="480"
-                    allowFullScreen="allowFullScreen"
-                    mozallowfullscreen="mozallowfullscreen"
-                    msallowfullscreen="msallowfullscreen"
-                    oallowfullscreen="oallowfullscreen"
-                    webkitallowfullscreen="webkitallowfullscreen"
-                ></iframe>
+                <div dangerouslySetInnerHTML={{ __html: this.state.iFrame }} />
 
                 <div>
                     <Tabs>
@@ -1712,6 +1711,8 @@ class Carousel extends Component {
 }
 
 Carousel.propTypes = {
+    year: PropTypes.number,
+    currentVideo: PropTypes.object,
     filmData: PropTypes.array,
 };
 
