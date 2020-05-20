@@ -63,23 +63,70 @@ const vidItem = {
     borderColor: 'LightGrey',
     borderRadius: '.3em',
 };
+
+const sprocPerfsFirst = {
+    display: 'block',
+    background: 'rgb(255,255,255)',
+    //width: '148px',
+    width: '1em',
+    //height: '178px',
+    height: '1em',
+    float: 'left',
+    marginLeft: '.45em',
+    marginRight: '.7em',
+    marginTop: '.2em',
+    marginBottom: '.2em',
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: 'LightGrey',
+    borderRadius: '.2em',
+};
+const sprocPerfsMid = {
+    display: 'block',
+    background: 'rgb(255,255,255)',
+    //width: '148px',
+    width: '1em',
+    //height: '178px',
+    height: '1em',
+    float: 'left',
+    marginLeft: '.7em',
+    marginRight: '.7em',
+    marginTop: '.2em',
+    marginBottom: '.2em',
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: 'LightGrey',
+    borderRadius: '.2em',
+};
+const sprocPerfsLast = {
+    display: 'block',
+    background: 'rgb(255,255,255)',
+    //width: '148px',
+    width: '1em',
+    //height: '178px',
+    height: '1em',
+    float: 'left',
+    marginLeft: '.7em',
+    marginRight: '.45em',
+    marginTop: '.2em',
+    marginBottom: '.2em',
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: 'LightGrey',
+    borderRadius: '.2em',
+};
+
 const sliderDiv = {
     position: 'relative',
     //width: '700px',
     width: '51.8em',
-    height: '11.8em',
+    height: '14.7em',
     margin: 'auto',
     background: 'rgb(0,0,0)',
-    padding: '7px'
-};
-const sliderDiv2 = {
-    position: 'relative',
-    //width: '700px',
-    width: '45em',
-    height: '11.8em',
-    margin: 'auto',
-    background: 'rgb(0,0,0)',
-    padding: '7px'
+    padding: '0px 7px 0px 7px',
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: 'LightGrey',
 };
 const desc = {
     color: '#21A1D2',
@@ -98,9 +145,6 @@ const thumb = {
     //left: 0,
 };
 
-const dotGroup = {
-    textAlign: 'center'
-};
 const buttonBack = {
     position: 'absolute',
     textAlign: 'center',
@@ -109,9 +153,9 @@ const buttonBack = {
     borderStyle: 'solid',
     borderColor: 'LightGrey',
     left:-45,
-    top: '.15em',
-    borderRadius: '.2em',
-    height: '6em',
+    top: '0em',
+    borderRadius: '.1em',
+    height: '100%',
     width: '1.4em',
 };
 const buttonNext = {
@@ -122,38 +166,13 @@ const buttonNext = {
     borderStyle: 'solid',
     borderColor: 'LightGrey',
     right:-45,
-    top: '.15em',
-    borderRadius: '.2em',
-    height: '6em',
+    top: '0em',
+    borderRadius: '.1em',
+    height: '100%',
     width: '1.4em',
 };
-const buttonBack2 = {
-    position: 'absolute',
-    textAlign: 'center',
-    fontSize: '20px',
-    border: '1px',
-    borderStyle: 'solid',
-    borderColor: 'LightGrey',
-    left:-25,
-    top: '35%',
-    borderRadius: '50%',
-    height: '2.6em',
-    width: '2.6em',
 
-};
-const buttonNext2 = {
-    position: 'absolute',
-    textAlign: 'center',
-    fontSize: '20px',
-    border: '1px',
-    borderStyle: 'solid',
-    borderColor: 'LightGrey',
-    right:-25,
-    top: '35%',
-    borderRadius: '50%',
-    height: '2.6em',
-    width: '2.6em',
-};
+
 
 const tabs = {
     height: '2.6em',
@@ -171,15 +190,14 @@ const Styles = {
     socMed,
     vidContainerIframe,
     thumb,
-    dotGroup,
-    buttonBack,
-    buttonBack2,
     buttonNext,
-    buttonNext2,
+    buttonBack,
+    sprocPerfsFirst,
+    sprocPerfsMid,
+    sprocPerfsLast,
     vidItem,
     desc,
     sliderDiv,
-    sliderDiv2,
     tabs
 };
 

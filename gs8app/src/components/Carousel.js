@@ -38,7 +38,6 @@ class Carousel extends Component {
             filmData: this.props.filmData,
             carouselYear: this.props.year,
             allTags: [],
-            filmData: [],
             data: [],
             wWidth: window.innerWidth,
             wHeight: window.innerHeight,
@@ -72,41 +71,49 @@ class Carousel extends Component {
                     msallowfullscreen="msallowfullscreen"
                     oallowfullscreen="oallowfullscreen"
                     webkitallowfullscreen="webkitallowfullscreen"
-                ></iframe>
+                />
 
                 <div>
                     <Tabs>
                         <TabList>
-                                <Tab>
-                                    <img src={require("../img/logo2020.png")} height="100" width="124" alt="Tab:"/>
-                                    <br/><b>2020</b>
-                                </Tab>
-                                <Tab>
-                                    <img src={require("../img/logo2019.png")} height="100" width="124" alt="Tab:"/>
-                                    <br/><b>2019</b>
-                                </Tab>
-                                <Tab >
-                                    <img src={require("../img/logo2011.png")} height="100" width="205"/>
-                                    <br/><b>2011</b>
-                                </Tab>
-                                <Tab >
-                                    <img src={require("../img/logo2010.png")} height="100" width="120"/>
-                                    <br/><b>2010</b>
-                                </Tab>
-                                <Tab >
-                                    <img src={require("../img/logo2009.png")} height="100" width="120"/>
-                                    <br/><b>2009</b>
-                                </Tab>
-                                <Tab >
-                                    <img src={require("../img/logo2008.png")} height="100" width="120"/>
-                                    <br/><b>2008</b>
-                                </Tab>
-                                <Tab ><img src={require("../img/logo2007.png")} height="100" width="120"/>
-                                    <br/><b>2007</b>
-                                </Tab>
-                                <Tab ><img src={require("../img/logo2006.png")} height="100" width="120"/>
-                                    <br/><b>2006</b>
-                                </Tab>
+                            <Tab>
+                                <img src={require("../img/logo2020.png")} height="100" width="124"
+                                     alt="2020 Films Tab"/>
+                                <br/><b>2020</b>
+                            </Tab>
+                            <Tab>
+                                <img src={require("../img/logo2019.png")} height="100" width="124"
+                                     alt="2019 Films Tab"/>
+                                <br/><b>2019</b>
+                            </Tab>
+                            <Tab>
+                                <img src={require("../img/logo2011.png")} height="100" width="205"
+                                     alt="2011 Films Tab"/>
+                                <br/><b>2011</b>
+                            </Tab>
+                            <Tab>
+                                <img src={require("../img/logo2010.png")} height="100" width="120"
+                                     alt="2010 Films Tab"/>
+                                <br/><b>2010</b>
+                            </Tab>
+                            <Tab>
+                                <img src={require("../img/logo2009.png")} height="100" width="120"
+                                     alt="2009 Films Tab"/>
+                                <br/><b>2009</b>
+                            </Tab>
+                            <Tab>
+                                <img src={require("../img/logo2008.png")} height="100" width="120"
+                                     alt="2008 Films Tab"/>
+                                <br/><b>2008</b>
+                            </Tab>
+                            <Tab><img src={require("../img/logo2007.png")} height="100" width="120"
+                                      alt="2007 Films Tab"/>
+                                <br/><b>2007</b>
+                            </Tab>
+                            <Tab><img src={require("../img/logo2006.png")} height="100" width="120"
+                                      alt="2006 Films Tab"/>
+                                <br/><b>2006</b>
+                            </Tab>
                         </TabList>
 
                         <TabPanel>
@@ -117,7 +124,7 @@ class Carousel extends Component {
                                     totalSlides={20}
                                     step={5}
                                     naturalSlideWidth={425}
-                                    naturalSlideHeight={500}
+                                    naturalSlideHeight={650}
                                     hasMasterSpinner
                                 >
                                     <div style={styles.sliderDiv}>
@@ -125,10 +132,14 @@ class Carousel extends Component {
                                         <Slider>
 
                                             <Slide index={0}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('pjMlCHCufrA');
                                                     }}
 
@@ -147,13 +158,21 @@ class Carousel extends Component {
                                                         Figure Man Written by Anthony Thambynayagam
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={1}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('mCbqDuNgMp4');
                                                     }}
                                                 >
@@ -170,13 +189,21 @@ class Carousel extends Component {
                                                         The Best Day of My Life by Jason Austin
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={2}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('nBgVaDr0l6I');
                                                     }}
                                                 >
@@ -193,13 +220,21 @@ class Carousel extends Component {
                                                         Untitled by Nolan Gonzalez
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={3}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('m89w7f59a6A');
                                                     }}
                                                 >
@@ -213,15 +248,24 @@ class Carousel extends Component {
                                                         className="desc"
                                                         style={styles.desc}
                                                     >
-                                                        Chasing Terrence by Terrence Wynder Kevin Drury Kris Brown & Ernest Argyros
+                                                        Chasing Terrence by Terrence Wynder Kevin Drury Kris Brown &
+                                                        Ernest Argyros
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={4}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('gt9pDsYuubI');
                                                      }}
                                                 >
@@ -239,13 +283,21 @@ class Carousel extends Component {
                                                         Public Grief by Ali Rowenna
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={5}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('hXyDYJLn_sE');
                                                     }}
                                                 >
@@ -259,13 +311,21 @@ class Carousel extends Component {
                                                         Surprise in the Freezer by Corrie Greening
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={6}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('UURuEgH2yqw');
                                                     }}
                                                 >
@@ -279,13 +339,21 @@ class Carousel extends Component {
                                                         Block Party by Clint Berquist Music by DUBCAR
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={7}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('JTDctcyssJM');
                                                     }}
                                                 >
@@ -299,12 +367,20 @@ class Carousel extends Component {
                                                         Our Usual Table by La Dele Sines and Alan Phillips
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={8}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('jSgNTYQtolI');
                                                      }}
                                                 >
@@ -318,11 +394,19 @@ class Carousel extends Component {
                                                         Leap Year MMXX by Angelina Tolentino
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={9}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('3ODq0UvATTc');
                                                      }}
                                                 >
@@ -336,11 +420,19 @@ class Carousel extends Component {
                                                         The Big Con by Augie Pagan
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={10}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('20NS42MUPBE');
                                                      }}
                                                 >
@@ -354,11 +446,19 @@ class Carousel extends Component {
                                                         Special Olympics Basketball by Cedar Bushue
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={11}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('FA86M03VZgA');
                                                      }}
                                                 >
@@ -372,11 +472,19 @@ class Carousel extends Component {
                                                         HOLD FAST by Chris Pfeifle
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={12}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('XmLLo9PCcYY');
                                                      }}
                                                 >
@@ -387,14 +495,23 @@ class Carousel extends Component {
                                                         />
                                                     </div>
                                                     <div className="desc" style={styles.desc}>
-                                                        The Adventures of Oak and Humbug by Christopher Kimbrough & Elahe Zare
+                                                        The Adventures of Oak and Humbug by Christopher Kimbrough &
+                                                        Elahe Zare
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={13}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('vy4219QQ908');
                                                      }}
                                                 >
@@ -405,14 +522,23 @@ class Carousel extends Component {
                                                         />
                                                     </div>
                                                     <div className="desc" style={styles.desc}>
-                                                        The Adventures of Oak and Humbug by Christopher Kimbrough & Elahe Zare
+                                                        The Adventures of Oak and Humbug by Christopher Kimbrough &
+                                                        Elahe Zare
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={14}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('rfhxLAPNFzc');
                                                      }}
                                                 >
@@ -426,11 +552,19 @@ class Carousel extends Component {
                                                         Return of Robot by Grant Crawford
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={15}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('0F0SQwkre1A');
                                                      }}
                                                 >
@@ -444,11 +578,19 @@ class Carousel extends Component {
                                                         Innocent Chaos by Jason Zook
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={16}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('6sLDxt2ZUik');
                                                      }}
                                                 >
@@ -462,11 +604,19 @@ class Carousel extends Component {
                                                         Headstones by Jesse Moore and Patty Foley
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={17}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('_9XuTT1IqUY');
                                                      }}
                                                 >
@@ -477,14 +627,22 @@ class Carousel extends Component {
                                                         />
                                                     </div>
                                                     <div className="desc" style={styles.desc}>
-                                                        West Nebraska  by Just John
+                                                        West Nebraska by Just John
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={18}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('lZ_7x3Fddhg');
                                                      }}
                                                 >
@@ -498,11 +656,19 @@ class Carousel extends Component {
                                                         The Ghosts of GT by Hazel Lucy & Emma
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={19}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('cSUCoi98LKY');
                                                      }}
                                                 >
@@ -516,10 +682,11 @@ class Carousel extends Component {
                                                         ENDEMIC by Kevin Coulton
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
-
-
-
                                         </Slider>
 
                                         <ButtonBack
@@ -536,13 +703,13 @@ class Carousel extends Component {
                                         </ButtonNext>
                                     </div>
                                 </CarouselProvider>
-
+                                <br/>
                                 <CarouselProvider
                                     visibleSlides={5.12}
                                     totalSlides={23}
                                     step={5}
                                     naturalSlideWidth={425}
-                                    naturalSlideHeight={500}
+                                    naturalSlideHeight={650}
                                     hasMasterSpinner
                                 >
                                     <div style={styles.sliderDiv}>
@@ -550,10 +717,14 @@ class Carousel extends Component {
                                         <Slider>
 
                                             <Slide index={0}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('4677tCafGs8');
                                                     }}
 
@@ -571,13 +742,21 @@ class Carousel extends Component {
                                                         Purveyor of Lost Dreams by Mackenzi Wakley
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={1}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('HgpzVJo6L5M');
                                                     }}
                                                 >
@@ -594,13 +773,21 @@ class Carousel extends Component {
                                                         Sun's there, you're just not high enough by Madison Holup
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={2}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('ZKZ6GaW3reI');
                                                     }}
                                                 >
@@ -617,13 +804,21 @@ class Carousel extends Component {
                                                         Georgetown: Where the Cats Play by Davis Creative Productions
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={3}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('jBIVtqcQKc8');
                                                     }}
                                                 >
@@ -637,15 +832,24 @@ class Carousel extends Component {
                                                         className="desc"
                                                         style={styles.desc}
                                                     >
-                                                        A Glimpse of the Connections Museum by Neil Rhoades & Alyson Stoner-Rhoades
+                                                        A Glimpse of the Connections Museum by Neil Rhoades & Alyson
+                                                        Stoner-Rhoades
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={4}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('IV78XRDl5So');
                                                      }}
                                                 >
@@ -662,13 +866,21 @@ class Carousel extends Component {
                                                         A Search for Community by Paul Dewald
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={5}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('qJUBu6seFi4');
                                                     }}
                                                 >
@@ -682,13 +894,21 @@ class Carousel extends Component {
                                                         The Busker by Peter Reiquam
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={6}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('oDB7hpCHR6M');
                                                     }}
                                                 >
@@ -699,16 +919,25 @@ class Carousel extends Component {
                                                         />
                                                     </div>
                                                     <div className="desc" style={styles.desc}>
-                                                        Sparks by Michael Campos, Lauren Harris, Jordan Maples and Ryan Rohrer
+                                                        Sparks by Michael Campos, Lauren Harris, Jordan Maples and Ryan
+                                                        Rohrer
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={7}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
                                                     style={styles.vidItem}
-                                                    onClick={()=>{
+                                                    onClick={() => {
                                                         setFilmSRC('WlSFqFBaVKI');
                                                     }}
                                                 >
@@ -722,12 +951,20 @@ class Carousel extends Component {
                                                         River City Racers by Sean Byrne
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={8}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('--faHh58Iz4');
                                                      }}
                                                 >
@@ -741,11 +978,19 @@ class Carousel extends Component {
                                                         No Fly Zone by Trinh Duong & Rob Jellinek
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={9}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('g34pD0hxkxA');
                                                      }}
                                                 >
@@ -756,14 +1001,22 @@ class Carousel extends Component {
                                                         />
                                                     </div>
                                                     <div className="desc" style={styles.desc}>
-                                                        Frances Doesn’t Care for the Blues  by William Brandt
+                                                        Frances Doesn’t Care for the Blues by William Brandt
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={10}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('jCGknIvwYXg');
                                                      }}
                                                 >
@@ -777,11 +1030,19 @@ class Carousel extends Component {
                                                         Flower People by Nemo Campisi
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={11}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('BIcijHZbFvU');
                                                      }}
                                                 >
@@ -795,11 +1056,19 @@ class Carousel extends Component {
                                                         Perros Manos (dog hands) by Zack Lindsey and Keturah Walker
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={12}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('rlPc377aevk');
                                                      }}
                                                 >
@@ -813,11 +1082,19 @@ class Carousel extends Component {
                                                         Flyght Path (or The Girl is Fly) By Tracy Thompson
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={13}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('phDhkC2S5xE');
                                                      }}
                                                 >
@@ -831,11 +1108,19 @@ class Carousel extends Component {
                                                         THE 1979 BIZARRE by Alex Miller
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={14}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('GWK_LN-RTLE');
                                                      }}
                                                 >
@@ -849,11 +1134,19 @@ class Carousel extends Component {
                                                         Observation of Place by Alexis Wood
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={15}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('NG7kofsBQCw');
                                                      }}
                                                 >
@@ -867,11 +1160,19 @@ class Carousel extends Component {
                                                         In the Air by Ann Sammon
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={16}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('SWqxs01FK4A');
                                                      }}
                                                 >
@@ -885,11 +1186,19 @@ class Carousel extends Component {
                                                         Untitled by Channel Horner
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={17}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('wj2bxuFzNcM');
                                                      }}
                                                 >
@@ -903,11 +1212,19 @@ class Carousel extends Component {
                                                         A Hard Day's Day by Adam Walker and Charlotte Blythe
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={18}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('dWF2buyQQVk');
                                                      }}
                                                 >
@@ -921,11 +1238,19 @@ class Carousel extends Component {
                                                         In Search of the Perfect Beer by John Krull & Yukari Romano
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={19}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('z3u5__Ql4O4');
                                                      }}
                                                 >
@@ -939,11 +1264,19 @@ class Carousel extends Component {
                                                         letters to [and from] Pablo by Rana San
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={20}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('aM-krzeLi14');
                                                      }}
                                                 >
@@ -957,11 +1290,19 @@ class Carousel extends Component {
                                                         The Great Paralysis by Stephen Samelko
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={21}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('5PwVZzJNoUg');
                                                      }}
                                                 >
@@ -975,11 +1316,19 @@ class Carousel extends Component {
                                                         The Owl & the Pussycat by Edward Lear
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
                                             <Slide index={22}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                                 <div className="vid-item"
                                                      style={styles.vidItem}
-                                                     onClick={()=>{
+                                                     onClick={() => {
                                                          setFilmSRC('mZGLL68-6QQ');
                                                      }}
                                                 >
@@ -993,8 +1342,11 @@ class Carousel extends Component {
                                                         Mystery 3 by Jenelle Sauvageau
                                                     </div>
                                                 </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
                                             </Slide>
-
 
 
                                         </Slider>
@@ -1014,691 +1366,954 @@ class Carousel extends Component {
                                     </div>
 
                                 </CarouselProvider>
+                                <br/>
                             </div>
 
                         </TabPanel>
                         <TabPanel>
                             {/*2019*/}
-                                <div style={styles.filmGalleryStyle}>
-                                    <CarouselProvider
-                                        visibleSlides={5.12}
-                                        totalSlides={15}
-                                        step={5}
-                                        naturalSlideWidth={425}
-                                        naturalSlideHeight={500}
-                                        hasMasterSpinner
-                                    >
-                                        <div style={styles.sliderDiv}>
+                            <div style={styles.filmGalleryStyle}>
+                                <CarouselProvider
+                                    visibleSlides={5.12}
+                                    totalSlides={15}
+                                    step={5}
+                                    naturalSlideWidth={425}
+                                    naturalSlideHeight={650}
+                                    hasMasterSpinner
+                                >
+                                    <div style={styles.sliderDiv}>
 
-                                            <Slider>
+                                        <Slider>
 
-                                                <Slide index={0}>
+                                            <Slide index={0}>
+                                                <div style={styles.sprocPerfsFirst}></div>
+                                                <div style={styles.sprocPerfsMid}></div>
+                                                <div style={styles.sprocPerfsMid}></div>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('vQQe83JGuuM');
+                                                    }}
+
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/vQQe83JGuuM/0.jpg"
+                                                            alt="Duwamish Rowing Club Youth Program by Mike Merta"
+                                                        />
+                                                    </div>
                                                     <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('vQQe83JGuuM');
-                                                        }}
-
+                                                        className="desc"
+                                                        style={styles.desc}
                                                     >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/vQQe83JGuuM/0.jpg"
-                                                                alt="Duwamish Rowing Club Youth Program by Mike Merta"
-                                                            />
-                                                        </div>
-                                                        <div
-                                                            className="desc"
-                                                            style={styles.desc}
-                                                        >
-                                                            Duwamish Rowing Club Youth Program by Mike Merta
-                                                        </div>
+                                                        Duwamish Rowing Club Youth Program by Mike Merta
                                                     </div>
-                                                </Slide>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={1}>
+                                            <Slide index={1}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('NCDebzHXmlI');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/NCDebzHXmlI/0.jpg"
+                                                            alt="Le Pickle by Anthony Thambynayagam"
+                                                        />
+                                                    </div>
                                                     <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('NCDebzHXmlI');
-                                                        }}
+                                                        className="desc"
+                                                        style={styles.desc}
                                                     >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/NCDebzHXmlI/0.jpg"
-                                                                alt="Le Pickle by Anthony Thambynayagam"
-                                                            />
-                                                        </div>
-                                                        <div
-                                                            className="desc"
-                                                            style={styles.desc}
-                                                        >
-                                                            Le Pickle by Anthony Thambynayagam
-                                                        </div>
+                                                        Le Pickle by Anthony Thambynayagam
                                                     </div>
-                                                </Slide>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={2}>
+                                            <Slide index={2}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('HgZedpzdwio');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/HgZedpzdwio/0.jpg"
+                                                            alt="Crud, Rats & Beyond by Robert Daniels, Alison Zerbe, Josh Pollock, Brian Wisniewski, Aaron Rommel"
+                                                        />
+                                                    </div>
                                                     <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('HgZedpzdwio');
-                                                        }}
+                                                        className="desc"
+                                                        style={styles.desc}
                                                     >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/HgZedpzdwio/0.jpg"
-                                                                alt="Crud, Rats & Beyond by Robert Daniels, Alison Zerbe, Josh Pollock, Brian Wisniewski, Aaron Rommel"
-                                                            />
-                                                        </div>
-                                                        <div
-                                                            className="desc"
-                                                            style={styles.desc}
-                                                        >
-                                                            Crud, Rats & Beyond by Robert Daniels, Alison Zerbe, Josh Pollock, Brian Wisniewski, Aaron Rommel
-                                                        </div>
+                                                        Crud, Rats & Beyond by Robert Daniels, Alison Zerbe, Josh
+                                                        Pollock, Brian Wisniewski, Aaron Rommel
                                                     </div>
-                                                </Slide>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={3}>
+                                            <Slide index={3}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('UH1sZFRjriY');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/UH1sZFRjriY/0.jpg"
+                                                            alt="WAKE UP by The Jam Squad"
+                                                        />
+                                                    </div>
                                                     <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('UH1sZFRjriY');
-                                                        }}
+                                                        className="desc"
+                                                        style={styles.desc}
                                                     >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/UH1sZFRjriY/0.jpg"
-                                                                alt="WAKE UP by The Jam Squad"
-                                                            />
-                                                        </div>
-                                                        <div
-                                                            className="desc"
-                                                            style={styles.desc}
-                                                        >
-                                                            WAKE UP by The Jam Squad
-                                                        </div>
+                                                        WAKE UP by The Jam Squad
                                                     </div>
-                                                </Slide>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={4}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('s1neAAjvEzg');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/s1neAAjvEzg/0.jpg"
-                                                                alt="Jellybean the Sidecar Queen by Peter Reiquam"
-                                                            />
-                                                        </div>
-                                                        <div
-                                                            className="desc"
-                                                            style={styles.desc}
-                                                        >
-                                                            Jellybean the Sidecar Queen by Peter Reiquam
-                                                        </div>
+                                            <Slide index={4}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('s1neAAjvEzg');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/s1neAAjvEzg/0.jpg"
+                                                            alt="Jellybean the Sidecar Queen by Peter Reiquam"
+                                                        />
                                                     </div>
-                                                </Slide>
-
-                                                <Slide index={5}>
                                                     <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('XINjL0jPDQ4');
-                                                        }}
+                                                        className="desc"
+                                                        style={styles.desc}
                                                     >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/XINjL0jPDQ4/0.jpg"
-                                                                alt="Alert by Ahmad White"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Alert by Ahmad White
-                                                        </div>
+                                                        Jellybean the Sidecar Queen by Peter Reiquam
                                                     </div>
-                                                </Slide>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={6}>
+                                            <Slide index={5}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('XINjL0jPDQ4');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/XINjL0jPDQ4/0.jpg"
+                                                            alt="Alert by Ahmad White"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Alert by Ahmad White
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+
+                                            <Slide index={6}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('qZpTOJAyrNk');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/qZpTOJAyrNk/0.jpg"
+                                                            alt="Alien Gas Mask Robot by Grant Crawford"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Alien Gas Mask Robot by Grant Crawford
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+
+                                            <Slide index={7}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('_ZnM5wUJzB4');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/_ZnM5wUJzB4/0.jpg"
+                                                            alt="Time to Spare by Katie Lewis & Reid Priewe"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Time to Spare by Katie Lewis & Reid Priewe
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+
+                                            <Slide index={8}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('mdDlc-DaIq8');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/mdDlc-DaIq8/0.jpg"
+                                                            alt="Birth of a Libation II: Who’s Yer Mama by Amee Shepard"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Birth of a Libation II: Who’s Yer Mama by Amee Shepard
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={9}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('FjjK5Nt-WJk');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/FjjK5Nt-WJk/0.jpg"
+                                                            alt="Masters of the Universe of Guitars, Dogs, Hats, and Boots by Adam Walker"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Masters of the Universe of Guitars, Dogs, Hats, and Boots by
+                                                        Adam Walker
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={10}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('EB_4uAI2gzg');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/EB_4uAI2gzg/0.jpg"
+                                                            alt="PNW Grrrls by Madison Holup"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        PNW Grrrls by Madison Holup
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={11}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('DReXr6rvscE');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/DReXr6rvscE/0.jpg"
+                                                            alt="The Life and Times of Mr. Plumbean by Jake and Emmett Bookwalter"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        The Life and Times of Mr. Plumbean by Jake and Emmett Bookwalter
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={12}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('Q00LdMynhkc');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/Q00LdMynhkc/0.jpg"
+                                                            alt="The Only Cure for Love by Ella E. Anderson, Alexzandyr Biernat"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        The Only Cure for Love by Ella E. Anderson, Alexzandyr Biernat
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={13}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('j4RPub-XlCw');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/j4RPub-XlCw/0.jpg"
+                                                            alt="Iron Rising By Kasey Williams"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Iron Rising By Kasey Williams
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={14}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('2qERqHa8HHg');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/2qERqHa8HHg/0.jpg"
+                                                            alt="PINLAND EMPIRE by Kevin Coulton"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        PINLAND EMPIRE by Kevin Coulton
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                        </Slider>
+
+                                        <ButtonBack
+                                            className="buttonBack"
+                                            style={styles.buttonBack}
+                                        >
+                                            &#10096;
+                                        </ButtonBack>
+                                        <ButtonNext
+                                            className="buttonNext"
+                                            style={styles.buttonNext}
+                                        >
+                                            &#10097;
+                                        </ButtonNext>
+                                    </div>
+
+                                </CarouselProvider>
+                                <br/>
+
+                                <CarouselProvider
+                                    visibleSlides={5.12}
+                                    totalSlides={16}
+                                    step={5}
+                                    naturalSlideWidth={425}
+                                    naturalSlideHeight={650}
+                                    hasMasterSpinner
+                                >
+                                    <div style={styles.sliderDiv}>
+
+                                        <Slider>
+
+                                            <Slide index={0}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('prUpHa0XyIw');
+                                                    }}
+
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/prUpHa0XyIw/0.jpg"
+                                                            alt="SUPER NATURAL by Wittman Estes Architecture + Landscape"
+                                                        />
+                                                    </div>
                                                     <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('qZpTOJAyrNk');
-                                                        }}
+                                                        className="desc"
+                                                        style={styles.desc}
                                                     >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/qZpTOJAyrNk/0.jpg"
-                                                                alt="Alien Gas Mask Robot by Grant Crawford"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Alien Gas Mask Robot by Grant Crawford
-                                                        </div>
+                                                        SUPER NATURAL by Wittman Estes Architecture + Landscape
                                                     </div>
-                                                </Slide>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={7}>
+                                            <Slide index={1}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('6VJG2Jb5JmA');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/6VJG2Jb5JmA/0.jpg"
+                                                            alt="deadalive by Tammy Martin"
+                                                        />
+                                                    </div>
                                                     <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('_ZnM5wUJzB4');
-                                                        }}
+                                                        className="desc"
+                                                        style={styles.desc}
                                                     >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/_ZnM5wUJzB4/0.jpg"
-                                                                alt="Time to Spare by Katie Lewis & Reid Priewe"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Time to Spare by Katie Lewis & Reid Priewe
-                                                        </div>
+                                                        deadalive by Tammy Martin
                                                     </div>
-                                                </Slide>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={8}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('mdDlc-DaIq8');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/mdDlc-DaIq8/0.jpg"
-                                                                alt="Birth of a Libation II: Who’s Yer Mama by Amee Shepard"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Birth of a Libation II: Who’s Yer Mama by Amee Shepard
-                                                        </div>
+                                            <Slide index={2}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('TGQFcohx5SA');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/TGQFcohx5SA/0.jpg"
+                                                            alt="Making Money by Bryan Allan Krauss"
+                                                        />
                                                     </div>
-                                                </Slide>
-                                                <Slide index={9}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('FjjK5Nt-WJk');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/FjjK5Nt-WJk/0.jpg"
-                                                                alt="Masters of the Universe of Guitars, Dogs, Hats, and Boots by Adam Walker"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Masters of the Universe of Guitars, Dogs, Hats, and Boots by Adam Walker
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                                <Slide index={10}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('EB_4uAI2gzg');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/EB_4uAI2gzg/0.jpg"
-                                                                alt="PNW Grrrls by Madison Holup"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            PNW Grrrls by Madison Holup
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                                <Slide index={11}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('DReXr6rvscE');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/DReXr6rvscE/0.jpg"
-                                                                alt="The Life and Times of Mr. Plumbean by Jake and Emmett Bookwalter"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            The Life and Times of Mr. Plumbean by Jake and Emmett Bookwalter
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                                <Slide index={12}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('Q00LdMynhkc');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/Q00LdMynhkc/0.jpg"
-                                                                alt="The Only Cure for Love by Ella E. Anderson, Alexzandyr Biernat"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            The Only Cure for Love by Ella E. Anderson, Alexzandyr Biernat
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                                <Slide index={13}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('j4RPub-XlCw');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/j4RPub-XlCw/0.jpg"
-                                                                alt="Iron Rising By Kasey Williams"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Iron Rising By Kasey Williams
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                                <Slide index={14}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('2qERqHa8HHg');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/2qERqHa8HHg/0.jpg"
-                                                                alt="PINLAND EMPIRE by Kevin Coulton"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            PINLAND EMPIRE by Kevin Coulton
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                            </Slider>
-
-                                            <ButtonBack
-                                                className="buttonBack"
-                                                style={styles.buttonBack}
-                                            >
-                                                &#10096;
-                                            </ButtonBack>
-                                            <ButtonNext
-                                                className="buttonNext"
-                                                style={styles.buttonNext}
-                                            >
-                                                &#10097;
-                                            </ButtonNext>
-                                        </div>
-
-                                    </CarouselProvider>
-
-                                    <CarouselProvider
-                                        visibleSlides={5.12}
-                                        totalSlides={16}
-                                        step={5}
-                                        naturalSlideWidth={425}
-                                        naturalSlideHeight={500}
-                                        hasMasterSpinner
-                                    >
-                                        <div style={styles.sliderDiv}>
-
-                                            <Slider>
-
-                                                <Slide index={0}>
                                                     <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('prUpHa0XyIw');
-                                                        }}
-
+                                                        className="desc"
+                                                        style={styles.desc}
                                                     >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/prUpHa0XyIw/0.jpg"
-                                                                alt="SUPER NATURAL by Wittman Estes Architecture + Landscape"
-                                                            />
-                                                        </div>
-                                                        <div
-                                                            className="desc"
-                                                            style={styles.desc}
-                                                        >
-                                                            SUPER NATURAL by Wittman Estes Architecture + Landscape
-                                                        </div>
+                                                        Making Money by Bryan Allan Krauss
                                                     </div>
-                                                </Slide>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={1}>
+                                            <Slide index={3}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('Lh_QBcA39K0');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/Lh_QBcA39K0/0.jpg"
+                                                            alt="Georgetown Papers by Kris Brown, Ernest Argyros, Joseph Burchetta & John Flowers"
+                                                        />
+                                                    </div>
                                                     <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('6VJG2Jb5JmA');
-                                                        }}
+                                                        className="desc"
+                                                        style={styles.desc}
                                                     >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/6VJG2Jb5JmA/0.jpg"
-                                                                alt="deadalive by Tammy Martin"
-                                                            />
-                                                        </div>
-                                                        <div
-                                                            className="desc"
-                                                            style={styles.desc}
-                                                        >
-                                                            deadalive by Tammy Martin
-                                                        </div>
+                                                        Georgetown Papers by Kris Brown, Ernest Argyros, Joseph
+                                                        Burchetta & John Flowers
                                                     </div>
-                                                </Slide>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={2}>
+                                            <Slide index={4}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div className="vid-item"
+                                                     style={styles.vidItem}
+                                                     onClick={() => {
+                                                         setFilmSRC('W1cjdIR7vcw');
+                                                     }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/W1cjdIR7vcw/0.jpg"
+                                                            alt="Allegory of the Pinball by Neil Rhoades and Alyson Stoner-Rhoades"
+                                                        />
+                                                    </div>
                                                     <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('TGQFcohx5SA');
-                                                        }}
+                                                        className="desc"
+                                                        style={styles.desc}
                                                     >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/TGQFcohx5SA/0.jpg"
-                                                                alt="Making Money by Bryan Allan Krauss"
-                                                            />
-                                                        </div>
-                                                        <div
-                                                            className="desc"
-                                                            style={styles.desc}
-                                                        >
-                                                            Making Money by Bryan Allan Krauss
-                                                        </div>
+                                                        Allegory of the Pinball by Neil Rhoades and Alyson
+                                                        Stoner-Rhoades
                                                     </div>
-                                                </Slide>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={3}>
-                                                    <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('Lh_QBcA39K0');
-                                                        }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/Lh_QBcA39K0/0.jpg"
-                                                                alt="Georgetown Papers by Kris Brown, Ernest Argyros, Joseph Burchetta & John Flowers"
-                                                            />
-                                                        </div>
-                                                        <div
-                                                            className="desc"
-                                                            style={styles.desc}
-                                                        >
-                                                            Georgetown Papers by Kris Brown, Ernest Argyros, Joseph Burchetta & John Flowers
-                                                        </div>
+                                            <Slide index={5}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('cvNjrJoYIjY');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/cvNjrJoYIjY/0.jpg"
+                                                            alt="Gorgetown by Simone Sweet-Chavez and her parents"
+                                                        />
                                                     </div>
-                                                </Slide>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Gorgetown by Simone Sweet-Chavez and her parents
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={4}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('W1cjdIR7vcw');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/W1cjdIR7vcw/0.jpg"
-                                                                alt="Allegory of the Pinball by Neil Rhoades and Alyson Stoner-Rhoades"
-                                                            />
-                                                        </div>
-                                                        <div
-                                                            className="desc"
-                                                            style={styles.desc}
-                                                        >
-                                                            Allegory of the Pinball by Neil Rhoades and Alyson Stoner-Rhoades
-                                                        </div>
+                                            <Slide index={6}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('dXy72g4D244');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/dXy72g4D244/0.jpg"
+                                                            alt="Private Video"
+                                                        />
                                                     </div>
-                                                </Slide>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Private Video
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={5}>
-                                                    <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('cvNjrJoYIjY');
-                                                        }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/cvNjrJoYIjY/0.jpg"
-                                                                alt="Gorgetown by Simone Sweet-Chavez and her parents"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Gorgetown by Simone Sweet-Chavez and her parents
-                                                        </div>
+                                            <Slide index={7}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div
+                                                    className="vid-item"
+                                                    style={styles.vidItem}
+                                                    onClick={() => {
+                                                        setFilmSRC('-QOghA9qpRY');
+                                                    }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/-QOghA9qpRY/0.jpg"
+                                                            alt="Infinite Push/Pull by Ali Rowenna"
+                                                        />
                                                     </div>
-                                                </Slide>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Infinite Push/Pull by Ali Rowenna
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
 
-                                                <Slide index={6}>
-                                                    <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('dXy72g4D244');
-                                                        }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/dXy72g4D244/0.jpg"
-                                                                alt="Private Video"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Private Video
-                                                        </div>
+                                            <Slide index={8}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div className="vid-item"
+                                                     style={styles.vidItem}
+                                                     onClick={() => {
+                                                         setFilmSRC('CR-gnHw--mc');
+                                                     }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/CR-gnHw--mc/0.jpg"
+                                                            alt="Foreign and Familiar. by Brad Curran"
+                                                        />
                                                     </div>
-                                                </Slide>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Foreign and Familiar. by Brad Curran
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={9}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div className="vid-item"
+                                                     style={styles.vidItem}
+                                                     onClick={() => {
+                                                         setFilmSRC('Hl712CFrnr0');
+                                                     }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/Hl712CFrnr0/0.jpg"
+                                                            alt="Georgetown Roundup by Corinne Arnold & John Colter Arnold"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Georgetown Roundup by Corinne Arnold & John Colter Arnold
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={10}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div className="vid-item"
+                                                     style={styles.vidItem}
+                                                     onClick={() => {
+                                                         setFilmSRC('p0SxtriJVd4');
+                                                     }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/p0SxtriJVd4/0.jpg"
+                                                            alt="Then and Now by Lovelee"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Then and Now by Lovelee
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={11}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div className="vid-item"
+                                                     style={styles.vidItem}
+                                                     onClick={() => {
+                                                         setFilmSRC('QVp30Ic52D8');
+                                                     }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/QVp30Ic52D8/0.jpg"
+                                                            alt="Live and Let Dive by Jordan Pasek"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Live and Let Dive by Jordan Pasek
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={12}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div className="vid-item"
+                                                     style={styles.vidItem}
+                                                     onClick={() => {
+                                                         setFilmSRC('eNS6GyzXqVI');
+                                                     }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/eNS6GyzXqVI/0.jpg"
+                                                            alt="Transportation by Ion Gardescu"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Transportation by Ion Gardescu
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={13}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div className="vid-item"
+                                                     style={styles.vidItem}
+                                                     onClick={() => {
+                                                         setFilmSRC('b4Wj_uDVQmI');
+                                                     }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/b4Wj_uDVQmI/0.jpg"
+                                                            alt="Flora By Mike Poetzel"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Flora By Mike Poetzel
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={14}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div className="vid-item"
+                                                     style={styles.vidItem}
+                                                     onClick={() => {
+                                                         setFilmSRC('bsAjP_1WOrI');
+                                                     }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/bsAjP_1WOrI/0.jpg"
+                                                            alt="Duwamish Valley Youth Corps"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        Duwamish Valley Youth Corps
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                            <Slide index={15}>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                                <div className="vid-item"
+                                                     style={styles.vidItem}
+                                                     onClick={() => {
+                                                         setFilmSRC('XwN4pUY0y-8');
+                                                     }}
+                                                >
+                                                    <div className="thumb" style={styles.thumb}>
+                                                        <Image
+                                                            src="http://img.youtube.com/vi/XwN4pUY0y-8/0.jpg"
+                                                            alt="The Stallion by Laura C Wright"
+                                                        />
+                                                    </div>
+                                                    <div className="desc" style={styles.desc}>
+                                                        The Stallion by Laura C Wright
+                                                    </div>
+                                                </div>
+                                                <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsLast}/>
+                                            </Slide>
+                                        </Slider>
 
-                                                <Slide index={7}>
-                                                    <div
-                                                        className="vid-item"
-                                                        style={styles.vidItem}
-                                                        onClick={()=>{
-                                                            setFilmSRC('-QOghA9qpRY');
-                                                        }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/-QOghA9qpRY/0.jpg"
-                                                                alt="Infinite Push/Pull by Ali Rowenna"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Infinite Push/Pull by Ali Rowenna
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-
-                                                <Slide index={8}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('CR-gnHw--mc');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/CR-gnHw--mc/0.jpg"
-                                                                alt="Foreign and Familiar. by Brad Curran"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Foreign and Familiar. by Brad Curran
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                                <Slide index={9}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('Hl712CFrnr0');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/Hl712CFrnr0/0.jpg"
-                                                                alt="Georgetown Roundup by Corinne Arnold & John Colter Arnold"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Georgetown Roundup by Corinne Arnold & John Colter Arnold
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                                <Slide index={10}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('p0SxtriJVd4');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/p0SxtriJVd4/0.jpg"
-                                                                alt="Then and Now by Lovelee"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Then and Now by Lovelee
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                                <Slide index={11}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('QVp30Ic52D8');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/QVp30Ic52D8/0.jpg"
-                                                                alt="Live and Let Dive by Jordan Pasek"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Live and Let Dive by Jordan Pasek
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                                <Slide index={12}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('eNS6GyzXqVI');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/eNS6GyzXqVI/0.jpg"
-                                                                alt="Transportation by Ion Gardescu"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Transportation by Ion Gardescu
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                                <Slide index={13}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('b4Wj_uDVQmI');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/b4Wj_uDVQmI/0.jpg"
-                                                                alt="Flora By Mike Poetzel"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Flora By Mike Poetzel
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                                <Slide index={14}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('bsAjP_1WOrI');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/bsAjP_1WOrI/0.jpg"
-                                                                alt="Duwamish Valley Youth Corps"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            Duwamish Valley Youth Corps
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                                <Slide index={15}>
-                                                    <div className="vid-item"
-                                                         style={styles.vidItem}
-                                                         onClick={()=>{
-                                                             setFilmSRC('XwN4pUY0y-8');
-                                                         }}
-                                                    >
-                                                        <div className="thumb" style={styles.thumb}>
-                                                            <Image
-                                                                src="http://img.youtube.com/vi/XwN4pUY0y-8/0.jpg"
-                                                                alt="The Stallion by Laura C Wright"
-                                                            />
-                                                        </div>
-                                                        <div className="desc" style={styles.desc}>
-                                                            The Stallion by Laura C Wright
-                                                        </div>
-                                                    </div>
-                                                </Slide>
-                                            </Slider>
-
-                                            <ButtonBack
-                                                className="buttonBack"
-                                                style={styles.buttonBack}
-                                            >
-                                                &#10096;
-                                            </ButtonBack>
-                                            <ButtonNext
-                                                className="buttonNext"
-                                                style={styles.buttonNext}
-                                            >
-                                                &#10097;
-                                            </ButtonNext>
-                                        </div>
-                                    </CarouselProvider>
-                                </div>
+                                        <ButtonBack
+                                            className="buttonBack"
+                                            style={styles.buttonBack}
+                                        >
+                                            &#10096;
+                                        </ButtonBack>
+                                        <ButtonNext
+                                            className="buttonNext"
+                                            style={styles.buttonNext}
+                                        >
+                                            &#10097;
+                                        </ButtonNext>
+                                    </div>
+                                </CarouselProvider>
+                                <br/>
+                            </div>
                         </TabPanel>
                         <TabPanel>
                             {/*2011*/}
@@ -1728,6 +2343,7 @@ class Carousel extends Component {
                 </div>
             </div>
         );
+
     }
 }
 
