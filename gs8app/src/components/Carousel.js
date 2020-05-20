@@ -78,33 +78,33 @@ class Carousel extends Component {
                     <Tabs>
                         <TabList>
                                 <Tab>
-                                    <img src={require("../img/logo2020.png")} height="100" width="124"></img>
+                                    <img src={require("../img/logo2020.png")} height="100" width="124" alt="Tab:"/>
                                     <br/><b>2020</b>
                                 </Tab>
                                 <Tab>
-                                    <img src={require("../img/logo2019.png")} height="100" width="124"></img>
+                                    <img src={require("../img/logo2019.png")} height="100" width="124" alt="Tab:"/>
                                     <br/><b>2019</b>
                                 </Tab>
                                 <Tab >
-                                    <img src={require("../img/logo2011.png")} height="100" width="205"></img>
+                                    <img src={require("../img/logo2011.png")} height="100" width="205"/>
                                     <br/><b>2011</b>
                                 </Tab>
                                 <Tab >
-                                    <img src={require("../img/logo2010.png")} height="100" width="120"></img>
+                                    <img src={require("../img/logo2010.png")} height="100" width="120"/>
                                     <br/><b>2010</b>
                                 </Tab>
                                 <Tab >
-                                    <img src={require("../img/logo2009.png")} height="100" width="120"></img>
+                                    <img src={require("../img/logo2009.png")} height="100" width="120"/>
                                     <br/><b>2009</b>
                                 </Tab>
                                 <Tab >
-                                    <img src={require("../img/logo2008.png")} height="100" width="120"></img>
+                                    <img src={require("../img/logo2008.png")} height="100" width="120"/>
                                     <br/><b>2008</b>
                                 </Tab>
-                                <Tab ><img src={require("../img/logo2007.png")} height="100" width="120"></img>
+                                <Tab ><img src={require("../img/logo2007.png")} height="100" width="120"/>
                                     <br/><b>2007</b>
                                 </Tab>
-                                <Tab ><img src={require("../img/logo2006.png")} height="100" width="120"></img>
+                                <Tab ><img src={require("../img/logo2006.png")} height="100" width="120"/>
                                     <br/><b>2006</b>
                                 </Tab>
                         </TabList>

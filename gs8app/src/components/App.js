@@ -78,7 +78,6 @@ class App extends Component {
     render() {
         return (
             <div style={styles.filmGalleryStyle}>
-                <h1>GS8 Film Gallery</h1>
                 <Carousel year={1942}/>
             </div>
         );
