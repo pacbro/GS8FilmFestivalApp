@@ -18,6 +18,7 @@ class App extends Component {
             year: this.props.tempData.year,
         };
         //this.getData = this.getData.bind(this);
+        this.setYear = this.setYear.bind(this);
     }
     
     componentDidMount() {
@@ -30,7 +31,13 @@ class App extends Component {
         console.log('loadFilmData()');
     }
 
-    
+    setYear = event => {
+        let newYear = parseInt(event.currentTarget.dataset.year);
+        this.setState({
+            year: newYear
+        });
+        console.log('Year set to ' + newYear);
+    }
     //fetchCsv3(csv){
     //    var lines=csv.split("\n");      
     //    var result = [];      
@@ -87,7 +94,7 @@ class App extends Component {
         return (
             <div style={styles.filmGalleryStyle}>
                 <h1>GS8 Film Gallery</h1>
-                <Carousel year={this.state.year} currentVideo={this.state.currentVideo} filmData={this.state.filmData}/>
+                <Carousel year={this.state.year} currentVideo={this.state.currentVideo} filmData={this.state.filmData} setYear={this.setYear}/>
             </div>
         );
     }

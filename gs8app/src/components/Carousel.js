@@ -12,6 +12,7 @@ import {
 } from 'pure-react-carousel';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import Button from '@material-ui/core/Button';
 
 /*
 let filmData = {
@@ -76,16 +77,86 @@ class Carousel extends Component {
                 <div>
                     <Tabs>
                         <TabList>
-                                <Tab>
-                                    <img src="../img/logo2020.png"></img>
-                                </Tab>
-                                <Tab>2019</Tab>
-                                <Tab >2011</Tab>
-                                <Tab >2010</Tab>
-                                <Tab >2009</Tab>
-                                <Tab >2008</Tab>
-                                <Tab >2007</Tab>
-                                <Tab >2006</Tab>
+                            <Tab>
+                                <Button
+                                variant="contained"
+                                color="primary"
+                                data-year='2020'
+                                onClick={this.props.setYear}
+                                >
+                                    2020
+                                </Button>
+                            </Tab>
+                            <Tab>
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    data-year='2019'
+                                    onClick={this.props.setYear}
+                                >
+                                    2019
+                                </Button>
+                            </Tab>
+                            <Tab>
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    data-year='2011'
+                                    onClick={this.props.setYear}
+                                >
+                                    2011
+                                </Button>
+                            </Tab>
+                            <Tab>
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    data-year='2010'
+                                    onClick={this.props.setYear}
+                                >
+                                    2010
+                                </Button>
+                            </Tab>
+                            <Tab>
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    data-year='2009'
+                                    onClick={this.props.setYear}
+                                >
+                                    2009
+                                </Button>
+                            </Tab>
+                            <Tab>
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    data-year='2008'
+                                    onClick={this.props.setYear}
+                                >
+                                    2008
+                                </Button>
+                            </Tab>
+                            <Tab>
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    data-year='2007'
+                                    onClick={this.props.setYear}
+                                >
+                                    2007
+                                </Button>
+                            </Tab>
+                            <Tab>
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    data-year='2006'
+                                    onClick={this.props.setYear}
+                                >
+                                    2006
+                                </Button>
+                            </Tab>
                         </TabList>
 
                         <TabPanel>
@@ -996,8 +1067,8 @@ class Carousel extends Component {
                             </div>
 
                         </TabPanel>
+                        {/*
                         <TabPanel>
-                            {/*2019*/}
                                 <div style={styles.filmGalleryStyle}>
                                     <CarouselProvider
                                         visibleSlides={5.12}
@@ -1678,31 +1749,8 @@ class Carousel extends Component {
                                         </div>
                                     </CarouselProvider>
                                 </div>
-                        </TabPanel>
-                        <TabPanel>
-                            {/*2011*/}
-                            <h2>Coming soon!</h2>
-                        </TabPanel>
-                        <TabPanel>
-                            {/*2010*/}
-                            <h2>Coming soon!</h2>
-                        </TabPanel>
-                        <TabPanel>
-                            {/*2009*/}
-                            <h2>Coming soon!</h2>
-                        </TabPanel>
-                        <TabPanel>
-                            {/*2008*/}
-                            <h2>Coming soon!</h2>
-                        </TabPanel>
-                        <TabPanel>
-                            {/*2007*/}
-                            <h2>Coming soon!</h2>
-                        </TabPanel>
-                        <TabPanel>
-                            {/*2006*/}
-                            <h2>Coming soon!</h2>
-                        </TabPanel>
+                        </TabPanel>                        
+                    */ }
                     </Tabs>
                 </div>
             </div>
@@ -1714,6 +1762,7 @@ Carousel.propTypes = {
     year: PropTypes.number,
     currentVideo: PropTypes.object,
     filmData: PropTypes.array,
+    setYear: PropTypes.func
 };
 
 export default Carousel;
