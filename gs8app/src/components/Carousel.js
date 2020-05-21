@@ -74,57 +74,57 @@ class Carousel extends Component {
                 />
 
                 <div>
+
                     <Tabs>
                         <TabList>
-                            <Tab>
-                                <img src={require("../img/logo2020.png")} height="100" width="124"
-                                     alt="2020 Films Tab"/>
-                                <br/><b>2020</b>
-                            </Tab>
-                            <Tab>
-                                <img src={require("../img/logo2019.png")} height="100" width="124"
-                                     alt="2019 Films Tab"/>
-                                <br/><b>2019</b>
-                            </Tab>
-                            <Tab>
-                                <img src={require("../img/logo2011.png")} height="100" width="205"
-                                     alt="2011 Films Tab"/>
-                                <br/><b>2011</b>
-                            </Tab>
-                            <Tab>
-                                <img src={require("../img/logo2010.png")} height="100" width="120"
-                                     alt="2010 Films Tab"/>
-                                <br/><b>2010</b>
-                            </Tab>
-                            <Tab>
-                                <img src={require("../img/logo2009.png")} height="100" width="120"
-                                     alt="2009 Films Tab"/>
-                                <br/><b>2009</b>
-                            </Tab>
-                            <Tab>
-                                <img src={require("../img/logo2008.png")} height="100" width="120"
-                                     alt="2008 Films Tab"/>
-                                <br/><b>2008</b>
-                            </Tab>
-                            <Tab><img src={require("../img/logo2007.png")} height="100" width="120"
-                                      alt="2007 Films Tab"/>
-                                <br/><b>2007</b>
-                            </Tab>
-                            <Tab><img src={require("../img/logo2006.png")} height="100" width="120"
-                                      alt="2006 Films Tab"/>
-                                <br/><b>2006</b>
-                            </Tab>
+                                <Tab>
+                                    <img src={require("../img/logo2020.png")} height="80" width="86"
+                                         alt="2020 Films Tab"/>
+                                    <br/><b>2020</b>
+                                </Tab>
+                                <Tab>
+                                    <img src={require("../img/logo2019.png")} height="80" width="86"
+                                         alt="2019 Films Tab"/>
+                                    <br/><b>2019</b>
+                                </Tab>
+                                <Tab>
+                                    <img src={require("../img/logo2011.png")} height="80" width="160"
+                                         alt="2011 Films Tab"/>
+                                    <br/><b>2011</b>
+                                </Tab>
+                                <Tab>
+                                    <img src={require("../img/logo2010.png")} height="80" width="82"
+                                         alt="2010 Films Tab"/>
+                                    <br/><b>2010</b>
+                                </Tab>
+                                <Tab>
+                                    <img src={require("../img/logo2009.png")} height="80" width="82"
+                                         alt="2009 Films Tab"/>
+                                    <br/><b>2009</b>
+                                </Tab>
+                                <Tab>
+                                    <img src={require("../img/logo2008.png")} height="80" width="82"
+                                         alt="2008 Films Tab"/>
+                                    <br/><b>2008</b>
+                                </Tab>
+                                <Tab><img src={require("../img/logo2007.png")} height="80" width="82"
+                                          alt="2007 Films Tab"/>
+                                    <br/><b>2007</b>
+                                </Tab>
+                                <Tab><img src={require("../img/logo2006.png")} height="80" width="82"
+                                          alt="2006 Films Tab"/>
+                                    <br/><b>2006</b>
+                                </Tab>
                         </TabList>
-
                         <TabPanel>
                             {/*2020*/}
                             <div style={styles.filmGalleryStyle}>
                                 <CarouselProvider
-                                    visibleSlides={5.12}
+                                    visibleSlides={5}
                                     totalSlides={20}
                                     step={5}
-                                    naturalSlideWidth={425}
-                                    naturalSlideHeight={650}
+                                    naturalSlideWidth={450}
+                                    naturalSlideHeight={800}
                                     hasMasterSpinner
                                 >
                                     <div style={styles.sliderDiv}>
@@ -158,10 +158,10 @@ class Carousel extends Component {
                                                         Figure Man Written by Anthony Thambynayagam
                                                     </div>
                                                 </div>
-                                                <div style={styles.sprocPerfsFirst}/>
-                                                <div style={styles.sprocPerfsMid}/>
-                                                <div style={styles.sprocPerfsMid}/>
-                                                <div style={styles.sprocPerfsLast}/>
+                                                    <div style={styles.sprocPerfsFirst}/>
+                                                    <div style={styles.sprocPerfsMid}/>
+                                                    <div style={styles.sprocPerfsMid}/>
+                                                    <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={1}>
@@ -1368,6 +1368,7 @@ class Carousel extends Component {
                                 </CarouselProvider>
                                 <br/>
                             </div>
+                            <br /> <br />
 
                         </TabPanel>
                         <TabPanel>
@@ -1834,7 +1835,6 @@ class Carousel extends Component {
 
                                 </CarouselProvider>
                                 <br/>
-
                                 <CarouselProvider
                                     visibleSlides={5.12}
                                     totalSlides={16}
