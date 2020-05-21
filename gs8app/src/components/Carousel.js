@@ -10,8 +10,27 @@ import {
     Slide,
     Slider,
 } from 'pure-react-carousel';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { makeStyles } from '@bit/mui-org.material-ui.styles';
+import Paper from '@bit/mui-org.material-ui.paper';
+import Tabs from '@bit/mui-org.material-ui.tabs';
+import Tab from '@bit/mui-org.material-ui.tab';
+
+// const useStyles = makeStyles({
+//     root: {
+//         flexGrow: 1,
+//     },
+// });
+//
+// export default function CenteredTabs() {
+//     const classes = useStyles();
+//     const [value, setValue] = React.useState(0);
+//
+//     const handleChange = (event, newValue) => {
+//         setValue(newValue);
+//     };
+
 
 /*
 let filmData = {
@@ -73,49 +92,55 @@ class Carousel extends Component {
                     webkitallowfullscreen="webkitallowfullscreen"
                 />
 
-                <div>
+                {/*<Paper className={classes.root}>*/}
+                    {/*<Tabs value={value} onChange={handleChange} indicatorColor="primary" textColor="primary" centered>*/}
+                        {/*<Tab label="Item One" />*/}
+                        {/*<Tab label="Item Two" />*/}
+                        {/*<Tab label="Item Three" />*/}
+                    {/*</Tabs>*/}
+                {/*</Paper>*/}
 
-                    <Tabs>
-                        <TabList>
-                                <Tab>
-                                    <img src={require("../img/logo2020.png")} height="80" width="86"
-                                         alt="2020 Films Tab"/>
-                                    <br/><b>2020</b>
-                                </Tab>
-                                <Tab>
-                                    <img src={require("../img/logo2019.png")} height="80" width="86"
-                                         alt="2019 Films Tab"/>
-                                    <br/><b>2019</b>
-                                </Tab>
-                                <Tab>
-                                    <img src={require("../img/logo2011.png")} height="80" width="160"
-                                         alt="2011 Films Tab"/>
-                                    <br/><b>2011</b>
-                                </Tab>
-                                <Tab>
-                                    <img src={require("../img/logo2010.png")} height="80" width="82"
-                                         alt="2010 Films Tab"/>
-                                    <br/><b>2010</b>
-                                </Tab>
-                                <Tab>
-                                    <img src={require("../img/logo2009.png")} height="80" width="82"
-                                         alt="2009 Films Tab"/>
-                                    <br/><b>2009</b>
-                                </Tab>
-                                <Tab>
-                                    <img src={require("../img/logo2008.png")} height="80" width="82"
-                                         alt="2008 Films Tab"/>
-                                    <br/><b>2008</b>
-                                </Tab>
-                                <Tab><img src={require("../img/logo2007.png")} height="80" width="82"
-                                          alt="2007 Films Tab"/>
-                                    <br/><b>2007</b>
-                                </Tab>
-                                <Tab><img src={require("../img/logo2006.png")} height="80" width="82"
-                                          alt="2006 Films Tab"/>
-                                    <br/><b>2006</b>
-                                </Tab>
-                        </TabList>
+                <div>
+                        {/*<TabList>*/}
+                                {/*<Tab>*/}
+                                    {/*<img src={require("../img/logo2020.png")} height="80" width="86"*/}
+                                         {/*alt="2020 Films Tab"/>*/}
+                                    {/*<br/><b>2020</b>*/}
+                                {/*</Tab>*/}
+                                {/*<Tab>*/}
+                                    {/*<img src={require("../img/logo2019.png")} height="80" width="86"*/}
+                                         {/*alt="2019 Films Tab"/>*/}
+                                    {/*<br/><b>2019</b>*/}
+                                {/*</Tab>*/}
+                                {/*<Tab>*/}
+                                    {/*<img src={require("../img/logo2011.png")} height="80" width="160"*/}
+                                         {/*alt="2011 Films Tab"/>*/}
+                                    {/*<br/><b>2011</b>*/}
+                                {/*</Tab>*/}
+                                {/*<Tab>*/}
+                                    {/*<img src={require("../img/logo2010.png")} height="80" width="82"*/}
+                                         {/*alt="2010 Films Tab"/>*/}
+                                    {/*<br/><b>2010</b>*/}
+                                {/*</Tab>*/}
+                                {/*<Tab>*/}
+                                    {/*<img src={require("../img/logo2009.png")} height="80" width="82"*/}
+                                         {/*alt="2009 Films Tab"/>*/}
+                                    {/*<br/><b>2009</b>*/}
+                                {/*</Tab>*/}
+                                {/*<Tab>*/}
+                                    {/*<img src={require("../img/logo2008.png")} height="80" width="82"*/}
+                                         {/*alt="2008 Films Tab"/>*/}
+                                    {/*<br/><b>2008</b>*/}
+                                {/*</Tab>*/}
+                                {/*<Tab><img src={require("../img/logo2007.png")} height="80" width="82"*/}
+                                          {/*alt="2007 Films Tab"/>*/}
+                                    {/*<br/><b>2007</b>*/}
+                                {/*</Tab>*/}
+                                {/*<Tab><img src={require("../img/logo2006.png")} height="80" width="82"*/}
+                                          {/*alt="2006 Films Tab"/>*/}
+                                    {/*<br/><b>2006</b>*/}
+                                {/*</Tab>*/}
+                        {/*</TabList>*/}
                         <TabPanel>
                             {/*2020*/}
                             <div style={styles.filmGalleryStyle}>
@@ -2339,7 +2364,6 @@ class Carousel extends Component {
                             {/*2006*/}
                             <h2>Coming soon!</h2>
                         </TabPanel>
-                    </Tabs>
                 </div>
             </div>
         );
