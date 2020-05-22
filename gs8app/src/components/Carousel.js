@@ -13,14 +13,6 @@ import {
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
-/*
-let filmData = {
-    ytID:'123ABC$%^def',
-    title:'Title goes here!',
-    year:'2020',
-    tags:['First tag', 'Second tag', 'Third tag', 'Fourth tag', 'etc...'],
-};
-*/
 
 let setFilmSRC = (ytID) => {
     window.scrollTo(500, 0);
