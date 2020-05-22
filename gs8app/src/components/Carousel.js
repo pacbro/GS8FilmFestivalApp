@@ -82,7 +82,7 @@ class Carousel extends Component {
                     id="vid_frame"
                     style={styles.vidContainerIframe}
                     title="Georgetown Super 8 Film Archive"
-                    src=""
+                    src="https://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=1&rel=0&showinfo=0&autohide=1"
                     frameBorder="0"
                     width="640"
                     height="480"
