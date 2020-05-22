@@ -82,6 +82,7 @@ class Carousel extends Component {
                 </div>
     */
 
+    //src="https://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=1&rel=0&showinfo=0&autohide=1"
     render() {
         return (
             <div>
@@ -89,7 +90,8 @@ class Carousel extends Component {
                     id="vid_frame"
                     style={styles.vidContainerIframe}
                     title="Georgetown Super 8 Film Archive"
-                    src="https://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=1&rel=0&showinfo=0&autohide=1"
+
+                    src="https://youtu.be/jvq7-b-Ko1g?autoplay=1&rel=0&showinfo=0&autohide=1"
                     frameBorder="0"
                     width="640"
                     height="480"
