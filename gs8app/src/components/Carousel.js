@@ -65,8 +65,12 @@ class Carousel extends Component {
         depends on its size or position.
         */
         //setFilmSRC('jvq7-b-Ko1g');
+        /*
         document.getElementById('vid_frame').src =
             'https://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=1&rel=0&showinfo=0&autohide=1';
+        */
+        document.getElementById('vid_frame').src =
+            'https://youtu.be/jvq7-b-Ko1g?autoplay=1&rel=0&showinfo=0&autohide=1';
         console.log('<< Carousel 01: Mounted successfully >>');
 
     }
