@@ -29,6 +29,7 @@ let setFilmSRC = (ytID) => {
         'https://www.youtube.com/embed/' +
         ytID +
         '?autoplay=1&rel=0&showinfo=0&autohide=1';
+    console.log('Setting ytID: ' + ytID);
 };
 
 class Carousel extends Component {
@@ -63,7 +64,9 @@ class Carousel extends Component {
         and tooltips when you need to measure a DOM node before rendering something that
         depends on its size or position.
         */
-        setFilmSRC('jvq7-b-Ko1g');
+        //setFilmSRC('jvq7-b-Ko1g');
+        document.getElementById('vid_frame').src =
+            'https://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=1&rel=0&showinfo=0&autohide=1';
         console.log('<< Carousel 01: Mounted successfully >>');
 
     }
