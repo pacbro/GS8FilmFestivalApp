@@ -7,14 +7,18 @@ const tempData = {
     },
     filmData: [
         {
-            name: 'film1',
+            name: 'Duwamish Rowing Club Youth Program',
+            by: 'Mike Merta',
             year: '2020',
-            url: 'http://www.youtube.com'
+            img: 'http://img.youtube.com/vi/vQQe83JGuuM/0.jpg',
+            filmSrc: 'vQQe83JGuuM',
         },
         {
-            name: 'film2',
-            year: '2019',
-            url: 'http://www.youtube.com'
+            name: 'Duwamish Rowing Club Youth Program',
+            by: 'Mike Merta',
+            year: '2020',
+            img: 'http://img.youtube.com/vi/vQQe83JGuuM/0.jpg',
+            filmSrc: 'vQQe83JGuuM',
         }
     ]
 };
