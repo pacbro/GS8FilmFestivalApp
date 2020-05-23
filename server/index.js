@@ -14,9 +14,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(bodyParser.json());
 
-console.log('##Launching GS8 server');
+console.log('## Launching GS8 server ##');
 
-db.on('error', console.error.bind(console, 'GS8 DB connection error:'));
+db.on('error', console.error.bind(console, '** GS8 DB connection error:'));
 
 app.get('/', (req, res) => {
     res.send('Hello Worldz!');
@@ -42,4 +42,5 @@ app.get('/donate', (req, res) => {
 
 app.use('/tags', tagsRouter);
 
-app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`));
+//app.listen(apiPort, () => console.log('## Server running on port ${apiPort} ##'));
+app.listen();
