@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+// Remember to remove 'cors' from package.json
 const cors = require('cors');
 
 const db = require('./db');
@@ -9,12 +10,13 @@ const app = express();
 const apiPort = 3001;
 
 app.use(bodyParser.urlencoded({ extended: true }));
+// Remember to remove 'cors' from package.json
 app.use(cors());
 app.use(bodyParser.json());
 
 console.log('##Launching GS8 server');
 
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.on('error', console.error.bind(console, 'GS8 DB connection error:'));
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
