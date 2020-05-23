@@ -4,8 +4,6 @@ import {withRouter} from 'react-router-dom';
 
 /*
 Notes:
-    CSV will be shaped like this:
-        youTubeID,filmTitle,year,[StartTagArray,tag,tag,tag,tag,tag,tag,tag,]EndTagArray,
 
 add   "secure": false,  to package JSON to get proxy local file reader to work
 
@@ -26,16 +24,12 @@ class DataController extends React.Component {
         super(props);
         this.state = {
             data: []
-
-
-
         };
         this.getData = this.getData.bind(this);
     }
 
     componentWillMount() {
-
-
+        
         this.getCsvData();
     }
 
