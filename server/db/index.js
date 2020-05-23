@@ -1,3 +1,4 @@
+// Remember to remove 'mongoose' from package.json
 const mongoose = require('mongoose');
 
 var admin = 'dbAdmin';
@@ -21,6 +22,7 @@ const options = {
     useNewUrlParser: true
 };
 
+// Remember to remove 'mongoose' from package.json
 mongoose.connect(url, options).then(
     () => {
         console.log('##Database connection established!');
@@ -31,5 +33,5 @@ mongoose.connect(url, options).then(
 );
 
 const db = mongoose.connection;
-
+// Remember to remove 'mongoose' from package.json
 module.exports = db;

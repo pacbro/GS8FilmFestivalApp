@@ -29,7 +29,7 @@ class DataController extends React.Component {
     }
 
     componentWillMount() {
-        
+
         this.getCsvData();
     }
 
