@@ -79,7 +79,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/vQQe83JGuuM/0.jpg"
+                                                src="https://img.youtube.com/vi/vQQe83JGuuM/0.jpg"
                                                 alt="Duwamish Rowing Club Youth Program by Mike Merta"
                                             />
                                         </div>
@@ -102,7 +102,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/NCDebzHXmlI/0.jpg"
+                                                src="https://img.youtube.com/vi/NCDebzHXmlI/0.jpg"
                                                 alt="Le Pickle by Anthony Thambynayagam"
                                             />
                                         </div>
@@ -125,7 +125,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/HgZedpzdwio/0.jpg"
+                                                src="https://img.youtube.com/vi/HgZedpzdwio/0.jpg"
                                                 alt="Crud, Rats & Beyond by Robert Daniels, Alison Zerbe, Josh Pollock, Brian Wisniewski, Aaron Rommel"
                                             />
                                         </div>
@@ -148,7 +148,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/UH1sZFRjriY/0.jpg"
+                                                src="https://img.youtube.com/vi/UH1sZFRjriY/0.jpg"
                                                 alt="WAKE UP by The Jam Squad"
                                             />
                                         </div>
@@ -170,7 +170,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/s1neAAjvEzg/0.jpg"
+                                                src="https://img.youtube.com/vi/s1neAAjvEzg/0.jpg"
                                                 alt="Jellybean the Sidecar Queen by Peter Reiquam"
                                             />
                                         </div>
@@ -193,7 +193,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/XINjL0jPDQ4/0.jpg"
+                                                src="https://img.youtube.com/vi/XINjL0jPDQ4/0.jpg"
                                                 alt="Alert by Ahmad White"
                                             />
                                         </div>
@@ -213,7 +213,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/qZpTOJAyrNk/0.jpg"
+                                                src="https://img.youtube.com/vi/qZpTOJAyrNk/0.jpg"
                                                 alt="Alien Gas Mask Robot by Grant Crawford"
                                             />
                                         </div>
@@ -233,7 +233,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/_ZnM5wUJzB4/0.jpg"
+                                                src="https://img.youtube.com/vi/_ZnM5wUJzB4/0.jpg"
                                                 alt="Time to Spare by Katie Lewis & Reid Priewe"
                                             />
                                         </div>
@@ -252,7 +252,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/mdDlc-DaIq8/0.jpg"
+                                                src="https://img.youtube.com/vi/mdDlc-DaIq8/0.jpg"
                                                 alt="Birth of a Libation II: Who’s Yer Mama by Amee Shepard"
                                             />
                                         </div>
@@ -270,7 +270,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/FjjK5Nt-WJk/0.jpg"
+                                                src="https://img.youtube.com/vi/FjjK5Nt-WJk/0.jpg"
                                                 alt="Masters of the Universe of Guitars, Dogs, Hats, and Boots by Adam Walker"
                                             />
                                         </div>
@@ -288,7 +288,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/EB_4uAI2gzg/0.jpg"
+                                                src="https://img.youtube.com/vi/EB_4uAI2gzg/0.jpg"
                                                 alt="PNW Grrrls by Madison Holup"
                                             />
                                         </div>
@@ -306,7 +306,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/DReXr6rvscE/0.jpg"
+                                                src="https://img.youtube.com/vi/DReXr6rvscE/0.jpg"
                                                 alt="The Life and Times of Mr. Plumbean by Jake and Emmett Bookwalter"
                                             />
                                         </div>
@@ -324,7 +324,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/Q00LdMynhkc/0.jpg"
+                                                src="https://img.youtube.com/vi/Q00LdMynhkc/0.jpg"
                                                 alt="The Only Cure for Love by Ella E. Anderson, Alexzandyr Biernat"
                                             />
                                         </div>
@@ -342,7 +342,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/j4RPub-XlCw/0.jpg"
+                                                src="https://img.youtube.com/vi/j4RPub-XlCw/0.jpg"
                                                 alt="Iron Rising By Kasey Williams"
                                             />
                                         </div>
@@ -360,7 +360,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/2qERqHa8HHg/0.jpg"
+                                                src="https://img.youtube.com/vi/2qERqHa8HHg/0.jpg"
                                                 alt="PINLAND EMPIRE by Kevin Coulton"
                                             />
                                         </div>
@@ -410,7 +410,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/prUpHa0XyIw/0.jpg"
+                                                src="https://img.youtube.com/vi/prUpHa0XyIw/0.jpg"
                                                 alt="SUPER NATURAL by Wittman Estes Architecture + Landscape"
                                             />
                                         </div>
@@ -433,7 +433,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/6VJG2Jb5JmA/0.jpg"
+                                                src="https://img.youtube.com/vi/6VJG2Jb5JmA/0.jpg"
                                                 alt="deadalive by Tammy Martin"
                                             />
                                         </div>
@@ -456,7 +456,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/TGQFcohx5SA/0.jpg"
+                                                src="https://img.youtube.com/vi/TGQFcohx5SA/0.jpg"
                                                 alt="Making Money by Bryan Allan Krauss"
                                             />
                                         </div>
@@ -479,7 +479,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/Lh_QBcA39K0/0.jpg"
+                                                src="https://img.youtube.com/vi/Lh_QBcA39K0/0.jpg"
                                                 alt="Georgetown Papers by Kris Brown, Ernest Argyros, Joseph Burchetta & John Flowers"
                                             />
                                         </div>
@@ -501,7 +501,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/W1cjdIR7vcw/0.jpg"
+                                                src="https://img.youtube.com/vi/W1cjdIR7vcw/0.jpg"
                                                 alt="Allegory of the Pinball by Neil Rhoades and Alyson Stoner-Rhoades"
                                             />
                                         </div>
@@ -524,7 +524,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/cvNjrJoYIjY/0.jpg"
+                                                src="https://img.youtube.com/vi/cvNjrJoYIjY/0.jpg"
                                                 alt="Gorgetown by Simone Sweet-Chavez and her parents"
                                             />
                                         </div>
@@ -544,7 +544,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/dXy72g4D244/0.jpg"
+                                                src="https://img.youtube.com/vi/dXy72g4D244/0.jpg"
                                                 alt="Private Video"
                                             />
                                         </div>
@@ -564,7 +564,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/-QOghA9qpRY/0.jpg"
+                                                src="https://img.youtube.com/vi/-QOghA9qpRY/0.jpg"
                                                 alt="Infinite Push/Pull by Ali Rowenna"
                                             />
                                         </div>
@@ -583,7 +583,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/CR-gnHw--mc/0.jpg"
+                                                src="https://img.youtube.com/vi/CR-gnHw--mc/0.jpg"
                                                 alt="Foreign and Familiar. by Brad Curran"
                                             />
                                         </div>
@@ -601,7 +601,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/Hl712CFrnr0/0.jpg"
+                                                src="https://img.youtube.com/vi/Hl712CFrnr0/0.jpg"
                                                 alt="Georgetown Roundup by Corinne Arnold & John Colter Arnold"
                                             />
                                         </div>
@@ -619,7 +619,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/p0SxtriJVd4/0.jpg"
+                                                src="https://img.youtube.com/vi/p0SxtriJVd4/0.jpg"
                                                 alt="Then and Now by Lovelee"
                                             />
                                         </div>
@@ -637,7 +637,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/QVp30Ic52D8/0.jpg"
+                                                src="https://img.youtube.com/vi/QVp30Ic52D8/0.jpg"
                                                 alt="Live and Let Dive by Jordan Pasek"
                                             />
                                         </div>
@@ -655,7 +655,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/eNS6GyzXqVI/0.jpg"
+                                                src="https://img.youtube.com/vi/eNS6GyzXqVI/0.jpg"
                                                 alt="Transportation by Ion Gardescu"
                                             />
                                         </div>
@@ -673,7 +673,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/b4Wj_uDVQmI/0.jpg"
+                                                src="https://img.youtube.com/vi/b4Wj_uDVQmI/0.jpg"
                                                 alt="Flora By Mike Poetzel"
                                             />
                                         </div>
@@ -691,7 +691,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/bsAjP_1WOrI/0.jpg"
+                                                src="https://img.youtube.com/vi/bsAjP_1WOrI/0.jpg"
                                                 alt="Duwamish Valley Youth Corps"
                                             />
                                         </div>
@@ -709,7 +709,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/XwN4pUY0y-8/0.jpg"
+                                                src="https://img.youtube.com/vi/XwN4pUY0y-8/0.jpg"
                                                 alt="The Stallion by Laura C Wright"
                                             />
                                         </div>
@@ -761,7 +761,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/vQQe83JGuuM/0.jpg"
+                                                src="https://img.youtube.com/vi/vQQe83JGuuM/0.jpg"
                                                 alt="Duwamish Rowing Club Youth Program by Mike Merta"
                                             />
                                         </div>
@@ -792,7 +792,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/NCDebzHXmlI/0.jpg"
+                                                src="https://img.youtube.com/vi/NCDebzHXmlI/0.jpg"
                                                 alt="Le Pickle by Anthony Thambynayagam"
                                             />
                                         </div>
@@ -823,7 +823,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/HgZedpzdwio/0.jpg"
+                                                src="https://img.youtube.com/vi/HgZedpzdwio/0.jpg"
                                                 alt="Crud, Rats & Beyond by Robert Daniels, Alison Zerbe, Josh Pollock, Brian Wisniewski, Aaron Rommel"
                                             />
                                         </div>
@@ -854,7 +854,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/UH1sZFRjriY/0.jpg"
+                                                src="https://img.youtube.com/vi/UH1sZFRjriY/0.jpg"
                                                 alt="WAKE UP by The Jam Squad"
                                             />
                                         </div>
@@ -884,7 +884,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/s1neAAjvEzg/0.jpg"
+                                                src="https://img.youtube.com/vi/s1neAAjvEzg/0.jpg"
                                                 alt="Jellybean the Sidecar Queen by Peter Reiquam"
                                             />
                                         </div>
@@ -915,7 +915,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/XINjL0jPDQ4/0.jpg"
+                                                src="https://img.youtube.com/vi/XINjL0jPDQ4/0.jpg"
                                                 alt="Alert by Ahmad White"
                                             />
                                         </div>
@@ -943,7 +943,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/qZpTOJAyrNk/0.jpg"
+                                                src="https://img.youtube.com/vi/qZpTOJAyrNk/0.jpg"
                                                 alt="Alien Gas Mask Robot by Grant Crawford"
                                             />
                                         </div>
@@ -971,7 +971,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/_ZnM5wUJzB4/0.jpg"
+                                                src="https://img.youtube.com/vi/_ZnM5wUJzB4/0.jpg"
                                                 alt="Time to Spare by Katie Lewis & Reid Priewe"
                                             />
                                         </div>
@@ -998,7 +998,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/mdDlc-DaIq8/0.jpg"
+                                                src="https://img.youtube.com/vi/mdDlc-DaIq8/0.jpg"
                                                 alt="Birth of a Libation II: Who’s Yer Mama by Amee Shepard"
                                             />
                                         </div>
@@ -1024,7 +1024,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/FjjK5Nt-WJk/0.jpg"
+                                                src="https://img.youtube.com/vi/FjjK5Nt-WJk/0.jpg"
                                                 alt="Masters of the Universe of Guitars, Dogs, Hats, and Boots by Adam Walker"
                                             />
                                         </div>
@@ -1050,7 +1050,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/EB_4uAI2gzg/0.jpg"
+                                                src="https://img.youtube.com/vi/EB_4uAI2gzg/0.jpg"
                                                 alt="PNW Grrrls by Madison Holup"
                                             />
                                         </div>
@@ -1076,7 +1076,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/DReXr6rvscE/0.jpg"
+                                                src="https://img.youtube.com/vi/DReXr6rvscE/0.jpg"
                                                 alt="The Life and Times of Mr. Plumbean by Jake and Emmett Bookwalter"
                                             />
                                         </div>
@@ -1102,7 +1102,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/Q00LdMynhkc/0.jpg"
+                                                src="https://img.youtube.com/vi/Q00LdMynhkc/0.jpg"
                                                 alt="The Only Cure for Love by Ella E. Anderson, Alexzandyr Biernat"
                                             />
                                         </div>
@@ -1128,7 +1128,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/j4RPub-XlCw/0.jpg"
+                                                src="https://img.youtube.com/vi/j4RPub-XlCw/0.jpg"
                                                 alt="Iron Rising By Kasey Williams"
                                             />
                                         </div>
@@ -1154,7 +1154,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/2qERqHa8HHg/0.jpg"
+                                                src="https://img.youtube.com/vi/2qERqHa8HHg/0.jpg"
                                                 alt="PINLAND EMPIRE by Kevin Coulton"
                                             />
                                         </div>
@@ -1182,7 +1182,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/prUpHa0XyIw/0.jpg"
+                                                src="https://img.youtube.com/vi/prUpHa0XyIw/0.jpg"
                                                 alt="SUPER NATURAL by Wittman Estes Architecture + Landscape"
                                             />
                                         </div>
@@ -1210,7 +1210,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/6VJG2Jb5JmA/0.jpg"
+                                                src="https://img.youtube.com/vi/6VJG2Jb5JmA/0.jpg"
                                                 alt="deadalive by Tammy Martin"
                                             />
                                         </div>
@@ -1233,7 +1233,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/TGQFcohx5SA/0.jpg"
+                                                src="https://img.youtube.com/vi/TGQFcohx5SA/0.jpg"
                                                 alt="Making Money by Bryan Allan Krauss"
                                             />
                                         </div>
@@ -1256,7 +1256,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/Lh_QBcA39K0/0.jpg"
+                                                src="https://img.youtube.com/vi/Lh_QBcA39K0/0.jpg"
                                                 alt="Georgetown Papers by Kris Brown, Ernest Argyros, Joseph Burchetta & John Flowers"
                                             />
                                         </div>
@@ -1278,7 +1278,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/W1cjdIR7vcw/0.jpg"
+                                                src="https://img.youtube.com/vi/W1cjdIR7vcw/0.jpg"
                                                 alt="Allegory of the Pinball by Neil Rhoades and Alyson Stoner-Rhoades"
                                             />
                                         </div>
@@ -1301,7 +1301,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/cvNjrJoYIjY/0.jpg"
+                                                src="https://img.youtube.com/vi/cvNjrJoYIjY/0.jpg"
                                                 alt="Gorgetown by Simone Sweet-Chavez and her parents"
                                             />
                                         </div>
@@ -1321,7 +1321,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/dXy72g4D244/0.jpg"
+                                                src="https://img.youtube.com/vi/dXy72g4D244/0.jpg"
                                                 alt="Private Video"
                                             />
                                         </div>
@@ -1341,7 +1341,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/-QOghA9qpRY/0.jpg"
+                                                src="https://img.youtube.com/vi/-QOghA9qpRY/0.jpg"
                                                 alt="Infinite Push/Pull by Ali Rowenna"
                                             />
                                         </div>
@@ -1360,7 +1360,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/CR-gnHw--mc/0.jpg"
+                                                src="https://img.youtube.com/vi/CR-gnHw--mc/0.jpg"
                                                 alt="Foreign and Familiar. by Brad Curran"
                                             />
                                         </div>
@@ -1378,7 +1378,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/Hl712CFrnr0/0.jpg"
+                                                src="https://img.youtube.com/vi/Hl712CFrnr0/0.jpg"
                                                 alt="Georgetown Roundup by Corinne Arnold & John Colter Arnold"
                                             />
                                         </div>
@@ -1396,7 +1396,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/p0SxtriJVd4/0.jpg"
+                                                src="https://img.youtube.com/vi/p0SxtriJVd4/0.jpg"
                                                 alt="Then and Now by Lovelee"
                                             />
                                         </div>
@@ -1414,7 +1414,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/QVp30Ic52D8/0.jpg"
+                                                src="https://img.youtube.com/vi/QVp30Ic52D8/0.jpg"
                                                 alt="Live and Let Dive by Jordan Pasek"
                                             />
                                         </div>
@@ -1432,7 +1432,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/eNS6GyzXqVI/0.jpg"
+                                                src="https://img.youtube.com/vi/eNS6GyzXqVI/0.jpg"
                                                 alt="Transportation by Ion Gardescu"
                                             />
                                         </div>
@@ -1450,7 +1450,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/b4Wj_uDVQmI/0.jpg"
+                                                src="https://img.youtube.com/vi/b4Wj_uDVQmI/0.jpg"
                                                 alt="Flora By Mike Poetzel"
                                             />
                                         </div>
@@ -1468,7 +1468,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/bsAjP_1WOrI/0.jpg"
+                                                src="https://img.youtube.com/vi/bsAjP_1WOrI/0.jpg"
                                                 alt="Duwamish Valley Youth Corps"
                                             />
                                         </div>
@@ -1486,7 +1486,7 @@ class Carousel_2019 extends Component {
                                     >
                                         <div className="thumb" style={styles.thumb}>
                                             <Image
-                                                src="http://img.youtube.com/vi/XwN4pUY0y-8/0.jpg"
+                                                src="https://img.youtube.com/vi/XwN4pUY0y-8/0.jpg"
                                                 alt="The Stallion by Laura C Wright"
                                             />
                                         </div>
