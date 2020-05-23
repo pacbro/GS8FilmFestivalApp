@@ -7,7 +7,7 @@ const db = require('./db');
 const tagsRouter = require('./routes/tags-router');
 
 const app = express();
-const apiPort = 3001;
+const apiPort = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 // Remember to remove 'cors' from package.json
@@ -19,7 +19,7 @@ console.log('##Launching GS8 server');
 db.on('error', console.error.bind(console, 'GS8 DB connection error:'));
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Hello Worldz!');
 });
 
 app.get('/contact', (req, res) => {
