@@ -1,4 +1,4 @@
-/*
+
 const express = require('express');
 const bodyParser = require('body-parser');
 // Remember to remove 'cors' from package.json
@@ -8,7 +8,8 @@ const db = require('./db');
 const tagsRouter = require('./routes/tags-router');
 
 const app = express();
-const apiPort = 3000;
+//const apiPort = 3000;
+const apiPort = 80;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 // Remember to remove 'cors' from package.json
@@ -34,8 +35,9 @@ app.get('/subscribe', (req, res) => {
 
 app.use('/tags', tagsRouter);
 app.listen(apiPort, () => console.log('## Server running on port ${apiPort} ##'));
-*/
 
+
+/*
 //////////////////////////////////////////////////////////////////
 // this version of server code is for testing basic funvtionality.
 const express = require('express');
@@ -55,4 +57,4 @@ app.get('/FilmArchiveSrv', (req, res) => {
 app.listen();
 // this version of server code is for testing basic funvtionality.
 //////////////////////////////////////////////////////////////////
-
+*/
