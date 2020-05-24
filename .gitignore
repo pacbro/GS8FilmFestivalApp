@@ -14,7 +14,7 @@
 # misc
 /.idea
 /idea
-
+/.vs
 /vs
 .DS_Store
 .env.local
@@ -26,17 +26,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
-<<<<<<< HEAD
 # API Keys
-youTubeAPIkey.js
-/youTubeAPIkey.js
-youTubeOauthKey.js
-/youTubeOauthKey.js
-=======
-API Keys
 youTubeOauthKey.js
 /youTubeOauthKey.js
 youTubeAPIkey.js
 /youTubeAPIkey.js
->>>>>>> joseph-carousel
+
