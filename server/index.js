@@ -21,7 +21,7 @@ console.log('## Launching GS8 server ##');
 db.on('error', console.error.bind(console, '** GS8 DB connection error:'));
 
 app.get('/FilmArchiveSrv', (req, res) => {
-    res.send('Hello Worldz! - GS8/FilmArchiveSrv.');
+    res.send('Hello Worldz! - GS8/FilmArchiveSrv..');
 });
 
 //app.get('/contact', (req, res) => {res.send('Hello World!');});
@@ -31,8 +31,8 @@ app.get('/FilmArchiveSrv', (req, res) => {
 //app.get('/donate', (req, res) => {res.send('Hello World!')})
 //app.use('/tags', tagsRouter);
 
-//app.listen(apiPort, () => console.log('## Server running on port ${apiPort} ##'));
-app.listen(() => console.log('## GS8 Server is now running ##'));
+app.listen(apiPort, () => console.log('## Server running on port ${apiPort} ##'));
+//app.listen(() => console.log('## GS8 Server is now running ##'));
 
 
 
