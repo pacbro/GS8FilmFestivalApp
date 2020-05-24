@@ -20,8 +20,21 @@ class App extends Component {
     
     componentDidMount() {
         console.log('app-didMount');
+        this.callServer()
+            .then(res => console.log({ data: res.express }))
+            .castch(err => console.log(err));
         this.getCsvData();
     }
+
+    callServer = async () => {
+        const response = await fetch('http://www.georgetownsuper8.org:5000/hello');
+        const body = await response.json();
+        if (response.status !== 200) {
+            throw Error(body.message)
+        }
+        //console.log(body);
+        return body;
+    };
     
     fetchCsv3(csv){
         var lines=csv.split("\n");      

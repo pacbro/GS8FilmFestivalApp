@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\gs8app",
     "\\gs8app\\src",
-    "\\gs8app\\src\\components"
+    "\\gs8app\\src\\components",
+    "\\server"
   ],
-  "SelectedNode": "\\gs8app\\src\\components\\App.js",
+  "SelectedNode": "\\server\\index.js",
   "PreviewInSolutionExplorer": false
 }
