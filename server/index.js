@@ -8,8 +8,8 @@ const db = require('./db');
 const tagsRouter = require('./routes/tags-router');
 
 const app = express();
-//const apiPort = 3000;
-const apiPort = 80;
+const apiPort = 3000;
+//const apiPort = 80;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 // Remember to remove 'cors' from package.json
