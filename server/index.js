@@ -20,12 +20,10 @@ app.use('/FilmArchiveSrv/static', express.static('public'));
 console.log('## Launching GS8 server ##');
 db.on('error', console.error.bind(console, '** GS8 DB connection error:'));
 
-app.get('/', (req, res) => {
-    res.send('Hello Worldz! - GS8/');
-});
 app.get('/FilmArchiveSrv', (req, res) => {
     res.send('Hello Worldz! - GS8/FilmArchiveSrv');
 });
+
 //app.get('/contact', (req, res) => {res.send('Hello World!');});
 //app.get('/subscribe', (req, res) => {res.send('Hello World!');});
 // to be handled by other sources
@@ -37,9 +35,11 @@ app.get('/FilmArchiveSrv', (req, res) => {
 app.listen(() => console.log('## GS8 Server is now running ##'));
 
 
+
+
 /*
 //////////////////////////////////////////////////////////////////
-// This version of server code is for testing basic funvtionality.
+// This version of server code is for testing basic functionality.
 const express = require('express');
 const app = express();
 const path = require('path');
