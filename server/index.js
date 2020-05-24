@@ -48,9 +48,6 @@ app.use('/FilmArchiveSrv/static', express.static('public'));
 
 console.log('## Launching GS8 server ##');
 
-app.get('/', (req, res) => {
-    res.send('Hello Worldz! - /');
-});
 app.get('/FilmArchiveSrv', (req, res) => {
     res.send('Hello Worldz! - FAS');
 });
