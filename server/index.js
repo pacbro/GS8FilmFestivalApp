@@ -34,12 +34,13 @@ app.get('/subscribe', (req, res) => {
 //app.get('/donate', (req, res) => {res.send('Hello World!')})
 
 app.use('/tags', tagsRouter);
-app.listen(apiPort, () => console.log('## Server running on port ${apiPort} ##'));
+//app.listen(apiPort, () => console.log('## Server running on port ${apiPort} ##'));
+app.listen(() => console.log('## GS8 Server is now running ##'));
 
 
 /*
 //////////////////////////////////////////////////////////////////
-// this version of server code is for testing basic funvtionality.
+// This version of server code is for testing basic funvtionality.
 const express = require('express');
 const app = express();
 const path = require('path');
