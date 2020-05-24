@@ -29,7 +29,7 @@ app.get('/FilmArchiveSrv', (req, res) => {
 //app.get('/donate', (req, res) => {res.send('Hello World!')})
 //app.use('/tags', tagsRouter);
 
-app.listen(apiPort, () => console.log('## GS8/FilmArchiveSrv running on port ${apiPort} ##'));
+app.listen(apiPort, () => console.log(`## GS8/FilmArchiveSrv running on port ${apiPort} ##`));
 
 
 
