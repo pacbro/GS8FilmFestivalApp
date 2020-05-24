@@ -74,12 +74,23 @@ class App extends Component {
        }
     }
 
+    getYear() {
+        var d = new Date();
+
+        return d.getFullYear();
+    }
+
+
     
     render() {
         return (
             <div style={styles.filmGalleryStyle}>
                 <Carousel year={1942}/>
+                <footer>
+                    <small>&copy; Copyright {this.getYear()}, GS8 Bellevue College Dev Team. All Rights Reserved</small>
+                </footer>
             </div>
+
         );
     }
 }
