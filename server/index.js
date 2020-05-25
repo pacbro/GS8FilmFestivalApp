@@ -29,7 +29,7 @@ console.log('## Launching GS8 server ##');
 
 app.listen(apiPort, () => console.log('## GS8/FilmArchiveSrv running on port ${' + apiPort + '} ##'));
 
-app.get('/FilmArchiveSrv/Hello', (req, res) => {
+app.get('/hello', (req, res) => {
     //res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
     //console.log('hello!');
     res.send('Hello');
