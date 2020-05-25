@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 //const tagsRouter = require('./routes/tags-router');
 
 const app = express();
-const apiPort = process.env.PORT || 3000;
+const apiPort = process.env.PORT || 30000;
 //const apiPort = 80;
 
 if (process.env.NODE_ENV === "production") {
@@ -23,14 +23,13 @@ app.use((req, res, next) => {
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
-// Remember to remove 'cors' from package.json
 app.use(bodyParser.json());
 
 console.log('## Launching GS8 server ##');
 
-app.listen(apiPort, () => console.log('## GS8/FilmArchiveSrv running on port ${'+apiPort+'} ##'));
+app.listen(apiPort, () => console.log('## GS8/FilmArchiveSrv running on port ${' + apiPort + '} ##'));
 
-app.get('/hello', (req, res) => {
+app.get('/Hello', (req, res) => {
     res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
     console.log('hello!');
 });
