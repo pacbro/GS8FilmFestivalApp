@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const db = require('./db');
-const tagsRouter = require('./routes/tags-router');
+//const tagsRouter = require('./routes/tags-router');
 
 const app = express();
 const apiPort = process.env.PORT || 3000;
@@ -12,9 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 console.log('## Launching GS8 server ##');
-db.on('error', console.error.bind(console, '** GS8 DB connection error:'));
 
-app.listen(apiPort, () => console.log('## GS8/FilmArchiveSrv running on port ${apiPort} ##'));
+app.listen(apiPort, () => console.log('## GS8/FilmArchiveSrv running on port ${'+apiPort+'} ##'));
 
 app.get('/hello', (req, res) => {
     res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
