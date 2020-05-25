@@ -19,6 +19,10 @@ app.get('/hello', (req, res) => {
     res.send('Hello');
 });
 
+app.get('/FilmArchiveSrv/hello', (req, res) => {
+    res.send('Hello');
+});
+
 app.get('/FilmArchiveSrv', (req, res) => {
     res.send('Hello Worldz! - GS8/FilmArchiveSrv');
 });
