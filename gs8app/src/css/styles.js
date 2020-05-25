@@ -10,10 +10,10 @@ const filmGalleryStyle = {
     color: 'white',
 };
 const cardStyle = {
-    width: '46em',
+    width: '50em',
     textAlign: 'center',
     padding: '25px',
-    margine: '25px'
+    margin: '25px'
 };
 const titleStyle = {
     fontWeight: 'bold',
@@ -28,7 +28,7 @@ const pStyle = {
 const divButtonStyle = {
     textAlign: 'center',
     padding: '25px',
-    margine: '25px'
+    margin: '25px'
 };
 const socMed = {
     fontSize: '50px',
@@ -53,9 +53,9 @@ const vidItem = {
     display: 'block',
     background: 'rgb(255,255,255)',
     //width: '148px',
-    width: '9em',
+    width: '10em',
     //height: '178px',
-    height: '11em',
+    height: '12em',
     float: 'left',
     padding: '.3em',
     border: '1px',
@@ -119,8 +119,8 @@ const sprocPerfsLast = {
 const sliderDiv = {
     position: 'relative',
     //width: '700px',
-    width: '51.8em',
-    height: '14.7em',
+    width: '52.8em',
+    height: '16em',
     margin: 'auto',
     background: 'rgb(0,0,0)',
     padding: '0px 7px 0px 7px',
@@ -129,8 +129,10 @@ const sliderDiv = {
     borderColor: 'LightGrey',
 };
 const desc = {
-    color: '#21A1D2',
-    fontSize: '14',
+    color: 'black',
+    fontSize: '14px',
+    fontWeight: 'bold',
+    fontFamily: 'American Typewriter'
     //marginTop:'5px',
 };
 
@@ -172,13 +174,6 @@ const buttonNext = {
     width: '1.4em',
 };
 
-
-
-const tabs = {
-    height: '2.6em',
-    width: '2.6em',
-};
-
 const Styles = {
     parentDivStyle,
     filmGalleryStyle,
@@ -198,7 +193,6 @@ const Styles = {
     vidItem,
     desc,
     sliderDiv,
-    tabs
 };
 
 export default Styles;
