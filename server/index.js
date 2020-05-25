@@ -9,7 +9,6 @@ const apiPort = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 // Remember to remove 'cors' from package.json
-app.use(cors());
 app.use(bodyParser.json());
 
 console.log('## Launching GS8 server ##');
