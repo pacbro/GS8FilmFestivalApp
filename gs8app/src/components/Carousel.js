@@ -1507,6 +1507,7 @@ class Carousel extends Component {
                                                 <div style={styles.sprocPerfsFirst}></div>
                                                 <div style={styles.sprocPerfsMid}></div>
                                                 <div style={styles.sprocPerfsMid}></div>
+                                                <div style={styles.sprocPerfsMid}></div>
                                                 <div style={styles.sprocPerfsLast}/>
                                                 <div
                                                     className="vid-item"
