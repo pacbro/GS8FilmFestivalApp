@@ -191,6 +191,7 @@ const Styles = {
     nextBackDiv,
     logos,
     logo2011,
+    filmLoadingBkg,
 };
 
 export default Styles;
