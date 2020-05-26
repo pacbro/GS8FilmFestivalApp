@@ -107,11 +107,13 @@ class Carousel extends Component {
                                          alt="2008 Films Tab"/>
                                     <br/><b>2008</b>
                                 </Tab>
-                                <Tab><img src={require("../img/logo2007.png")} height="80" width="82"
+                                <Tab>
+                                    <img src={require("../img/logo2007.png")} height="80" width="82"
                                           alt="2007 Films Tab"/>
                                     <br/><b>2007</b>
                                 </Tab>
-                                <Tab><img src={require("../img/logo2006.png")} height="80" width="82"
+                                <Tab>
+                                    <img src={require("../img/logo2006.png")} height="80" width="82"
                                           alt="2006 Films Tab"/>
                                     <br/><b>2006</b>
                                 </Tab>
@@ -246,7 +248,7 @@ class Carousel extends Component {
                                                         />
                                                     </div>
                                                     <div
-                                                        className="desc"
+
                                                         style={styles.desc}
                                                     >
                                                         Chasing Terrence by Terrence Wynder Kevin Drury Kris Brown &
