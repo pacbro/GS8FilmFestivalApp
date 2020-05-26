@@ -92,32 +92,46 @@ class Carousel extends Component {
                                     </div>
                                 </Tab>
                                 <Tab>
-                                    <img src={require("../img/2011_logo.png")} height="80" width="160"
-                                         alt="2011 Films Tab"/>
-                                    <br/><b>2011</b>
+                                    <div style={styles.logo2011}>
+                                        <img src={require("../img/2011_logo.png")} height="80" width="160"
+                                             alt="2011 Films Tab"/>
+                                        <br/><b>2011</b>
+                                    </div>
                                 </Tab>
                                 <Tab>
+                                    <div style={styles.logos}>
                                     <img src={require("../img/2010_logo.png")} height="80" width="82"
                                          alt="2010 Films Tab"/>
                                     <br/><b>2010</b>
+                                    </div>
                                 </Tab>
                                 <Tab>
-                                    <img src={require("../img/2009_logo.png")} height="80" width="82"
-                                         alt="2009 Films Tab"/>
-                                    <br/><b>2009</b>
+                                    <div style={styles.logos}>
+                                        <img src={require("../img/2009_logo.png")} height="80" width="82"
+                                             alt="2009 Films Tab"/>
+                                        <br/><b>2009</b>
+                                    </div>
                                 </Tab>
                                 <Tab>
-                                    <img src={require("../img/2008_logo.png")} height="80" width="82"
-                                         alt="2008 Films Tab"/>
-                                    <br/><b>2008</b>
+                                    <div style={styles.logos}>
+                                        <img src={require("../img/2008_logo.png")} height="80" width="82"
+                                             alt="2008 Films Tab"/>
+                                        <br/><b>2008</b>
+                                    </div>
                                 </Tab>
-                                <Tab><img src={require("../img/2007_logo.png")} height="80" width="82"
-                                          alt="2007 Films Tab"/>
-                                    <br/><b>2007</b>
+                                <Tab>
+                                    <div style={styles.logos}>
+                                        <img src={require("../img/2007_logo.png")} height="80" width="82"
+                                              alt="2007 Films Tab"/>
+                                        <br/><b>2007</b>
+                                    </div>
                                 </Tab>
-                                <Tab><img src={require("../img/2006_logo.png")} height="80" width="82"
+                                <Tab>
+                                    <div style={styles.logos}>
+                                        <img src={require("../img/2006_logo.png")} height="80" width="82"
                                           alt="2006 Films Tab"/>
-                                    <br/><b>2006</b>
+                                        <br/><b>2006</b>
+                                    </div>
                                 </Tab>
                         </TabList>
                         <TabPanel>
