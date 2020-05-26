@@ -1,9 +1,11 @@
 const filmGalleryStyle = {
     textAlign: 'center',
+
     display: 'inline-block',
     //background: 'rgb(0,0,0)',
     color: 'white',
 };
+
 const vidContainerIframe = {
     position: 'relative',
     align: 'center',
@@ -66,6 +68,22 @@ const testTextDiv = {
     overflowWrap: 'break-word',
     wordWrap: 'break-word',
 };
+const thumb = {
+    //overflow:'hidden',
+    height: '110px',
+    //width: '120px',
+    //margin: 'auto',
+    //top: '-10',
+    //right: 0,
+    //bottom: 0,
+    //left: 0,
+};
+const desc = {
+    color: 'black',
+    fontSize: '14px',
+    fontWeight: 'bold',
+    fontFamily: 'American Typewriter'
+};
 
 const sprocPerfsFirst = {
     display: 'block',
@@ -113,7 +131,6 @@ const sprocPerfsLast = {
     borderColor: 'LightGrey',
     borderRadius: '.2em',
 };
-
 
 const buttonBack = {
     position: 'absolute',
