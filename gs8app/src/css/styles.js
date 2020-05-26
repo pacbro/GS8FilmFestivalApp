@@ -30,6 +30,27 @@ const nextBackDiv = {
     //borderColor: 'Red',
 };
 
+const logos = {
+    width: '86px',
+    height: '110px',
+    border: '3px solid #ccc',
+    padding: '5px',
+    margin: '-9px',
+    marginBottom: '.2em',
+    borderRadius: '.3em .3em 0em 0em',
+    background: 'rgb(50,50,50)',
+};
+
+const logo2011 = {
+    width: '160px',
+    height: '110px',
+    border: '3px solid #ccc',
+    padding: '5px',
+    margin: '-9px',
+    marginBottom: '.2em',
+    borderRadius: '.3em .3em 0em 0em',
+    background: 'rgb(50,50,50)',
+};
 
 const vidItem = {
     display: 'block',
