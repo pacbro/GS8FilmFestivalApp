@@ -62,7 +62,7 @@ class Carousel extends Component {
                     id="vid_frame"
                     style={styles.vidContainerIframe}
                     title="Figure Man Written by Anthony Thambynayagam"
-                    src="http://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=0&rel=0&showinfo=0"
+                    src="https://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=0&rel=0&showinfo=0"
                     frameBorder="0"
                     width="640"
                     height="480"
@@ -163,9 +163,9 @@ class Carousel extends Component {
 
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
-                                                        {/*src="http://img.youtube.com/vi/{index0ytID}/0.jpg" */}
+                                                        {/*src="https://img.youtube.com/vi/{index0ytID}/0.jpg" */}
                                                         <Image
-                                                            src="http://img.youtube.com/vi/pjMlCHCufrA/0.jpg"
+                                                            src="https://img.youtube.com/vi/pjMlCHCufrA/0.jpg"
                                                             alt="Figure Man Written by Anthony Thambynayagam"
                                                         />
                                                     </div>
@@ -197,7 +197,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/mCbqDuNgMp4/0.jpg"
+                                                            src="https://img.youtube.com/vi/mCbqDuNgMp4/0.jpg"
                                                             alt="The Best Day of My Life by Jason Austin"
                                                         />
                                                     </div>
@@ -228,7 +228,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/nBgVaDr0l6I/0.jpg"
+                                                            src="https://img.youtube.com/vi/nBgVaDr0l6I/0.jpg"
                                                             alt="Untitled by Nolan Gonzalez"
                                                         />
                                                     </div>
@@ -259,7 +259,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/m89w7f59a6A/0.jpg"
+                                                            src="https://img.youtube.com/vi/m89w7f59a6A/0.jpg"
                                                             alt="Ernest Argyros 2"
                                                         />
                                                     </div>
@@ -290,7 +290,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/gt9pDsYuubI/0.jpg"
+                                                            src="https://img.youtube.com/vi/gt9pDsYuubI/0.jpg"
                                                             alt="Public Grief by Ali Rowenna"
                                                         />
                                                     </div>
@@ -322,7 +322,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/hXyDYJLn_sE/0.jpg"
+                                                            src="https://img.youtube.com/vi/hXyDYJLn_sE/0.jpg"
                                                             alt="Surprise in the Freezer by Corrie Greening"
                                                         />
                                                     </div>
@@ -350,7 +350,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/UURuEgH2yqw/0.jpg"
+                                                            src="https://img.youtube.com/vi/UURuEgH2yqw/0.jpg"
                                                             alt="Block Party by Clint Berquist Music by DUBCAR"
                                                         />
                                                     </div>
@@ -378,7 +378,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/JTDctcyssJM/0.jpg"
+                                                            src="https://img.youtube.com/vi/JTDctcyssJM/0.jpg"
                                                             alt="Our Usual Table by La Dele Sines and Alan Phillips"
                                                         />
                                                     </div>
@@ -405,7 +405,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/jSgNTYQtolI/0.jpg"
+                                                            src="https://img.youtube.com/vi/jSgNTYQtolI/0.jpg"
                                                             alt="Leap Year MMXX by Angelina Tolentino"
                                                         />
                                                     </div>
@@ -431,7 +431,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/3ODq0UvATTc/0.jpg"
+                                                            src="https://img.youtube.com/vi/3ODq0UvATTc/0.jpg"
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
@@ -457,7 +457,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/20NS42MUPBE/0.jpg"
+                                                            src="https://img.youtube.com/vi/20NS42MUPBE/0.jpg"
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
@@ -483,7 +483,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/FA86M03VZgA/0.jpg"
+                                                            src="https://img.youtube.com/vi/FA86M03VZgA/0.jpg"
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
@@ -509,7 +509,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/XmLLo9PCcYY/0.jpg"
+                                                            src="https://img.youtube.com/vi/XmLLo9PCcYY/0.jpg"
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
@@ -536,7 +536,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/vy4219QQ908/0.jpg"
+                                                            src="https://img.youtube.com/vi/vy4219QQ908/0.jpg"
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
@@ -563,7 +563,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/rfhxLAPNFzc/0.jpg"
+                                                            src="https://img.youtube.com/vi/rfhxLAPNFzc/0.jpg"
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
@@ -589,7 +589,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/0F0SQwkre1A/0.jpg"
+                                                            src="https://img.youtube.com/vi/0F0SQwkre1A/0.jpg"
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
@@ -615,7 +615,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/6sLDxt2ZUik/0.jpg"
+                                                            src="https://img.youtube.com/vi/6sLDxt2ZUik/0.jpg"
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
@@ -641,7 +641,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/_9XuTT1IqUY/0.jpg"
+                                                            src="https://img.youtube.com/vi/_9XuTT1IqUY/0.jpg"
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
@@ -667,7 +667,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/lZ_7x3Fddhg/0.jpg"
+                                                            src="https://img.youtube.com/vi/lZ_7x3Fddhg/0.jpg"
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
@@ -693,7 +693,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/cSUCoi98LKY/0.jpg"
+                                                            src="https://img.youtube.com/vi/cSUCoi98LKY/0.jpg"
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
@@ -750,7 +750,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/4677tCafGs8/0.jpg"
+                                                            src="https://img.youtube.com/vi/4677tCafGs8/0.jpg"
                                                             alt="Purveyor of Lost Dreams by Mackenzi Wakley"
                                                         />
                                                     </div>
@@ -781,7 +781,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/HgpzVJo6L5M/0.jpg"
+                                                            src="https://img.youtube.com/vi/HgpzVJo6L5M/0.jpg"
                                                             alt="Sun's there, you're just not high enough by Madison Holup"
                                                         />
                                                     </div>
@@ -812,7 +812,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/ZKZ6GaW3reI/0.jpg"
+                                                            src="https://img.youtube.com/vi/ZKZ6GaW3reI/0.jpg"
                                                             alt="Georgetown: Where the Cats Play by Davis Creative Productions"
                                                         />
                                                     </div>
@@ -843,7 +843,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/jBIVtqcQKc8/0.jpg"
+                                                            src="https://img.youtube.com/vi/jBIVtqcQKc8/0.jpg"
                                                             alt="A Glimpse of the Connections Museum by Neil Rhoades & Alyson Stoner-Rhoades"
                                                         />
                                                     </div>
@@ -874,7 +874,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/IV78XRDl5So/0.jpg"
+                                                            src="https://img.youtube.com/vi/IV78XRDl5So/0.jpg"
                                                             alt="A Search for Community by Paul Dewald"
                                                         />
                                                     </div>
@@ -905,7 +905,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/qJUBu6seFi4/0.jpg"
+                                                            src="https://img.youtube.com/vi/qJUBu6seFi4/0.jpg"
                                                             alt="The Busker by Peter Reiquam"
                                                         />
                                                     </div>
@@ -933,7 +933,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/oDB7hpCHR6M/0.jpg"
+                                                            src="https://img.youtube.com/vi/oDB7hpCHR6M/0.jpg"
                                                             alt="Sparks by Michael Campos, Lauren Harris, Jordan Maples and Ryan Rohrer"
                                                         />
                                                     </div>
@@ -962,7 +962,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/WlSFqFBaVKI/0.jpg"
+                                                            src="https://img.youtube.com/vi/WlSFqFBaVKI/0.jpg"
                                                             alt="River City Racers by Sean Byrne"
                                                         />
                                                     </div>
@@ -989,7 +989,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/--faHh58Iz4/0.jpg"
+                                                            src="https://img.youtube.com/vi/--faHh58Iz4/0.jpg"
                                                             alt="No Fly Zone by Trinh Duong & Rob Jellinek"
                                                         />
                                                     </div>
@@ -1015,7 +1015,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/g34pD0hxkxA/0.jpg"
+                                                            src="https://img.youtube.com/vi/g34pD0hxkxA/0.jpg"
                                                             alt="Frances Doesn’t Care for the Blues  by William Brandt"
                                                         />
                                                     </div>
@@ -1041,7 +1041,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/jCGknIvwYXg/0.jpg"
+                                                            src="https://img.youtube.com/vi/jCGknIvwYXg/0.jpg"
                                                             alt="Flower People by Nemo Campisi"
                                                         />
                                                     </div>
@@ -1067,7 +1067,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/BIcijHZbFvU/0.jpg"
+                                                            src="https://img.youtube.com/vi/BIcijHZbFvU/0.jpg"
                                                             alt="Perros Manos (dog hands) by Zack Lindsey and Keturah Walker"
                                                         />
                                                     </div>
@@ -1093,7 +1093,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/rlPc377aevk/0.jpg"
+                                                            src="https://img.youtube.com/vi/rlPc377aevk/0.jpg"
                                                             alt="Flyght Path (or The Girl is Fly) By Tracy Thompson"
                                                         />
                                                     </div>
@@ -1119,7 +1119,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/phDhkC2S5xE/0.jpg"
+                                                            src="https://img.youtube.com/vi/phDhkC2S5xE/0.jpg"
                                                             alt="THE 1979 BIZARRE by Alex Miller"
                                                         />
                                                     </div>
@@ -1145,7 +1145,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/GWK_LN-RTLE/0.jpg"
+                                                            src="https://img.youtube.com/vi/GWK_LN-RTLE/0.jpg"
                                                             alt="Observation of Place by Alexis Wood"
                                                         />
                                                     </div>
@@ -1171,7 +1171,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/NG7kofsBQCw/0.jpg"
+                                                            src="https://img.youtube.com/vi/NG7kofsBQCw/0.jpg"
                                                             alt="In the Air by Ann Sammon"
                                                         />
                                                     </div>
@@ -1197,7 +1197,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/SWqxs01FK4A/0.jpg"
+                                                            src="https://img.youtube.com/vi/SWqxs01FK4A/0.jpg"
                                                             alt="Untitled by Channel Horner"
                                                         />
                                                     </div>
@@ -1223,7 +1223,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/wj2bxuFzNcM/0.jpg"
+                                                            src="https://img.youtube.com/vi/wj2bxuFzNcM/0.jpg"
                                                             alt="A Hard Day's Day by Adam Walker and Charlotte Blythe"
                                                         />
                                                     </div>
@@ -1249,7 +1249,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/dWF2buyQQVk/0.jpg"
+                                                            src="https://img.youtube.com/vi/dWF2buyQQVk/0.jpg"
                                                             alt="In Search of the Perfect Beer by John Krull & Yukari Romano"
                                                         />
                                                     </div>
@@ -1275,7 +1275,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/z3u5__Ql4O4/0.jpg"
+                                                            src="https://img.youtube.com/vi/z3u5__Ql4O4/0.jpg"
                                                             alt="letters to [and from] Pablo by Rana San"
                                                         />
                                                     </div>
@@ -1301,7 +1301,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/aM-krzeLi14/0.jpg"
+                                                            src="https://img.youtube.com/vi/aM-krzeLi14/0.jpg"
                                                             alt="The Great Paralysis by Stephen Samelko"
                                                         />
                                                     </div>
@@ -1327,7 +1327,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/5PwVZzJNoUg/0.jpg"
+                                                            src="https://img.youtube.com/vi/5PwVZzJNoUg/0.jpg"
                                                             alt="The Owl & the Pussycat by Edward Lear"
                                                         />
                                                     </div>
@@ -1353,7 +1353,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/mZGLL68-6QQ/0.jpg"
+                                                            src="https://img.youtube.com/vi/mZGLL68-6QQ/0.jpg"
                                                             alt="Mystery 3 by Jenelle Sauvageau"
                                                         />
                                                     </div>
@@ -1420,7 +1420,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/vQQe83JGuuM/0.jpg"
+                                                            src="https://img.youtube.com/vi/vQQe83JGuuM/0.jpg"
                                                             alt="Duwamish Rowing Club Youth Program by Mike Merta"
                                                         />
                                                     </div>
@@ -1451,7 +1451,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/NCDebzHXmlI/0.jpg"
+                                                            src="https://img.youtube.com/vi/NCDebzHXmlI/0.jpg"
                                                             alt="Le Pickle by Anthony Thambynayagam"
                                                         />
                                                     </div>
@@ -1482,7 +1482,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/HgZedpzdwio/0.jpg"
+                                                            src="https://img.youtube.com/vi/HgZedpzdwio/0.jpg"
                                                             alt="Crud, Rats & Beyond by Robert Daniels, Alison Zerbe, Josh Pollock, Brian Wisniewski, Aaron Rommel"
                                                         />
                                                     </div>
@@ -1514,7 +1514,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/UH1sZFRjriY/0.jpg"
+                                                            src="https://img.youtube.com/vi/UH1sZFRjriY/0.jpg"
                                                             alt="WAKE UP by The Jam Squad"
                                                         />
                                                     </div>
@@ -1545,7 +1545,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/s1neAAjvEzg/0.jpg"
+                                                            src="https://img.youtube.com/vi/s1neAAjvEzg/0.jpg"
                                                             alt="Jellybean the Sidecar Queen by Peter Reiquam"
                                                         />
                                                     </div>
@@ -1576,7 +1576,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/XINjL0jPDQ4/0.jpg"
+                                                            src="https://img.youtube.com/vi/XINjL0jPDQ4/0.jpg"
                                                             alt="Alert by Ahmad White"
                                                         />
                                                     </div>
@@ -1604,7 +1604,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/qZpTOJAyrNk/0.jpg"
+                                                            src="https://img.youtube.com/vi/qZpTOJAyrNk/0.jpg"
                                                             alt="Alien Gas Mask Robot by Grant Crawford"
                                                         />
                                                     </div>
@@ -1632,7 +1632,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/_ZnM5wUJzB4/0.jpg"
+                                                            src="https://img.youtube.com/vi/_ZnM5wUJzB4/0.jpg"
                                                             alt="Time to Spare by Katie Lewis & Reid Priewe"
                                                         />
                                                     </div>
@@ -1660,7 +1660,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/mdDlc-DaIq8/0.jpg"
+                                                            src="https://img.youtube.com/vi/mdDlc-DaIq8/0.jpg"
                                                             alt="Birth of a Libation II: Who’s Yer Mama by Amee Shepard"
                                                         />
                                                     </div>
@@ -1687,7 +1687,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/FjjK5Nt-WJk/0.jpg"
+                                                            src="https://img.youtube.com/vi/FjjK5Nt-WJk/0.jpg"
                                                             alt="Masters of the Universe of Guitars, Dogs, Hats, and Boots by Adam Walker"
                                                         />
                                                     </div>
@@ -1715,7 +1715,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/EB_4uAI2gzg/0.jpg"
+                                                            src="https://img.youtube.com/vi/EB_4uAI2gzg/0.jpg"
                                                             alt="PNW Grrrls by Madison Holup"
                                                         />
                                                     </div>
@@ -1742,7 +1742,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/DReXr6rvscE/0.jpg"
+                                                            src="https://img.youtube.com/vi/DReXr6rvscE/0.jpg"
                                                             alt="The Life and Times of Mr. Plumbean by Jake and Emmett Bookwalter"
                                                         />
                                                     </div>
@@ -1769,7 +1769,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/Q00LdMynhkc/0.jpg"
+                                                            src="https://img.youtube.com/vi/Q00LdMynhkc/0.jpg"
                                                             alt="The Only Cure for Love by Ella E. Anderson, Alexzandyr Biernat"
                                                         />
                                                     </div>
@@ -1796,7 +1796,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/j4RPub-XlCw/0.jpg"
+                                                            src="https://img.youtube.com/vi/j4RPub-XlCw/0.jpg"
                                                             alt="Iron Rising By Kasey Williams"
                                                         />
                                                     </div>
@@ -1823,7 +1823,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/2qERqHa8HHg/0.jpg"
+                                                            src="https://img.youtube.com/vi/2qERqHa8HHg/0.jpg"
                                                             alt="PINLAND EMPIRE by Kevin Coulton"
                                                         />
                                                     </div>
@@ -1883,7 +1883,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/prUpHa0XyIw/0.jpg"
+                                                            src="https://img.youtube.com/vi/prUpHa0XyIw/0.jpg"
                                                             alt="SUPER NATURAL by Wittman Estes Architecture + Landscape"
                                                         />
                                                     </div>
@@ -1914,7 +1914,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/6VJG2Jb5JmA/0.jpg"
+                                                            src="https://img.youtube.com/vi/6VJG2Jb5JmA/0.jpg"
                                                             alt="deadalive by Tammy Martin"
                                                         />
                                                     </div>
@@ -1945,7 +1945,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/TGQFcohx5SA/0.jpg"
+                                                            src="https://img.youtube.com/vi/TGQFcohx5SA/0.jpg"
                                                             alt="Making Money by Bryan Allan Krauss"
                                                         />
                                                     </div>
@@ -1976,7 +1976,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/Lh_QBcA39K0/0.jpg"
+                                                            src="https://img.youtube.com/vi/Lh_QBcA39K0/0.jpg"
                                                             alt="Georgetown Papers by Kris Brown, Ernest Argyros, Joseph Burchetta & John Flowers"
                                                         />
                                                     </div>
@@ -2007,7 +2007,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/W1cjdIR7vcw/0.jpg"
+                                                            src="https://img.youtube.com/vi/W1cjdIR7vcw/0.jpg"
                                                             alt="Allegory of the Pinball by Neil Rhoades and Alyson Stoner-Rhoades"
                                                         />
                                                     </div>
@@ -2039,7 +2039,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/cvNjrJoYIjY/0.jpg"
+                                                            src="https://img.youtube.com/vi/cvNjrJoYIjY/0.jpg"
                                                             alt="Gorgetown by Simone Sweet-Chavez and her parents"
                                                         />
                                                     </div>
@@ -2067,7 +2067,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/dXy72g4D244/0.jpg"
+                                                            src="https://img.youtube.com/vi/dXy72g4D244/0.jpg"
                                                             alt="Private Video"
                                                         />
                                                     </div>
@@ -2095,7 +2095,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/-QOghA9qpRY/0.jpg"
+                                                            src="https://img.youtube.com/vi/-QOghA9qpRY/0.jpg"
                                                             alt="Infinite Push/Pull by Ali Rowenna"
                                                         />
                                                     </div>
@@ -2122,7 +2122,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/CR-gnHw--mc/0.jpg"
+                                                            src="https://img.youtube.com/vi/CR-gnHw--mc/0.jpg"
                                                             alt="Foreign and Familiar. by Brad Curran"
                                                         />
                                                     </div>
@@ -2148,7 +2148,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/Hl712CFrnr0/0.jpg"
+                                                            src="https://img.youtube.com/vi/Hl712CFrnr0/0.jpg"
                                                             alt="Georgetown Roundup by Corinne Arnold & John Colter Arnold"
                                                         />
                                                     </div>
@@ -2174,7 +2174,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/p0SxtriJVd4/0.jpg"
+                                                            src="https://img.youtube.com/vi/p0SxtriJVd4/0.jpg"
                                                             alt="Then and Now by Lovelee"
                                                         />
                                                     </div>
@@ -2200,7 +2200,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/QVp30Ic52D8/0.jpg"
+                                                            src="https://img.youtube.com/vi/QVp30Ic52D8/0.jpg"
                                                             alt="Live and Let Dive by Jordan Pasek"
                                                         />
                                                     </div>
@@ -2226,7 +2226,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/eNS6GyzXqVI/0.jpg"
+                                                            src="https://img.youtube.com/vi/eNS6GyzXqVI/0.jpg"
                                                             alt="Transportation by Ion Gardescu"
                                                         />
                                                     </div>
@@ -2252,7 +2252,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/b4Wj_uDVQmI/0.jpg"
+                                                            src="https://img.youtube.com/vi/b4Wj_uDVQmI/0.jpg"
                                                             alt="Flora By Mike Poetzel"
                                                         />
                                                     </div>
@@ -2278,7 +2278,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/bsAjP_1WOrI/0.jpg"
+                                                            src="https://img.youtube.com/vi/bsAjP_1WOrI/0.jpg"
                                                             alt="Duwamish Valley Youth Corps"
                                                         />
                                                     </div>
@@ -2304,7 +2304,7 @@ class Carousel extends Component {
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         <Image
-                                                            src="http://img.youtube.com/vi/XwN4pUY0y-8/0.jpg"
+                                                            src="https://img.youtube.com/vi/XwN4pUY0y-8/0.jpg"
                                                             alt="The Stallion by Laura C Wright"
                                                         />
                                                     </div>
