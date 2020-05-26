@@ -78,40 +78,44 @@ class Carousel extends Component {
                     <Tabs>
                         <TabList>
                                 <Tab>
-                                    <img src={require("../img/logo2020.png")} height="80" width="86"
-                                         alt="2020 Films Tab"/>
-                                    <br/><b>2020</b>
+                                    <div style={styles.logos}>
+                                        <img src={require("../img/2020_logo.png")} height="80" width="86"
+                                             alt="2020 Films Tab"/>
+                                        <br/><b>2020</b>
+                                    </div>
                                 </Tab>
                                 <Tab>
-                                    <img src={require("../img/logo2019.png")} height="80" width="86"
-                                         alt="2019 Films Tab"/>
+                                    <div style={styles.logos}>
+                                        <img src={require("../img/2019_logo.png")} height="80" width="86"
+                                             alt="2019 Films Tab"/>
                                     <br/><b>2019</b>
+                                    </div>
                                 </Tab>
                                 <Tab>
-                                    <img src={require("../img/logo2011.png")} height="80" width="160"
+                                    <img src={require("../img/2011_logo.png")} height="80" width="160"
                                          alt="2011 Films Tab"/>
                                     <br/><b>2011</b>
                                 </Tab>
                                 <Tab>
-                                    <img src={require("../img/logo2010.png")} height="80" width="82"
+                                    <img src={require("../img/2010_logo.png")} height="80" width="82"
                                          alt="2010 Films Tab"/>
                                     <br/><b>2010</b>
                                 </Tab>
                                 <Tab>
-                                    <img src={require("../img/logo2009.png")} height="80" width="82"
+                                    <img src={require("../img/2009_logo.png")} height="80" width="82"
                                          alt="2009 Films Tab"/>
                                     <br/><b>2009</b>
                                 </Tab>
                                 <Tab>
-                                    <img src={require("../img/logo2008.png")} height="80" width="82"
+                                    <img src={require("../img/2008_logo.png")} height="80" width="82"
                                          alt="2008 Films Tab"/>
                                     <br/><b>2008</b>
                                 </Tab>
-                                <Tab><img src={require("../img/logo2007.png")} height="80" width="82"
+                                <Tab><img src={require("../img/2007_logo.png")} height="80" width="82"
                                           alt="2007 Films Tab"/>
                                     <br/><b>2007</b>
                                 </Tab>
-                                <Tab><img src={require("../img/logo2006.png")} height="80" width="82"
+                                <Tab><img src={require("../img/2006_logo.png")} height="80" width="82"
                                           alt="2006 Films Tab"/>
                                     <br/><b>2006</b>
                                 </Tab>

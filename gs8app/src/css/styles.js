@@ -174,6 +174,14 @@ const buttonNext = {
     width: '1.4em',
 };
 
+const logos = {
+    width: '86px',
+    height: '110px',
+    border: '3px solid #ccc',
+    // margin: 'auto',
+    padding: '10px 15px',
+};
+
 const Styles = {
     parentDivStyle,
     filmGalleryStyle,
@@ -193,6 +201,7 @@ const Styles = {
     vidItem,
     desc,
     sliderDiv,
+    logos,
 };
 
 export default Styles;
