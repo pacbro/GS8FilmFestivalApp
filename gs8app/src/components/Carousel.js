@@ -116,6 +116,9 @@ class Carousel extends Component {
                                     <br/><b>2007</b>
                                 </Tab>
                                 <Tab><img src={require("../img/2006_logo.png")} height="80" width="82"
+                                          alt="2006 Films Tab"/>
+                                    <br/><b>2006</b>
+                                </Tab>
                         </TabList>
                         <TabPanel>
                             {/*2020*/}
