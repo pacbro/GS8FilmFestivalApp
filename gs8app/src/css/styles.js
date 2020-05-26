@@ -32,7 +32,7 @@ const nextBackDiv = {
 
 const logos = {
     width: '86px',
-    height: '100px',
+    height: '90px',
     border: '3px solid #ccc',
     padding: '5px',
     margin: '-9px',
