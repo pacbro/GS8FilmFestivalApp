@@ -1,7 +1,7 @@
 const filmGalleryStyle = {
     textAlign: 'center',
-    //display: 'inline-block',
-    background: 'rgb(0,0,0)',
+    display: 'inline-block',
+    //background: 'rgb(0,0,0)',
     color: 'white',
 };
 const vidContainerIframe = {
@@ -9,30 +9,60 @@ const vidContainerIframe = {
     align: 'center',
     width: '50em',
     height: '37.5em',
+    background: 'rgb(50,50,65)',
 };
+const sliderDiv = {
+    //position: 'relative',
+    width: 'auto',
+    padding: '0px .2em 0px .2em',
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: 'LightGrey',
+    background: 'rgb(50,50,65)',
+};
+const nextBackDiv = {
+    position: 'relative',
+    width: '68.9em',
+    padding: '0px 2.8em 0px 2.8em',
+    //border: '1px',
+    //borderStyle: 'solid',
+    //borderColor: 'Red',
+};
+
 
 const vidItem = {
     display: 'block',
     background: 'rgb(255,255,255)',
     width: '12em',
-    height: '16em',
-    //float: 'left',
+    height: '16.2em',
     padding: '.3em',
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
     borderRadius: '.3em',
+    //overflow: 'visible',
 };
 const thumb = {
-    height: '150px',
+    height: '144px',
+    width: 'auto',
 };
 const desc = {
     color: 'black',
     fontSize: '14px',
+    width: '10em',
     fontWeight: 'bold',
-    overflowWrap: 'break-word',
-    overflow: 'visible',
+    //overflowWrap: 'break-word',
     fontFamily: 'American Typewriter'
+};
+const testTextDiv = {
+    width: '10em',
+    background: 'rgb(0,0,0)',
+    border: '5px',
+    borderStyle: 'solid',
+    borderColor: 'Red',
+    //overflow: 'hidden',
+    overflowWrap: 'break-word',
+    wordWrap: 'break-word',
 };
 
 const sprocPerfsFirst = {
@@ -41,10 +71,11 @@ const sprocPerfsFirst = {
     width: '1em',
     height: '1em',
     float: 'left',
-    marginLeft: '.6em',
-    marginRight: '.76em',
-    marginTop: '.2em',
-    marginBottom: '.2em',
+    margin: '.2em .76em .2em .6em',
+    //marginLeft: '.6em',
+    //marginRight: '.76em',
+    //marginTop: '.2em',
+    //marginBottom: '.2em',
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
@@ -80,27 +111,6 @@ const sprocPerfsLast = {
     borderColor: 'LightGrey',
     borderRadius: '.2em',
 };
-
-const sliderDiv = {
-    position: 'relative',
-    //width: '66em',
-    width: 'auto',
-    background: 'rgb(50,50,65)',
-    padding: '0px .2em 0px .2em',
-    border: '1px',
-    borderStyle: 'solid',
-    borderColor: 'LightGrey',
-};
-const nextBackDiv = {
-    position: 'relative',
-    width: '68.9em',
-    background: 'rgb(0,0,0)',
-    padding: '0px 2.8em 0px 2.8em',
-    //border: '1px',
-    //borderStyle: 'solid',
-    //borderColor: 'Red',
-};
-
 
 
 const buttonBack = {
@@ -141,6 +151,7 @@ const Styles = {
     sprocPerfsLast,
     vidItem,
     desc,
+    testTextDiv,
     sliderDiv,
     nextBackDiv,
 };
