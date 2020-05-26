@@ -12,7 +12,7 @@ const filmGalleryStyle = {
 const cardStyle = {
     width: '50em',
     textAlign: 'center',
-    padding: '25px',
+    padding:'25px',
     margin: '25px'
 };
 const titleStyle = {
@@ -39,12 +39,9 @@ const rowDivStyle = {
     align: 'left'
 };
 
-
-const vidContainerIframe = {//.vid-container object, vid-container embed
+const vidContainerIframe = {
     position: 'relative',
     align: 'center',
-    //margineLeft: 'auto',
-    //margineRight: 'auto',
     width: '50em',
     height: '37.5em',
 };
@@ -52,9 +49,7 @@ const vidContainerIframe = {//.vid-container object, vid-container embed
 const vidItem = {
     display: 'block',
     background: 'rgb(255,255,255)',
-    //width: '148px',
     width: '10em',
-    //height: '178px',
     height: '12em',
     float: 'left',
     padding: '.3em',
@@ -63,13 +58,27 @@ const vidItem = {
     borderColor: 'LightGrey',
     borderRadius: '.3em',
 };
+const thumb = {
+    //overflow:'hidden',
+    height: '110px',
+    //width: '120px',
+    //margin: 'auto',
+    //top: '-10',
+    //right: 0,
+    //bottom: 0,
+    //left: 0,
+};
+const desc = {
+    color: 'black',
+    fontSize: '14px',
+    fontWeight: 'bold',
+    fontFamily: 'American Typewriter'
+};
 
 const sprocPerfsFirst = {
     display: 'block',
     background: 'rgb(255,255,255)',
-    //width: '148px',
     width: '1em',
-    //height: '178px',
     height: '1em',
     float: 'left',
     marginLeft: '.45em',
@@ -84,9 +93,7 @@ const sprocPerfsFirst = {
 const sprocPerfsMid = {
     display: 'block',
     background: 'rgb(255,255,255)',
-    //width: '148px',
     width: '1em',
-    //height: '178px',
     height: '1em',
     float: 'left',
     marginLeft: '.7em',
@@ -101,9 +108,7 @@ const sprocPerfsMid = {
 const sprocPerfsLast = {
     display: 'block',
     background: 'rgb(255,255,255)',
-    //width: '148px',
     width: '1em',
-    //height: '178px',
     height: '1em',
     float: 'left',
     marginLeft: '.7em',
@@ -118,7 +123,6 @@ const sprocPerfsLast = {
 
 const sliderDiv = {
     position: 'relative',
-    //width: '700px',
     width: '52.8em',
     height: '16em',
     margin: 'auto',
@@ -128,24 +132,9 @@ const sliderDiv = {
     borderStyle: 'solid',
     borderColor: 'LightGrey',
 };
-const desc = {
-    color: 'black',
-    fontSize: '14px',
-    fontWeight: 'bold',
-    fontFamily: 'American Typewriter'
-    //marginTop:'5px',
-};
 
-const thumb = {
-    overflow:'hidden',
-    height: '110px',
-    //width: '120px',
-    //margin: 'auto',
-    //top: '-10',
-    //right: 0,
-    //bottom: 0,
-    //left: 0,
-};
+
+
 
 const buttonBack = {
     position: 'absolute',
@@ -183,14 +172,7 @@ const logos = {
 };
 
 const Styles = {
-    parentDivStyle,
     filmGalleryStyle,
-    cardStyle,
-    titleStyle,
-    pStyle,
-    divButtonStyle,
-    rowDivStyle,
-    socMed,
     vidContainerIframe,
     thumb,
     buttonNext,
@@ -202,6 +184,13 @@ const Styles = {
     desc,
     sliderDiv,
     logos,
+    parentDivStyle,
+    cardStyle,
+    titleStyle,
+    pStyle,
+    divButtonStyle,
+    rowDivStyle,
+    socMed,
 };
 
 export default Styles;
