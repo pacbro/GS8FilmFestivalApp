@@ -1,72 +1,51 @@
-const parentDivStyle = {
-    textAlign: 'center',
-    display: 'inline-block',
-    width: '48em'
-};
 const filmGalleryStyle = {
     textAlign: 'center',
-    //display: 'inline-block',
-    background: 'rgb(0,0,0)',
+    display: 'inline-block',
+    //background: 'rgb(0,0,0)',
     color: 'white',
 };
-const cardStyle = {
-    width: '50em',
-    textAlign: 'center',
-    padding:'25px',
-    margin: '25px'
-};
-const titleStyle = {
-    fontWeight: 'bold',
-    textAlign: 'center',
-    fontSize: '2.2em'
-};
-const pStyle = {
-    display: 'inline-block',
-    textAlign: 'justify',
-    fontSize: '1.2em'
-};
-const divButtonStyle = {
-    textAlign: 'center',
-    padding: '25px',
-    margin: '25px'
-};
-const socMed = {
-    fontSize: '50px',
-    margin: '0 auto'
-};
-const rowDivStyle = {
-    textAlign: 'center',
-    align: 'left'
-};
-
 const vidContainerIframe = {
     position: 'relative',
     align: 'center',
     width: '50em',
     height: '37.5em',
+    background: 'rgb(50,50,65)',
 };
+const sliderDiv = {
+    //position: 'relative',
+    width: 'auto',
+    padding: '0px .2em 0px .2em',
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: 'LightGrey',
+    background: 'rgb(50,50,65)',
+};
+const nextBackDiv = {
+    position: 'relative',
+    width: '68.9em',
+    padding: '0px 2.8em 0px 2.8em',
+    //border: '1px',
+    //borderStyle: 'solid',
+    //borderColor: 'Red',
+};
+
 
 const vidItem = {
     display: 'block',
     background: 'rgb(255,255,255)',
-    width: '10em',
-    height: '12em',
-    float: 'left',
+    width: '12em',
+    height: '16.2em',
+    float: 'left', //new
     padding: '.3em',
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
     borderRadius: '.3em',
+    //overflow: 'visible',
 };
 const thumb = {
-    //overflow:'hidden',
-    height: '110px',
-    //width: '120px',
-    //margin: 'auto',
-    //top: '-10',
-    //right: 0,
-    //bottom: 0,
-    //left: 0,
+    height: '144px',
+    width: 'auto',
 };
 const desc = {
     color: 'black',
@@ -75,16 +54,30 @@ const desc = {
     fontFamily: 'American Typewriter'
 };
 
+
+
+const testTextDiv = {
+    width: '10em',
+    background: 'rgb(0,0,0)',
+    border: '5px',
+    borderStyle: 'solid',
+    borderColor: 'Red',
+    //overflow: 'hidden',
+    overflowWrap: 'break-word',
+    wordWrap: 'break-word',
+};
+
 const sprocPerfsFirst = {
     display: 'block',
     background: 'rgb(255,255,255)',
     width: '1em',
     height: '1em',
     float: 'left',
-    marginLeft: '.45em',
-    marginRight: '.7em',
-    marginTop: '.2em',
-    marginBottom: '.2em',
+    margin: '.2em .76em .2em .6em',
+    //marginLeft: '.6em',
+    //marginRight: '.76em',
+    //marginTop: '.2em',
+    //marginBottom: '.2em',
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
@@ -96,8 +89,8 @@ const sprocPerfsMid = {
     width: '1em',
     height: '1em',
     float: 'left',
-    marginLeft: '.7em',
-    marginRight: '.7em',
+    marginLeft: '.76em',
+    marginRight: '.75em',
     marginTop: '.2em',
     marginBottom: '.2em',
     border: '1px',
@@ -111,8 +104,8 @@ const sprocPerfsLast = {
     width: '1em',
     height: '1em',
     float: 'left',
-    marginLeft: '.7em',
-    marginRight: '.45em',
+    marginLeft: '.76em',
+    marginRight: '.4em',
     marginTop: '.2em',
     marginBottom: '.2em',
     border: '1px',
@@ -120,20 +113,6 @@ const sprocPerfsLast = {
     borderColor: 'LightGrey',
     borderRadius: '.2em',
 };
-
-const sliderDiv = {
-    position: 'relative',
-    width: '52.8em',
-    height: '16em',
-    margin: 'auto',
-    background: 'rgb(0,0,0)',
-    padding: '0px 7px 0px 7px',
-    border: '1px',
-    borderStyle: 'solid',
-    borderColor: 'LightGrey',
-};
-
-
 
 
 const buttonBack = {
@@ -143,9 +122,9 @@ const buttonBack = {
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
-    left:-45,
+    left:-0,
     top: '0em',
-    borderRadius: '.1em',
+    borderRadius: '.2em 0em 0em .2em',
     height: '100%',
     width: '1.4em',
 };
@@ -156,29 +135,11 @@ const buttonNext = {
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
-    right:-45,
+    right:-0,
     top: '0em',
-    borderRadius: '.1em',
+    borderRadius: '0em .2em .2em 0em',
     height: '100%',
     width: '1.4em',
-};
-
-const logos = {
-    width: '86px',
-    height: '110px',
-    border: '3px solid #ccc',
-    padding: '5px',
-    margin: '-9px',
-    marginBottom: '.2em',
-};
-
-const logo2011 = {
-    width: '160px',
-    height: '110px',
-    border: '3px solid #ccc',
-    padding: '5px',
-    margin: '-9px',
-    marginBottom: '.2em',
 };
 
 const Styles = {
@@ -192,16 +153,9 @@ const Styles = {
     sprocPerfsLast,
     vidItem,
     desc,
+    testTextDiv,
     sliderDiv,
-    logos,
-    logo2011,
-    parentDivStyle,
-    cardStyle,
-    titleStyle,
-    pStyle,
-    divButtonStyle,
-    rowDivStyle,
-    socMed,
+    nextBackDiv,
 };
 
 export default Styles;
