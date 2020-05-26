@@ -35,6 +35,7 @@ const vidItem = {
     background: 'rgb(255,255,255)',
     width: '12em',
     height: '16.2em',
+    float: 'left', //new
     padding: '.3em',
     border: '1px',
     borderStyle: 'solid',
@@ -49,11 +50,12 @@ const thumb = {
 const desc = {
     color: 'black',
     fontSize: '14px',
-    width: '10em',
     fontWeight: 'bold',
-    //overflowWrap: 'break-word',
     fontFamily: 'American Typewriter'
 };
+
+
+
 const testTextDiv = {
     width: '10em',
     background: 'rgb(0,0,0)',
