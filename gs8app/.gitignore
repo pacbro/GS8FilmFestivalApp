@@ -2,6 +2,8 @@
 
 # dependencies
 node_modules/
+node_modules/*
+
 /.pnp
 .pnp.js
 
@@ -36,3 +38,4 @@ youTubeAPIkey.js
 /youTubeAPIkey.js
 youTubeOauthKey.js
 /youTubeOauthKey.js
+
