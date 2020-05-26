@@ -177,6 +177,8 @@ const Styles = {
     testTextDiv,
     sliderDiv,
     nextBackDiv,
+    logos,
+    logo2011,
 };
 
 export default Styles;
