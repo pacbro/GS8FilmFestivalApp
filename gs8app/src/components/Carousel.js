@@ -68,20 +68,22 @@ class Carousel extends Component {
     render() {
         return (
             <div>
-                <iframe
-                    id="vid_frame"
-                    style={styles.vidContainerIframe}
-                    title="Georgetown Super 8 Film Archive"
-                    src="https://youtu.be/jvq7-b-Ko1g?autoplay=1&rel=0&showinfo=0&autohide=1"
-                    frameBorder="0"
-                    width="640"
-                    height="480"
-                    allowFullScreen="allowFullScreen"
-                    mozallowfullscreen="mozallowfullscreen"
-                    msallowfullscreen="msallowfullscreen"
-                    oallowfullscreen="oallowfullscreen"
-                    webkitallowfullscreen="webkitallowfullscreen"
-                />
+                <div style={styles.filmLoadingBkg}>
+                    <iframe
+                        id="vid_frame"
+                        style={styles.vidContainerIframe}
+                        title="Georgetown Super 8 Film Archive"
+                        src="https://youtu.be/jvq7-b-Ko1g?autoplay=1&rel=0&showinfo=0&autohide=1"
+                        frameBorder="0"
+                        width="640"
+                        height="480"
+                        allowFullScreen="allowFullScreen"
+                        mozallowfullscreen="mozallowfullscreen"
+                        msallowfullscreen="msallowfullscreen"
+                        oallowfullscreen="oallowfullscreen"
+                        webkitallowfullscreen="webkitallowfullscreen"
+                    />
+                </div>
                 <br/>
                 <br/>
                 <Tabs>
