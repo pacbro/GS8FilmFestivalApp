@@ -1,9 +1,3 @@
-const filmLoadingBkg = {
-    width: '640px',
-    height: '480px',
-    backgroundImage: 'url("../img/filmBkg.gif")',
-    backgroundColor: 'rgb(50,50,50)',
-};
 const filmGalleryStyle = {
     textAlign: 'center',
     display: 'inline-block',
@@ -16,6 +10,7 @@ const vidContainerIframe = {
     align: 'center',
     width: '50em',
     height: '37.5em',
+    backgroundImage: 'url("../img/filmBkg.gif")',
     background: 'rgb(50,50,65)',
 };
 const sliderDiv = {
@@ -191,7 +186,6 @@ const Styles = {
     nextBackDiv,
     logos,
     logo2011,
-    filmLoadingBkg,
 };
 
 export default Styles;
