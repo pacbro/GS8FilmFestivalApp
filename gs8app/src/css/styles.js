@@ -50,7 +50,7 @@ const thumb = {
 };
 const desc = {
     color: 'black',
-    fontSize: '1.2em',
+    fontSize: '1.1em',
     fontWeight: 'bold',
     fontFamily: 'American Typewriter'
 };
