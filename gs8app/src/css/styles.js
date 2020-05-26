@@ -10,7 +10,6 @@ const vidContainerIframe = {
     align: 'center',
     width: '50em',
     height: '37.5em',
-    backgroundImage: 'url("../img/filmBkg.gif")',
     background: 'rgb(50,50,65)',
 };
 const sliderDiv = {
