@@ -16,7 +16,6 @@ import 'react-tabs/style/react-tabs.css';
 
 let setFilmSRC = (ytID) => {
     window.scrollTo(500, 0);
-    //let str = 'https://www.youtube.com/embed/'+ytID+'?autoplay=1&rel=0&showinfo=0&autohide=1';
     document.getElementById('vid_frame').src =
         'https://www.youtube.com/embed/' +
         ytID +
@@ -57,12 +56,6 @@ class Carousel extends Component {
         depends on its size or position.
         */
         setFilmSRC('jvq7-b-Ko1g');
-        /*
-        document.getElementById('vid_frame').src =
-            'https://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=1&rel=0&showinfo=0&autohide=1';
-        */
-        console.log('<< Carousel 01: Mounted successfully >>');
-
     }
 
     /*
@@ -72,7 +65,6 @@ class Carousel extends Component {
                 </div>
     */
 
-    //src="https://www.youtube.com/embed/jvq7-b-Ko1g?autoplay=1&rel=0&showinfo=0&autohide=1"
     //https://medium.com/@josh.j.pearson/handling-iframe-loading-in-react-57f044a9d0fa
     render() {
         return (
@@ -81,7 +73,6 @@ class Carousel extends Component {
                     id="vid_frame"
                     style={styles.vidContainerIframe}
                     title="Georgetown Super 8 Film Archive"
-
                     src="https://youtu.be/jvq7-b-Ko1g?autoplay=1&rel=0&showinfo=0&autohide=1"
                     frameBorder="0"
                     width="640"
