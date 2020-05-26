@@ -2,7 +2,7 @@ const filmLoadingBkg = {
     width: '640px',
     height: '480px',
     backgroundImage: url("../img/filmBkg.gif"),
-    backgroundColor: rgb(50,50,50);
+    backgroundColor: rgb(50,50,50),
 };
 const filmGalleryStyle = {
     textAlign: 'center',
