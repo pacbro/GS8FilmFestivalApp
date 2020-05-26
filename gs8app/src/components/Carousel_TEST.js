@@ -13,22 +13,14 @@ import {
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
-/*
-let filmData = {
-    ytID:'123ABC$%^def',
-    title:'Title goes here!',
-    year:'2020',
-    tags:['First tag', 'Second tag', 'Third tag', 'Fourth tag', 'etc...'],
-};
-*/
 
 let setFilmSRC = (ytID) => {
     window.scrollTo(500, 0);
-    //let str = 'https://www.youtube.com/embed/'+ytID+'?autoplay=1&rel=0&showinfo=0&autohide=1';
     document.getElementById('vid_frame').src =
         'https://www.youtube.com/embed/' +
         ytID +
         '?autoplay=1&rel=0&showinfo=0&autohide=1';
+    console.log('Setting ytID: ' + ytID);
 };
 
 class Carousel extends Component {
@@ -41,20 +33,37 @@ class Carousel extends Component {
             data: [],
             wWidth: window.innerWidth,
             wHeight: window.innerHeight,
+            visibleSlides: 5.2,
+            step: 5,
+            naturalSlideWidth: 425,
+            naturalSlideHeight: 650,
+
         };
     }
 
     componentDidMount() {
-        console.log('<< Carousel 01: Mounted successfully >>');
+        /*
+        componentDidMount() is invoked immediately after a component is mounted (inserted
+        into the tree). Initialization that requires DOM nodes should go here. If you need
+        to load data from a remote endpoint, this is a good place to instantiate the network
+        request.
+
+        This method is a good place to set up any subscriptions. If you do that, don’t forget
+         to unsubscribe in componentWillUnmount().
+
+        You may call setState() immediately in componentDidMount(). It will trigger an extra
+        rendering, but it will happen before the browser updates the screen. This guarantees
+        that even though the render() will be called twice in this case, the user won’t see
+        the intermediate state. Use this pattern with caution because it often causes
+        performance issues. In most cases, you should be able to assign the initial state
+        in the constructor() instead. It can, however, be necessary for cases like modals
+        and tooltips when you need to measure a DOM node before rendering something that
+        depends on its size or position.
+        */
+        setFilmSRC('jvq7-b-Ko1g');
     }
 
-    /*
-                <div>
-                    <h1>Hideous Output block:</h1>
-                    <p>Name: {this.state.filmData[0].name.toString()}</p>
-                </div>
-    */
-
+    //https://medium.com/@josh.j.pearson/handling-iframe-loading-in-react-57f044a9d0fa
     render() {
         return (
             <div>
@@ -72,83 +81,81 @@ class Carousel extends Component {
                     oallowfullscreen="oallowfullscreen"
                     webkitallowfullscreen="webkitallowfullscreen"
                 />
-
-                <div>
-
-                    <Tabs>
-                        <TabList>
-                                <Tab>
-                                    <div style={styles.logos}>
-                                        <img src={require("../img/2020_logo.png")} height="80" width="86"
-                                             alt="2020 Films Tab"/>
-                                        <br/><b>2020</b>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div style={styles.logos}>
-                                        <img src={require("../img/2019_logo.png")} height="80" width="86"
-                                             alt="2019 Films Tab"/>
-                                    <br/><b>2019</b>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div style={styles.logo2011}>
-                                        <img src={require("../img/2011_logo.png")} height="80" width="160"
-                                             alt="2011 Films Tab"/>
-                                        <br/><b>2011</b>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div style={styles.logos}>
-                                    <img src={require("../img/2010_logo.png")} height="80" width="82"
-                                         alt="2010 Films Tab"/>
-                                    <br/><b>2010</b>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div style={styles.logos}>
-                                        <img src={require("../img/2009_logo.png")} height="80" width="82"
-                                             alt="2009 Films Tab"/>
-                                        <br/><b>2009</b>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div style={styles.logos}>
-                                        <img src={require("../img/2008_logo.png")} height="80" width="82"
-                                             alt="2008 Films Tab"/>
-                                        <br/><b>2008</b>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div style={styles.logos}>
-                                        <img src={require("../img/2007_logo.png")} height="80" width="82"
-                                              alt="2007 Films Tab"/>
-                                        <br/><b>2007</b>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div style={styles.logos}>
-                                        <img src={require("../img/2006_logo.png")} height="80" width="82"
-                                          alt="2006 Films Tab"/>
-                                        <br/><b>2006</b>
-                                    </div>
-                                </Tab>
-                        </TabList>
-                        <TabPanel>
-                            {/*2020*/}
-                            <div style={styles.filmGalleryStyle}>
-                                <CarouselProvider
-                                    visibleSlides={5}
-                                    totalSlides={20}
-                                    step={5}
-                                    naturalSlideWidth={425}
-                                    naturalSlideHeight={650}
-                                    hasMasterSpinner
-                                >
+                <br/>
+                <br/>
+                <Tabs>
+                    <TabList>
+                        <Tab>
+                            <div style={styles.logos}>
+                                <img src={require("../img/2020_logo.png")} height="80" width="86"
+                                     alt="2020 Films Tab"/>
+                                <br/><b>2020</b>
+                            </div>
+                        </Tab>
+                        <Tab>
+                            <div style={styles.logos}>
+                                <img src={require("../img/2019_logo.png")} height="80" width="86"
+                                     alt="2019 Films Tab"/>
+                                <br/><b>2019</b>
+                            </div>
+                        </Tab>
+                        <Tab>
+                            <div style={styles.logo2011}>
+                                <img src={require("../img/2011_logo.png")} height="80" width="160"
+                                     alt="2011 Films Tab"/>
+                                <br/><b>2011</b>
+                            </div>
+                        </Tab>
+                        <Tab>
+                            <div style={styles.logos}>
+                                <img src={require("../img/2010_logo.png")} height="80" width="82"
+                                     alt="2010 Films Tab"/>
+                                <br/><b>2010</b>
+                            </div>
+                        </Tab>
+                        <Tab>
+                            <div style={styles.logos}>
+                                <img src={require("../img/2009_logo.png")} height="80" width="82"
+                                     alt="2009 Films Tab"/>
+                                <br/><b>2009</b>
+                            </div>
+                        </Tab>
+                        <Tab>
+                            <div style={styles.logos}>
+                                <img src={require("../img/2008_logo.png")} height="80" width="82"
+                                     alt="2008 Films Tab"/>
+                                <br/><b>2008</b>
+                            </div>
+                        </Tab>
+                        <Tab>
+                            <div style={styles.logos}>
+                                <img src={require("../img/2007_logo.png")} height="80" width="82"
+                                     alt="2007 Films Tab"/>
+                                <br/><b>2007</b>
+                            </div>
+                        </Tab>
+                        <Tab>
+                            <div style={styles.logos}>
+                                <img src={require("../img/2006_logo.png")} height="80" width="82"
+                                     alt="2006 Films Tab"/>
+                                <br/><b>2006</b>
+                            </div>
+                        </Tab>
+                    </TabList>
+                    <TabPanel>
+                        {/*2020*/}
+                        <div style={styles.filmGalleryStyle}>
+                            <CarouselProvider
+                                totalSlides={20}
+                                visibleSlides={this.state.visibleSlides}
+                                step={this.state.step}
+                                naturalSlideWidth={this.state.naturalSlideWidth}
+                                naturalSlideHeight={this.state.naturalSlideHeight}
+                                hasMasterSpinner
+                            >
+                                <div style={styles.nextBackDiv}>
                                     <div style={styles.sliderDiv}>
-
                                         <Slider>
-
                                             <Slide index={0}>
                                                 <div style={styles.sprocPerfsFirst}/>
                                                 <div style={styles.sprocPerfsMid}/>
@@ -161,19 +168,16 @@ class Carousel extends Component {
                                                     onClick={() => {
                                                         setFilmSRC('pjMlCHCufrA');
                                                     }}
-
                                                 >
                                                     <div className="thumb" style={styles.thumb}>
                                                         {/*src="https://img.youtube.com/vi/{index0ytID}/0.jpg" */}
                                                         <Image
+                                                            style={styles.thumb}
                                                             src="https://img.youtube.com/vi/pjMlCHCufrA/0.jpg"
                                                             alt="Figure Man Written by Anthony Thambynayagam"
                                                         />
                                                     </div>
-                                                    <div
-                                                        className="desc"
-                                                        style={styles.desc}
-                                                    >
+                                                    <div  style={styles.desc}>
                                                         Figure Man Written by Anthony Thambynayagam
                                                     </div>
                                                 </div>
@@ -247,11 +251,13 @@ class Carousel extends Component {
                                                 <div style={styles.sprocPerfsFirst}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={3}>
                                                 <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsLast}/>
@@ -269,7 +275,7 @@ class Carousel extends Component {
                                                         />
                                                     </div>
                                                     <div
-
+                                                        className="desc"
                                                         style={styles.desc}
                                                     >
                                                         Chasing Terrence by Terrence Wynder Kevin Drury Kris Brown &
@@ -279,11 +285,13 @@ class Carousel extends Component {
                                                 <div style={styles.sprocPerfsFirst}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={4}>
                                                 <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsLast}/>
@@ -310,11 +318,13 @@ class Carousel extends Component {
                                                 <div style={styles.sprocPerfsFirst}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
+                                                <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsLast}/>
                                             </Slide>
 
                                             <Slide index={5}>
                                                 <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsLast}/>
@@ -331,7 +341,7 @@ class Carousel extends Component {
                                                             alt="Surprise in the Freezer by Corrie Greening"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Surprise in the Freezer by Corrie Greening
                                                     </div>
                                                 </div>
@@ -361,7 +371,7 @@ class Carousel extends Component {
                                                             alt="Block Party by Clint Berquist Music by DUBCAR"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Block Party by Clint Berquist Music by DUBCAR
                                                     </div>
                                                 </div>
@@ -391,11 +401,12 @@ class Carousel extends Component {
                                                             alt="Our Usual Table by La Dele Sines and Alan Phillips"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Our Usual Table by La Dele Sines and Alan Phillips
                                                     </div>
                                                 </div>
                                                 <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsLast}/>
@@ -403,6 +414,7 @@ class Carousel extends Component {
 
                                             <Slide index={8}>
                                                 <div style={styles.sprocPerfsFirst}/>
+                                                <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsMid}/>
                                                 <div style={styles.sprocPerfsLast}/>
@@ -418,7 +430,7 @@ class Carousel extends Component {
                                                             alt="Leap Year MMXX by Angelina Tolentino"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Leap Year MMXX by Angelina Tolentino
                                                     </div>
                                                 </div>
@@ -446,7 +458,7 @@ class Carousel extends Component {
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         The Big Con by Augie Pagan
                                                     </div>
                                                 </div>
@@ -474,7 +486,7 @@ class Carousel extends Component {
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Special Olympics Basketball by Cedar Bushue
                                                     </div>
                                                 </div>
@@ -502,7 +514,7 @@ class Carousel extends Component {
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         HOLD FAST by Chris Pfeifle
                                                     </div>
                                                 </div>
@@ -530,7 +542,7 @@ class Carousel extends Component {
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         The Adventures of Oak and Humbug by Christopher Kimbrough &
                                                         Elahe Zare
                                                     </div>
@@ -559,7 +571,7 @@ class Carousel extends Component {
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         The Adventures of Oak and Humbug by Christopher Kimbrough &
                                                         Elahe Zare
                                                     </div>
@@ -588,7 +600,7 @@ class Carousel extends Component {
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Return of Robot by Grant Crawford
                                                     </div>
                                                 </div>
@@ -616,7 +628,7 @@ class Carousel extends Component {
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Innocent Chaos by Jason Zook
                                                     </div>
                                                 </div>
@@ -644,7 +656,7 @@ class Carousel extends Component {
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Headstones by Jesse Moore and Patty Foley
                                                     </div>
                                                 </div>
@@ -672,7 +684,7 @@ class Carousel extends Component {
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         West Nebraska by Just John
                                                     </div>
                                                 </div>
@@ -700,7 +712,7 @@ class Carousel extends Component {
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         The Ghosts of GT by Hazel Lucy & Emma
                                                     </div>
                                                 </div>
@@ -728,7 +740,7 @@ class Carousel extends Component {
                                                             alt="The Big Con by Augie Pagan"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         ENDEMIC by Kevin Coulton
                                                     </div>
                                                 </div>
@@ -956,7 +968,7 @@ class Carousel extends Component {
                                                             alt="The Busker by Peter Reiquam"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         The Busker by Peter Reiquam
                                                     </div>
                                                 </div>
@@ -986,7 +998,7 @@ class Carousel extends Component {
                                                             alt="Sparks by Michael Campos, Lauren Harris, Jordan Maples and Ryan Rohrer"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Sparks by Michael Campos, Lauren Harris, Jordan Maples and Ryan
                                                         Rohrer
                                                     </div>
@@ -1017,7 +1029,7 @@ class Carousel extends Component {
                                                             alt="River City Racers by Sean Byrne"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         River City Racers by Sean Byrne
                                                     </div>
                                                 </div>
@@ -1046,7 +1058,7 @@ class Carousel extends Component {
                                                             alt="No Fly Zone by Trinh Duong & Rob Jellinek"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         No Fly Zone by Trinh Duong & Rob Jellinek
                                                     </div>
                                                 </div>
@@ -1074,7 +1086,7 @@ class Carousel extends Component {
                                                             alt="Frances Doesn’t Care for the Blues  by William Brandt"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Frances Doesn’t Care for the Blues by William Brandt
                                                     </div>
                                                 </div>
@@ -1102,7 +1114,7 @@ class Carousel extends Component {
                                                             alt="Flower People by Nemo Campisi"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Flower People by Nemo Campisi
                                                     </div>
                                                 </div>
@@ -1130,7 +1142,7 @@ class Carousel extends Component {
                                                             alt="Perros Manos (dog hands) by Zack Lindsey and Keturah Walker"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Perros Manos (dog hands) by Zack Lindsey and Keturah Walker
                                                     </div>
                                                 </div>
@@ -1158,7 +1170,7 @@ class Carousel extends Component {
                                                             alt="Flyght Path (or The Girl is Fly) By Tracy Thompson"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Flyght Path (or The Girl is Fly) By Tracy Thompson
                                                     </div>
                                                 </div>
@@ -1186,7 +1198,7 @@ class Carousel extends Component {
                                                             alt="THE 1979 BIZARRE by Alex Miller"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         THE 1979 BIZARRE by Alex Miller
                                                     </div>
                                                 </div>
@@ -1214,7 +1226,7 @@ class Carousel extends Component {
                                                             alt="Observation of Place by Alexis Wood"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Observation of Place by Alexis Wood
                                                     </div>
                                                 </div>
@@ -1242,7 +1254,7 @@ class Carousel extends Component {
                                                             alt="In the Air by Ann Sammon"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         In the Air by Ann Sammon
                                                     </div>
                                                 </div>
@@ -1270,7 +1282,7 @@ class Carousel extends Component {
                                                             alt="Untitled by Channel Horner"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Untitled by Channel Horner
                                                     </div>
                                                 </div>
@@ -1298,7 +1310,7 @@ class Carousel extends Component {
                                                             alt="A Hard Day's Day by Adam Walker and Charlotte Blythe"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         A Hard Day's Day by Adam Walker and Charlotte Blythe
                                                     </div>
                                                 </div>
@@ -1326,7 +1338,7 @@ class Carousel extends Component {
                                                             alt="In Search of the Perfect Beer by John Krull & Yukari Romano"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         In Search of the Perfect Beer by John Krull & Yukari Romano
                                                     </div>
                                                 </div>
@@ -1354,7 +1366,7 @@ class Carousel extends Component {
                                                             alt="letters to [and from] Pablo by Rana San"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         letters to [and from] Pablo by Rana San
                                                     </div>
                                                 </div>
@@ -1382,7 +1394,7 @@ class Carousel extends Component {
                                                             alt="The Great Paralysis by Stephen Samelko"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         The Great Paralysis by Stephen Samelko
                                                     </div>
                                                 </div>
@@ -1410,7 +1422,7 @@ class Carousel extends Component {
                                                             alt="The Owl & the Pussycat by Edward Lear"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         The Owl & the Pussycat by Edward Lear
                                                     </div>
                                                 </div>
@@ -1438,7 +1450,7 @@ class Carousel extends Component {
                                                             alt="Mystery 3 by Jenelle Sauvageau"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Mystery 3 by Jenelle Sauvageau
                                                     </div>
                                                 </div>
@@ -1673,7 +1685,7 @@ class Carousel extends Component {
                                                             alt="Alert by Ahmad White"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Alert by Ahmad White
                                                     </div>
                                                 </div>
@@ -1703,7 +1715,7 @@ class Carousel extends Component {
                                                             alt="Alien Gas Mask Robot by Grant Crawford"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Alien Gas Mask Robot by Grant Crawford
                                                     </div>
                                                 </div>
@@ -1733,7 +1745,7 @@ class Carousel extends Component {
                                                             alt="Time to Spare by Katie Lewis & Reid Priewe"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Time to Spare by Katie Lewis & Reid Priewe
                                                     </div>
                                                 </div>
@@ -1763,7 +1775,7 @@ class Carousel extends Component {
                                                             alt="Birth of a Libation II: Who’s Yer Mama by Amee Shepard"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Birth of a Libation II: Who’s Yer Mama by Amee Shepard
                                                     </div>
                                                 </div>
@@ -1792,7 +1804,7 @@ class Carousel extends Component {
                                                             alt="Masters of the Universe of Guitars, Dogs, Hats, and Boots by Adam Walker"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Masters of the Universe of Guitars, Dogs, Hats, and Boots by
                                                         Adam Walker
                                                     </div>
@@ -1822,7 +1834,7 @@ class Carousel extends Component {
                                                             alt="PNW Grrrls by Madison Holup"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         PNW Grrrls by Madison Holup
                                                     </div>
                                                 </div>
@@ -1851,7 +1863,7 @@ class Carousel extends Component {
                                                             alt="The Life and Times of Mr. Plumbean by Jake and Emmett Bookwalter"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         The Life and Times of Mr. Plumbean by Jake and Emmett Bookwalter
                                                     </div>
                                                 </div>
@@ -1880,7 +1892,7 @@ class Carousel extends Component {
                                                             alt="The Only Cure for Love by Ella E. Anderson, Alexzandyr Biernat"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         The Only Cure for Love by Ella E. Anderson, Alexzandyr Biernat
                                                     </div>
                                                 </div>
@@ -1909,7 +1921,7 @@ class Carousel extends Component {
                                                             alt="Iron Rising By Kasey Williams"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Iron Rising By Kasey Williams
                                                     </div>
                                                 </div>
@@ -1938,7 +1950,7 @@ class Carousel extends Component {
                                                             alt="PINLAND EMPIRE by Kevin Coulton"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         PINLAND EMPIRE by Kevin Coulton
                                                     </div>
                                                 </div>
@@ -2167,7 +2179,7 @@ class Carousel extends Component {
                                                             alt="Gorgetown by Simone Sweet-Chavez and her parents"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Gorgetown by Simone Sweet-Chavez and her parents
                                                     </div>
                                                 </div>
@@ -2197,7 +2209,7 @@ class Carousel extends Component {
                                                             alt="Private Video"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Private Video
                                                     </div>
                                                 </div>
@@ -2227,7 +2239,7 @@ class Carousel extends Component {
                                                             alt="Infinite Push/Pull by Ali Rowenna"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Infinite Push/Pull by Ali Rowenna
                                                     </div>
                                                 </div>
@@ -2256,7 +2268,7 @@ class Carousel extends Component {
                                                             alt="Foreign and Familiar. by Brad Curran"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Foreign and Familiar. by Brad Curran
                                                     </div>
                                                 </div>
@@ -2284,7 +2296,7 @@ class Carousel extends Component {
                                                             alt="Georgetown Roundup by Corinne Arnold & John Colter Arnold"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Georgetown Roundup by Corinne Arnold & John Colter Arnold
                                                     </div>
                                                 </div>
@@ -2312,7 +2324,7 @@ class Carousel extends Component {
                                                             alt="Then and Now by Lovelee"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Then and Now by Lovelee
                                                     </div>
                                                 </div>
@@ -2340,7 +2352,7 @@ class Carousel extends Component {
                                                             alt="Live and Let Dive by Jordan Pasek"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Live and Let Dive by Jordan Pasek
                                                     </div>
                                                 </div>
@@ -2368,7 +2380,7 @@ class Carousel extends Component {
                                                             alt="Transportation by Ion Gardescu"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Transportation by Ion Gardescu
                                                     </div>
                                                 </div>
@@ -2396,7 +2408,7 @@ class Carousel extends Component {
                                                             alt="Flora By Mike Poetzel"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Flora By Mike Poetzel
                                                     </div>
                                                 </div>
@@ -2424,7 +2436,7 @@ class Carousel extends Component {
                                                             alt="Duwamish Valley Youth Corps"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         Duwamish Valley Youth Corps
                                                     </div>
                                                 </div>
@@ -2452,7 +2464,7 @@ class Carousel extends Component {
                                                             alt="The Stallion by Laura C Wright"
                                                         />
                                                     </div>
-                                                    <div className="desc" style={styles.desc}>
+                                                    <div  style={styles.desc}>
                                                         The Stallion by Laura C Wright
                                                     </div>
                                                 </div>
