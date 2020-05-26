@@ -4,6 +4,7 @@ const filmGalleryStyle = {
     //background: 'rgb(0,0,0)',
     color: 'white',
 };
+
 const vidContainerIframe = {
     position: 'relative',
     align: 'center',
@@ -20,6 +21,7 @@ const sliderDiv = {
     borderColor: 'LightGrey',
     background: 'rgb(50,50,65)',
 };
+
 const nextBackDiv = {
     position: 'relative',
     width: '68.9em',
@@ -28,7 +30,6 @@ const nextBackDiv = {
     //borderStyle: 'solid',
     //borderColor: 'Red',
 };
-
 
 const vidItem = {
     display: 'block',
@@ -54,8 +55,6 @@ const desc = {
     fontFamily: 'American Typewriter'
 };
 
-
-
 const testTextDiv = {
     width: '10em',
     background: 'rgb(0,0,0)',
@@ -66,6 +65,15 @@ const testTextDiv = {
     overflowWrap: 'break-word',
     wordWrap: 'break-word',
 };
+const thumb = {
+    height: '110px',
+};
+const desc = {
+    color: 'black',
+    fontSize: '14px',
+    fontWeight: 'bold',
+    fontFamily: 'American Typewriter'
+};
 
 const sprocPerfsFirst = {
     display: 'block',
@@ -74,10 +82,6 @@ const sprocPerfsFirst = {
     height: '1em',
     float: 'left',
     margin: '.2em .76em .2em .6em',
-    //marginLeft: '.6em',
-    //marginRight: '.76em',
-    //marginTop: '.2em',
-    //marginBottom: '.2em',
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
@@ -113,7 +117,6 @@ const sprocPerfsLast = {
     borderColor: 'LightGrey',
     borderRadius: '.2em',
 };
-
 
 const buttonBack = {
     position: 'absolute',

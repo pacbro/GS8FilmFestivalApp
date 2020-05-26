@@ -63,6 +63,7 @@ class Carousel extends Component {
         setFilmSRC('jvq7-b-Ko1g');
     }
 
+
     //https://medium.com/@josh.j.pearson/handling-iframe-loading-in-react-57f044a9d0fa
     render() {
         return (
@@ -2521,9 +2522,6 @@ class Carousel extends Component {
                         <h2>Coming soon!</h2>
                     </TabPanel>
                 </Tabs>
-                <div style={styles.testTextDiv}>
-                    <p>This is test text and should be removed!</p>
-                </div>
             </div>
         );
 
