@@ -33,7 +33,9 @@ const nextBackDiv = {
 const logos = {
     width: '86px',
     height: '110px',
-    border: '1px solid #ccc',
+    borderLeft: '1px solid #ccc',
+    borderTop: '1px solid #ccc',
+    borderRight: '1px solid #ccc',
     padding: '5px',
     //margin: '-9px',
     margin: '-3px -9px 0px -9px',
@@ -45,7 +47,9 @@ const logos = {
 const logo2011 = {
     width: '160px',
     height: '110px',
-    border: '1px solid #ccc',
+    borderLeft: '1px solid #ccc',
+    borderTop: '1px solid #ccc',
+    borderRight: '1px solid #ccc',
     padding: '5px',
     //margin: '-9px',
     margin: '-3px -9px 0px -9px',
