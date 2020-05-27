@@ -43,8 +43,7 @@ const vidContainerIframe = {
     position: 'relative',
     align: 'center',
     width: '50em',
-    height: '37.5em',
-};
+    height: '37.5em',};
 
 const vidItem = {
     display: 'block',
