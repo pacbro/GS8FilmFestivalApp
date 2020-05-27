@@ -21,6 +21,7 @@ const sliderDiv = {
     borderColor: 'LightGrey',
     background: 'rgb(50,50,65)',
 };
+
 const nextBackDiv = {
     position: 'relative',
     width: '68.9em',
@@ -30,6 +31,7 @@ const nextBackDiv = {
     //borderColor: 'Red',
 };
 
+/*
 const logos = {
     width: '86px',
     height: '110px',
@@ -37,26 +39,11 @@ const logos = {
     borderTop: '1px solid #ccc',
     borderRight: '1px solid #ccc',
     padding: '5px',
-    //margin: '-9px',
     margin: '-3px -9px 0px -9px',
     marginBottom: '.2em',
     borderRadius: '.3em .3em 0em 0em',
     //background: 'rgb(0,0,0)',
-};
-
-const logo2011 = {
-    width: '160px',
-    height: '110px',
-    borderLeft: '1px solid #ccc',
-    borderTop: '1px solid #ccc',
-    borderRight: '1px solid #ccc',
-    padding: '5px',
-    //margin: '-9px',
-    margin: '-3px -9px 0px -9px',
-    marginBottom: '.2em',
-    borderRadius: '.3em .3em 0em 0em',
-    //background: 'rgb(50,50,50)',
-};
+};*/
 
 const vidItem = {
     display: 'block',
@@ -82,19 +69,6 @@ const desc = {
     fontFamily: 'American Typewriter'
 };
 
-
-
-const testTextDiv = {
-    width: '10em',
-    background: 'rgb(0,0,0)',
-    border: '5px',
-    borderStyle: 'solid',
-    borderColor: 'Red',
-    //overflow: 'hidden',
-    overflowWrap: 'break-word',
-    wordWrap: 'break-word',
-};
-
 const sprocPerfsFirst = {
     display: 'block',
     background: 'rgb(255,255,255)',
@@ -102,10 +76,6 @@ const sprocPerfsFirst = {
     height: '1em',
     float: 'left',
     margin: '.2em .76em .2em .6em',
-    //marginLeft: '.6em',
-    //marginRight: '.76em',
-    //marginTop: '.2em',
-    //marginBottom: '.2em',
     border: '1px',
     borderStyle: 'solid',
     borderColor: 'LightGrey',
@@ -169,6 +139,19 @@ const buttonNext = {
     width: '1.4em',
 };
 
+const logos = {
+    //borderRadius: '30px',
+    borderRadius: '1.5em',
+    width: '101px',
+    height: '125px',
+    background: 'LightGrey',
+    padding: '5px',
+    //margin: '-9px',
+    margin: '-3px -9px 0px -9px',
+    marginBottom: '.2em',
+    color: 'black',
+};
+
 const Styles = {
     filmGalleryStyle,
     vidContainerIframe,
@@ -180,11 +163,9 @@ const Styles = {
     sprocPerfsLast,
     vidItem,
     desc,
-    testTextDiv,
     sliderDiv,
     nextBackDiv,
     logos,
-    logo2011,
 };
 
 export default Styles;
