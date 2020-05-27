@@ -31,6 +31,36 @@ const nextBackDiv = {
     //borderColor: 'Red',
 };
 
+
+const logos = {
+    width: '86px',
+    height: '110px',
+    borderLeft: '1px solid #ccc',
+    borderTop: '1px solid #ccc',
+    borderRight: '1px solid #ccc',
+    padding: '5px',
+    //margin: '-9px',
+    margin: '-3px -9px 0px -9px',
+    marginBottom: '.2em',
+    borderRadius: '.3em .3em 0em 0em',
+    //background: 'rgb(0,0,0)',
+};
+
+const logo2011 = {
+    width: '160px',
+    height: '110px',
+    borderLeft: '1px solid #ccc',
+    borderTop: '1px solid #ccc',
+    borderRight: '1px solid #ccc',
+    padding: '5px',
+    //margin: '-9px',
+    margin: '-3px -9px 0px -9px',
+    marginBottom: '.2em',
+    borderRadius: '.3em .3em 0em 0em',
+    //background: 'rgb(50,50,50)',
+};
+
+
 const vidItem = {
     display: 'block',
     background: 'rgb(255,255,255)',
@@ -50,7 +80,7 @@ const thumb = {
 };
 const desc = {
     color: 'black',
-    fontSize: '14px',
+    fontSize: '1.1em',
     fontWeight: 'bold',
     fontFamily: 'American Typewriter'
 };
@@ -64,15 +94,6 @@ const testTextDiv = {
     //overflow: 'hidden',
     overflowWrap: 'break-word',
     wordWrap: 'break-word',
-};
-const thumb = {
-    height: '110px',
-};
-const desc = {
-    color: 'black',
-    fontSize: '14px',
-    fontWeight: 'bold',
-    fontFamily: 'American Typewriter'
 };
 
 const sprocPerfsFirst = {
@@ -156,9 +177,10 @@ const Styles = {
     sprocPerfsLast,
     vidItem,
     desc,
-    testTextDiv,
     sliderDiv,
     nextBackDiv,
+    logos,
+    logo2011,
 };
 
 export default Styles;
