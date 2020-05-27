@@ -165,19 +165,8 @@ const buttonNext = {
 
 const logos = {
     borderRadius: '30px',
-    width: '86px',
-    height: '110px',
-    background: 'LightGrey',
-    padding: '5px',
-    margin: '-9px',
-    marginBottom: '.2em',
-    color: 'black',
-};
-
-const logo2011 = {
-    borderRadius: '30px',
-    width: '160px',
-    height: '110px',
+    width: '101px',
+    height: '125px',
     background: 'LightGrey',
     padding: '5px',
     margin: '-9px',
@@ -198,7 +187,6 @@ const Styles = {
     desc,
     sliderDiv,
     logos,
-    logo2011,
     parentDivStyle,
     cardStyle,
     titleStyle,
