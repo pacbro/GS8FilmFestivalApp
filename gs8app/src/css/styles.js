@@ -142,8 +142,8 @@ const buttonNext = {
 const logos = {
     //borderRadius: '30px',
     borderRadius: '1.5em',
-    width: '132px',
-    height: '146px',
+    width: '117px',
+    height: '131px',
     background: 'LightGrey',
     padding: '5px',
     //margin: '-9px',
