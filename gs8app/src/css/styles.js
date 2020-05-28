@@ -147,9 +147,15 @@ const logos = {
     background: 'LightGrey',
     padding: '5px',
     //margin: '-9px',
-    margin: '-3px -9px 0px -9px',
+    //margin: '-3px -9px 0px -9px',
     marginBottom: '.2em',
     color: 'black',
+};
+
+const logoBar = {
+    width: '100%',
+    display: 'flex-box',
+    justify: 'space-between', 
 };
 
 const Styles = {
@@ -166,6 +172,7 @@ const Styles = {
     sliderDiv,
     nextBackDiv,
     logos,
+    logoBar,
 };
 
 export default Styles;
