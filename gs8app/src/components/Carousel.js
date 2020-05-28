@@ -85,7 +85,7 @@ class Carousel extends Component {
                 <br/>
                 <br/>
                 <div>
-                    <Tabs>
+                    <Tabs style={styles.logoBar}>
                         <TabList>
                                 <Tab>
                                     <div style={styles.logos}>
