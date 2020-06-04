@@ -33,7 +33,7 @@ class CarouselDisplay extends Component {
         console.log('Fake ass carousel bitch');
     }
 
-    setHTML = html => {
+    setHTML(html) {
         console.log('setting HTML');
         console.log(html);
         this.setState({
@@ -44,7 +44,7 @@ class CarouselDisplay extends Component {
     generateSlide = (film, pointer) => {
         console.log('creating slide ' + pointer);
         let slideHTML = '<Slide index={' + pointer + '}>';
-        slideHTML += '<div className="vid-item" style={styles.vidItem} onClick={() => {setFilmSRC("' + film.filmSrc + '");}}>';
+        slideHTML += '<div className="vid-item" style={styles.vidItem} onClick={() => {this.setFilmSRC("' + film.filmSrc + '");}}>';
         slideHTML += '<div className="thumb" style={styles.thumb}>'
         slideHTML += '<Image src="' + film.img + '" alt="' + film.name + ' by ' +film.by + '"/>';
         slideHTML += '</div><div className="desc" style={styles.desc}>';
@@ -79,7 +79,7 @@ class CarouselDisplay extends Component {
     render() {
         let html = this.state.html;
         return (
-            <div dangerouslySetInnerHTML={{ __html: html }}></div>                         
+            <div dangerouslySetInnerHTML={{ __html: html }}></div>
         );
     }
 }
