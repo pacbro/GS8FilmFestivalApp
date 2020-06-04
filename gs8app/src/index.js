@@ -5,6 +5,7 @@ import './css/index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import { tempData } from './tempData';
+import $ from 'jquery';
 
 ReactDOM.render(
     <BrowserRouter>
