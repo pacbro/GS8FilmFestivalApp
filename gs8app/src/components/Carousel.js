@@ -87,6 +87,9 @@ class Carousel extends Component {
                 <div>
                     <Tabs style={styles.logoBar}>
                         <TabList>
+                        {/* <------------------------ This is the first paste point ------------------------> */}
+
+
                                 <Tab>
                                     <div style={styles.logos}>
                                         <img src={require("../img/2020_logo.png")} height="105" width="107"
@@ -144,6 +147,9 @@ class Carousel extends Component {
                                     </div>
                                 </Tab>
                         </TabList>
+                         {/* <------------------------ This is the second paste point ------------------------> */}
+
+                        
                         <TabPanel>
                             {/*2020*/}
                             <div style={styles.filmGalleryStyle}>
@@ -2494,26 +2500,43 @@ class Carousel extends Component {
                         </TabPanel>
                         <TabPanel>
                             {/*2011*/}
+   {/* <------------------------ This is the third paste point ------------------------> */}
+
+
                             <h2>Coming soon!</h2>
                         </TabPanel>
                         <TabPanel>
                             {/*2010*/}
+   {/* <------------------------ This is the third paste point ------------------------> */}
+
+
                             <h2>Coming soon!</h2>
                         </TabPanel>
                         <TabPanel>
                             {/*2009*/}
+   {/* <------------------------ This is the third paste point ------------------------> */}
+
+
                             <h2>Coming soon!</h2>
                         </TabPanel>
                         <TabPanel>
                             {/*2008*/}
+   {/* <------------------------ This is the third paste point ------------------------> */}
+
                             <h2>Coming soon!</h2>
                         </TabPanel>
                         <TabPanel>
                             {/*2007*/}
+   {/* <------------------------ This is the third paste point ------------------------> */}
+
+                            
                             <h2>Coming soon!</h2>
                         </TabPanel>
                         <TabPanel>
                             {/*2006*/}
+   {/* <------------------------ This is the third paste point ------------------------> */}
+
+                            
                             <h2>Coming soon!</h2>
                         </TabPanel>
                     </Tabs>
